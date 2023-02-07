@@ -1,0 +1,15 @@
+# 2023/02/06
+## Accomplished
+- Set up jekyll development environment
+- Cloned text theme and moved in site articles
+- Start work on custom skin to use provided color scheme
+- Familiarized with the layout of everything and how it all works
+
+## Next Work
+- Upload to GitHub and start work on auto-building and auto-deploying a test site
+- Get logo images
+- Wait for homepage to be finalized before committing too much
+
+## Questions
+- how urgent is getting a site preview up
+- how stylized should articles be
