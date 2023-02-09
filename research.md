@@ -1,12 +1,12 @@
 ---
 layout: research
 title: Research Areas
+box1: Renewable Resource Assessment and Planning for High-Penetration Futures
+box2: Power System Operation Under Uncertainty and Heterogeneous Dispatch Paradigms 
+box3: Political Economy of Low-Carbon Infrastructure Innovation and Markets
 ---
 
 ## Power Transformation Lab Focus
-- Renewable Resource Assessment and Planning for High-Penetration Futures
-- Power System Operation Under Uncertainty and Heterogeneous Dispatch Paradigms
-- Political Economy of Low-Carbon Infrastructure Innovation and Markets
 
 The Davidson Lab focuses on the engineering implications and institutional conflicts inherent in deploying low-
 carbon energy at scale. We have particular interests in understanding the political systems of Asia (with a focus on
