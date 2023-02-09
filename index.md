@@ -1,5 +1,6 @@
 ---
 layout: home
+hero_image: img/white-clouds.jpg
 ---
 # Power Transformation Lab at UCSD
 
