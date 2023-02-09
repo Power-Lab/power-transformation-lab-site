@@ -1,0 +1,41 @@
+.layout--research {
+  #hero-container {
+    height: 30vh;
+    min-height: 200px;
+    background-color: #3c7cde;
+    position: relative;
+    margin: 0 -3rem;
+
+    #hero-text {
+      width: 80%;
+      height: 115px;
+
+      // vertical centering
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      text-align: center;
+      background-color: rgba($main-color-1, 0.7);
+      box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
+      clip: rect(0 80% 115px 0);
+
+      // text and hr colors
+      h2 {
+        color: $text-color-1;
+        height: 100%;
+      }
+    }
+
+    #hero-text:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(115px);
+      border-width: 115px 115px 0 0;
+      border-style: solid;
+      border-color: rgba($main-color-1, 0.7) transparent;
+    }
+  }
+}

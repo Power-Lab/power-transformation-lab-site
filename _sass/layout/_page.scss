@@ -30,6 +30,9 @@ html,
       @include overflow(hidden);
     }
   }
+  h1, h2 {
+    font-family: "Josefin Sans", sans-serif
+  }
 }
 
 .page__main-inner {
