@@ -112,6 +112,12 @@
   p img {
     float: left;
     margin-right: 12px;
+    max-width: 60%;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: none;
+    }
 
     // this style is applied in scripts/research.js because nth-of-type only works on siblings instead of across the whole document
     &.right-align {
