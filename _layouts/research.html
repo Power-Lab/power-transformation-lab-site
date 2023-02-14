@@ -10,9 +10,10 @@ show_title: false
 <div id="hero-container">
   <img src="{{ page.hero_image }}" class="hero-image">
   <div id="hero-text">
-    <h2>Researching achievable, sustainable infrastructure solutions for all the world regions</h2>
+    <h3>Researching achievable, sustainable infrastructure solutions for all the world regions</h3>
   </div>
 </div>
+<h2>Power Transformation Lab Focus</h2>
 <div id="triple-box-container">
   <div class="box">
     <h3>{{ page.box1 }}</h3>
@@ -24,8 +25,9 @@ show_title: false
     <h3>{{ page.box3 }}</h3>
   </div>
 </div>
+
+{{ content }}
+
 <script>
   {%- include scripts/research.js -%}
 </script>
-
-{{ content }}

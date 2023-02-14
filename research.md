@@ -7,8 +7,6 @@ box3: Political Economy of Low-Carbon Infrastructure Innovation and Markets
 hero_image: img/light-bulb-blue-sky.jpg
 ---
 
-## Power Transformation Lab Focus
-
 The Davidson Lab focuses on the engineering implications and institutional conflicts inherent in deploying low-
 carbon energy at scale. We have particular interests in understanding the political systems of Asia (with a focus on
 
