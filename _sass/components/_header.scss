@@ -1,7 +1,7 @@
 .header {
   background: $header-background;
   a {
-    font-weight: map-get($base, font-weight);
+    font-weight: 600;
     text-decoration: none !important;
     // this is what changes link hover color in the navbar
     @include link-colors($header-text-color, $header-text-color); 
