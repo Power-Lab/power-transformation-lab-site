@@ -92,6 +92,10 @@
     .box:last-of-type {
       background-color: $main-color-3;
     }
+    .box:hover {
+      cursor: pointer;
+      color: $text-color-1
+    }
   }
 
   h2 {

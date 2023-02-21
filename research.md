@@ -1,9 +1,6 @@
 ---
 layout: research
 title: Research Areas
-box1: Renewable Resource Assessment and Planning for High-Penetration Futures
-box2: Power System Operation Under Uncertainty and Heterogeneous Dispatch Paradigms 
-box3: Political Economy of Low-Carbon Infrastructure Innovation and Markets
 hero_image: img/light-bulb-blue-sky.jpg
 ---
 
