@@ -122,16 +122,19 @@
   }
 
   .dropdown-content {
-    display: none;
+    height: 0px;
+    overflow: hidden;
     position: absolute;
-    background-color: rgba(24, 24, 24, 0.5);
+    background-color: rgba(24, 24, 24, 0);
     min-width: 150px;
     z-index: 99;
   }
 
   :hover {
     .dropdown-content {
-      display: block;
+      height: auto;
+      background-color: rgba(24, 24, 24, 0.5);
+      transition: background-color 100ms;
     }
   }
 
