@@ -32,26 +32,26 @@
               <li class="navigation__item navigation__item--active">
                 <div class="dropdown">
                 <a href="{{ _nav_url }}" class="dropdown-btn">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
-                <div class="dropdown-content">
                 {%- if _item.subheadings -%}
+                <div class="dropdown-content">
                 {%- for subheading in _item.subheadings -%}
                 <a href="{{ subheading.url }}" class="dropdown-item">{{ subheading.title }}</a>
                 {%- endfor -%}
-                {%- endif -%}
                 </div>
+                {%- endif -%}
                 </div>
               </li>
             {%- else -%}
               <li class="navigation__item">
                 <div class="dropdown">
                 <a href="{{ _nav_url }}" class="dropdown-btn">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
-                <div class="dropdown-content">
                 {%- if _item.subheadings -%}
+                <div class="dropdown-content">
                 {%- for subheading in _item.subheadings -%}
                 <a href="{{ subheading.url }}" class="dropdown-item">{{ subheading.title }}</a>
                 {%- endfor -%}
-                {%- endif -%}
                 </div>
+                {%- endif -%}
                 </div>
               </li>
             {%- endif -%}
