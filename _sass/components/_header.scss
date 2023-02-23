@@ -84,7 +84,7 @@
 }
 
 .navigation {
-  @include overflow(auto, "x");
+  @include overflow(auto, auto);
   & > ul {
     height: map-get($layout, header-height);
     padding-bottom: 0;
@@ -112,6 +112,28 @@
     margin-bottom: -4px;
     content: "";
     @include split-line(bottom, 4px, transparent);
+  }
+
+  position: relative;
+  display: inline-block;
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00f;
+    min-width: 150px;
+    z-index: 99;
+  }
+
+  :hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+
+  .dropdown-item {
+    color: #fff;
+    display: block;
   }
 }
 /*  remove active nav coloring until input from designer

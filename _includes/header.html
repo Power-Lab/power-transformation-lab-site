@@ -29,9 +29,31 @@
             {%- assign _page_url = __return -%}
             {%- include snippets/get-string-from-locale-config.html locale=_item.titles -%}
             {%- if _nav_url == _page_url or page.nav_key and _item.key and page.nav_key == _item.key -%}
-              <li class="navigation__item navigation__item--active"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
+              <li class="navigation__item navigation__item--active">
+                <div class="dropdown">
+                <a href="{{ _nav_url }}" class="dropdown-btn">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
+                <div class="dropdown-content">
+                {%- if _item.subheadings -%}
+                {%- for subheading in _item.subheadings -%}
+                <a href="{{ subheading.url }}" class="dropdown-item">{{ subheading.title }}</a>
+                {%- endfor -%}
+                {%- endif -%}
+                </div>
+                </div>
+              </li>
             {%- else -%}
-              <li class="navigation__item"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
+              <li class="navigation__item">
+                <div class="dropdown">
+                <a href="{{ _nav_url }}" class="dropdown-btn">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
+                <div class="dropdown-content">
+                {%- if _item.subheadings -%}
+                {%- for subheading in _item.subheadings -%}
+                <a href="{{ subheading.url }}" class="dropdown-item">{{ subheading.title }}</a>
+                {%- endfor -%}
+                {%- endif -%}
+                </div>
+                </div>
+              </li>
             {%- endif -%}
           {%- endfor -%}
           {%- if site.search.provider -%}
