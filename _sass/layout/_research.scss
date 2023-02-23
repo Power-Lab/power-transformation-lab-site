@@ -85,6 +85,7 @@
         font-size: 18px;
       }
       box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.3);
+      @include link-colors($text-color-1, $text-color-1)
     }
     .box:first-of-type {
       background-color: $main-color-2;
