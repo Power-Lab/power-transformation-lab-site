@@ -10,7 +10,7 @@
         <div class="header__brand">
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
-          <a href="{{ __return }}"><img src="img/header-logo.png" height=64 /></a>
+          <a href="{{ __return }}"><img src="{{ __return }}img/header-logo.png" height=64 /></a>
           {%- if site.title -%}
           <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}" id="site-title">Power <br /> Transformation <br /> Lab</a>
           {%- endif -%}
