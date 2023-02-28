@@ -12,7 +12,7 @@
           {%- include snippets/get-nav-url.html path=_paths_root -%}
           <a href="{{ __return }}"><img src="img/header-logo.png" height=64 /></a>
           {%- if site.title -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
+          <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}" id="site-title">Power <br /> Transformation <br /> Lab</a>
           {%- endif -%}
         </div>
         {%- if site.search.provider -%}

@@ -81,6 +81,9 @@
       font-size: map-get($base, font-size-h4-small);
     }
   }
+  #site-title {
+    line-height: 20px
+  }
 }
 
 .navigation {
