@@ -13,6 +13,10 @@
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 
+{%- if _filter_tag -%}
+{%- assign _sorted_list = _sorted_list | where_exp:"item","item.tags contains _filter_tag" -%}
+{%- endif -%}
+
 {%- if include.type == 'item' -%}
 <div class="article-list items items--divided">
 {%- elsif include.type == 'brief' -%}

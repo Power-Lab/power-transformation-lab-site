@@ -71,12 +71,15 @@ layout: page
         source0=layout.articles.show_info source1=page.articles.show_info -%}
       {%- assign _show_info = __return -%}
 
+      {%- assign _filter_tag = page.articles.filter_tag -%}
+
       {%- assign _article_type = page.articles.article_type | default: layout.articles.article_type -%}
       {%- assign _cover_size = page.articles.cover_size | default: layout.articles.cover_size -%}
       {%- assign _excerpt_type = page.articles.excerpt_type | default: layout.articles.excerpt_type -%}
 
       {%- include article-list.html articles=_articles type='item'
         article_type=_article_type
+        filter_tag=_filter_tag
         show_cover=_show_cover cover_size=_cover_size
         show_excerpt=_show_excerpt excerpt_type=_excerpt_type
         show_readmore=_show_readmore show_info=_show_info -%}
