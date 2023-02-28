@@ -66,10 +66,22 @@ paths:
   home    : # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
+
   research: "/research.html"
+  publications: "/publications.html"
+  blog: "/blog.html"
+
   news: "/news.html"
+  media: "/media.html"
+  recent_posts: "/recent.html"
+
+  about: "/about.html"
   team: "/team.html"
+  teaching: "/teaching.html"
+  opportunities: "/opportunities.html"
+
   contact: "/contact.html"
+
   writing: "/writing/"
 
 
