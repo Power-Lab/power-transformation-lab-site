@@ -73,7 +73,7 @@ paths:
 
   news: "/news.html"
   media: "/media.html"
-  recent_posts: "/recent.html"
+  recent_posts: "/recent_posts.html"
 
   about: "/about.html"
   team: "/team.html"

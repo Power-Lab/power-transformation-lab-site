@@ -21,7 +21,7 @@ header:
       - title: Media
         url: /media.html
       - title: Recent Posts
-        url: /recent.html
+        url: /recent_posts.html
 
   - titles:
       en      : &EN       ABOUT
