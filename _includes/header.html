@@ -34,8 +34,10 @@
                 <a href="{{ _nav_url }}" class="dropdown-btn">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
                 {%- if _item.subheadings -%}
                 <div class="dropdown-content">
-                {%- for subheading in _item.subheadings -%}
-                <a href="{{ subheading.url }}" class="dropdown-item">{{ subheading.title }}</a>
+                {%- for _subheading in _item.subheadings -%}
+                {%- include snippets/get-nav-url.html path=_subheading.url -%}
+                {%- assign _subheading_url = __return -%}
+                <a href="{{ _subheading_url }}" class="dropdown-item">{{ _subheading.title }}</a>
                 {%- endfor -%}
                 </div>
                 {%- endif -%}
@@ -47,8 +49,10 @@
                 <a href="{{ _nav_url }}" class="dropdown-btn">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
                 {%- if _item.subheadings -%}
                 <div class="dropdown-content">
-                {%- for subheading in _item.subheadings -%}
-                <a href="{{ subheading.url }}" class="dropdown-item">{{ subheading.title }}</a>
+                {%- for _subheading in _item.subheadings -%}
+                {%- include snippets/get-nav-url.html path=_subheading.url -%}
+                {%- assign _subheading_url = __return -%}
+                <a href="{{ _subheading_url }}" class="dropdown-item">{{ _subheading.title }}</a>
                 {%- endfor -%}
                 </div>
                 {%- endif -%}
