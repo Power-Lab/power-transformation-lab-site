@@ -1,4 +1,4 @@
 ---
 layout: team
-title: Team
+title: Meet The Lab
 ---
