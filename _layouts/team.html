@@ -2,13 +2,12 @@
 layout: page
 show_title: false
 ---
-<h1>Meet The Lab</h1>
 <div id="team-container">
+  <h2>Meet The Lab</h2>
   <div class="large-bio-container clearfix">
     <div class="bio">
-    {% assign _mainbio = site.team | first%}
-    <h2>{{ _mainbio.name }}</h2>
-    {% if _mainbio.img %}
+    {% assign _mainbio = site.team | first %}
+    <h3>{{ _mainbio.name }}</h3>
     <div class="grid-container">
       <div class="grid grid--p-3">
         <div class="cell cell--12 cell--lg-6">
@@ -19,16 +18,29 @@ show_title: false
         </div>
       </div>
     </div>
-    {% else %}
-    {{ _mainbio.content }}
-    {% endif %}
     </div>
   </div>
+  {% assign _non_alumni = site.team | where: 'alumni', nil %}
   <div class="grid-container">
   <div class="grid-bio-container grid grid--p-3">
-  {% for _member in site.team offset:1 %}
+  {% for _member in _non_alumni offset: 1%}
     <div class="bio cell cell--12 cell--md-6 cell--lg-4 content">
-      <h2>{{ _member.name }}</h2>
+      <h3>{{ _member.name }}</h3>
+      {% if _member.img %}
+      <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
+      {% endif %}
+      {{ _member.content }}
+    </div>
+  {% endfor %}
+  </div>
+  </div>
+  <h2>Alumni</h2>
+  <div class="grid-container">
+  <div class="grid-bio-container grid grid--p-3">
+  {% assign _alumni = site.team | where: 'alumni','true' %}
+  {% for _member in _alumni %}
+    <div class="bio cell cell--12 cell--md-6 cell--lg-4 content">
+      <h3>{{ _member.name }}</h3>
       {% if _member.img %}
       <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
       {% endif %}
