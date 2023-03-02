@@ -12,7 +12,7 @@ show_title: false
     <div class="grid-container">
       <div class="grid grid--p-3">
         <div class="cell cell--12 cell--lg-6">
-          <img src={{ _mainbio.img }}>
+          <img src={{ _mainbio.img }} alt="Portrait of {{ _mainbio.name }}">
         </div>
         <div class="cell cell--12 cell--lg-6">
           {{ _mainbio.content }}
@@ -30,7 +30,7 @@ show_title: false
     <div class="bio cell cell--12 cell--md-6 cell--lg-4 content">
       <h2>{{ _member.name }}</h2>
       {% if _member.img %}
-      <img src={{ _member.img }}>
+      <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
       {% endif %}
       {{ _member.content }}
     </div>
