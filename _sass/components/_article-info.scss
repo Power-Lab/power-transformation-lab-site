@@ -1,6 +1,9 @@
 .article__info {
   font-size: map-get($base, font-size-sm);
   color: $text-color-l;
+  ul {
+    padding: 0 !important;
+  }
   .left-col {
     float: left;
     @include media-breakpoint-down(md) {
