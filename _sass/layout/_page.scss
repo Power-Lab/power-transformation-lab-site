@@ -33,6 +33,9 @@ html,
   h1, h2 {
     font-family: "Mulish", sans-serif
   }
+  ul,ol {
+    padding: revert;
+  }
 }
 
 .page__main-inner {
