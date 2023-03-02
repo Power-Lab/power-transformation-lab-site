@@ -1,0 +1,40 @@
+---
+layout: page
+show_title: false
+---
+<h1>Meet The Lab</h1>
+<div id="team-container">
+  <div class="large-bio-container clearfix">
+    <div class="bio">
+    {% assign _mainbio = site.team | first%}
+    <h2>{{ _mainbio.name }}</h2>
+    {% if _mainbio.img %}
+    <div class="grid-container">
+      <div class="grid grid--p-3">
+        <div class="cell cell--12 cell--lg-6">
+          <img src={{ _mainbio.img }}>
+        </div>
+        <div class="cell cell--12 cell--lg-6">
+          {{ _mainbio.content }}
+        </div>
+      </div>
+    </div>
+    {% else %}
+    {{ _mainbio.content }}
+    {% endif %}
+    </div>
+  </div>
+  <div class="grid-container">
+  <div class="grid-bio-container grid grid--p-3">
+  {% for _member in site.team offset:1 %}
+    <div class="bio cell cell--12 cell--md-6 cell--lg-4 content">
+      <h2>{{ _member.name }}</h2>
+      {% if _member.img %}
+      <img src={{ _member.img }}>
+      {% endif %}
+      {{ _member.content }}
+    </div>
+  {% endfor %}
+  </div>
+  </div>
+</div>

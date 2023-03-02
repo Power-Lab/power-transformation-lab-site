@@ -1,7 +1,4 @@
 ---
-layout: page
+layout: team
 title: Team
 ---
-
-About the team
-
