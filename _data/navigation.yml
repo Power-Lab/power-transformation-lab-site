@@ -20,12 +20,12 @@ header:
     url: /about.html
 
     subheadings: 
-    - title: Team
+    - title: Meet The Lab
       url: /team.html
-    - title: Teaching
-      url: /teaching.html
     - title: Opportunities
       url: /opportunities.html
+    - title: Study @ UCSD
+      url: /teaching.html
 
   - titles:
       en      : &EN       CONTACT
