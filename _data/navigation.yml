@@ -15,12 +15,6 @@ header:
       en: NEWS
     url: /news.html
 
-    subheadings:
-      - title: Media
-        url: /media.html
-      - title: Recent Posts
-        url: /recent_posts.html
-
   - titles:
       en      : &EN       ABOUT
     url: /about.html

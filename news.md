@@ -1,7 +1,4 @@
 ---
-layout: page
+layout: news
 title: News
 ---
-News page for the site
-
-

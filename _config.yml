@@ -71,8 +71,6 @@ paths:
   publications: "/publications.html"
 
   news: "/news.html"
-  media: "/media.html"
-  recent_posts: "/recent_posts.html"
 
   about: "/about.html"
   team: "/team.html"
@@ -83,6 +81,10 @@ paths:
 
   writing: "/writing/"
 
+
+## Collections
+collections:
+  - in_the_media
 
 ## => Post
 ##############################
