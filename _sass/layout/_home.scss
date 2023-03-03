@@ -31,8 +31,13 @@
         font-family: "Josefin Sans", sans-serif;
       }
 
+      h2 {
+        font-weight: 600;
+      }
+
       h1 {
         font-size: map-get($base, font-size-h1-md);
+        font-weight: 700
       }
 
       hr {
