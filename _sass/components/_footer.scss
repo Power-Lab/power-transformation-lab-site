@@ -24,6 +24,10 @@
       }
     }
   }
+  #footer-img {
+    height: 48px;
+    position: absolute;
+  }
 }
 .footer__author-links {
   @include overflow(auto);
