@@ -1,18 +1,22 @@
 .layout--research {
+  
+  padding-top: 30vh;
+
   #hero-container {
     height: 30vh;
     min-height: 200px;
-    position: relative;
-    margin: 0 -3rem;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100vw;
 
     .hero-image {
       width: 100vw;
       height: 100%;
       object-fit: cover;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
     }
 
     #hero-text {
@@ -21,7 +25,7 @@
       // vertical centering
       position: absolute;
       top: 50%;
-      left: 3rem;
+      left: 0;
       right: calc(3rem + 135px);
       transform: translateY(-50%);
       text-align: center;
@@ -66,7 +70,7 @@
   #triple-box-container {
     margin: 24px 0;
     display: grid;
-    grid-template-columns: repeat(3, calc(33.3% - 24px));
+    grid-template-columns: repeat(3, calc(33.3% - 16px));
     max-width: 800px;
     margin: 0 auto;
 
