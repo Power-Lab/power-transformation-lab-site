@@ -12,4 +12,14 @@
   h2 {
     font-size: map-get($base, font-size-h2-lg)
   }
+
+  .large-bio-container img {
+    margin-top: 12px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .large-bio-container img {
+      margin-top: 0
+    }
+  }
 }
