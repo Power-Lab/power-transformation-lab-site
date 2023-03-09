@@ -1,0 +1,13 @@
+.layout--news {
+  .section-header {
+    font-size: map-get($base, font-size-h2-xl)
+  }
+
+  .media-card {
+    display: block;
+
+    h3 {
+      font-family: 'Montserrat', sans-serif
+    }
+  }
+}

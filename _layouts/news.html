@@ -6,35 +6,39 @@ titles:
   # @end locale config
 show_title: false
 ---
-<div class="layout--page">
+<div class="layout--page layout--news">
   <div class="hero-container" style="background-color: #7695cd">
     <div class="hero-text">
       <h1>News</h1>
     </div>
   </div>
-  <div id="in-the-media-container">
-    <h2>In The Media</h2>
-    {% for media_mention in site.in_the_media %}
-    <a class="media-card">
-      <h3>{{ media_mention.title }}</h3>
-      {% if media_mention.image %}
-      <p>Image Placeholder</p>
-      {% endif %}
-      <p>{{ media_mention.description }}</p>
-    </a>
-    {% endfor %}
-  </div>
-  <div id="lab-updates-container">
-    <h2>Lab Updates</h2>
-    {% assign _recent_articles = site.posts | slice:0,3 %}
-    {%- include article-list.html 
-      articles=_recent_articles 
-      type='item'
-      article_type='BlogPosting'
-      show_excerpt=true
-      show_readmore=true
-      show_info=true
-    -%}
+  <div id="news-content-container" class="grid grid--p-3">
+    <div id="lab-updates-container" class="cell cell--12 cell--lg-8">
+      <h2 class="section-header">Lab Updates</h2>
+      {% assign _recent_articles = site.posts | slice:0,3 %}
+      {%- include article-list.html 
+        articles=_recent_articles 
+        type='item'
+        article_type='BlogPosting'
+        show_excerpt=true
+        show_readmore=true
+        show_info=true
+      -%}
+    </div>
+    <div id="in-the-media-container" class="cell cell--12 cell--lg-4">
+      <h2 class="section-header">In The Media</h2>
+      <ul>
+      {% for media_mention in site.in_the_media %}
+      <li><a class="media-card" href="{{ media_mention.link }}" target="_blank">
+        <h3>{{ media_mention.title }}</h3>
+        {% if media_mention.image %}
+        <p>Image Placeholder</p>
+        {% endif %}
+        <p>{{ media_mention.description }}</p>
+        </a></li>
+      {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>
 
