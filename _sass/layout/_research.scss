@@ -46,6 +46,17 @@
     border-color: rgba($main-color-3, 0.7) transparent;
   }
 
+  #research-hero-text:before {
+    $width: max(0px, calc((100vw - 1400px)/2));
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-1 * $width);
+    width: $width;
+    height: 135px;
+    background-color: rgba($main-color-3, 0.7);
+  }
+
   #triple-box-container {
     margin: 24px 0;
     display: grid;
