@@ -4,10 +4,6 @@
       font-weight: 600;
     }
 
-    h1 {
-      font-size: map-get($base, font-size-h1-lg);
-      font-weight: 700
-    }
 
     hr {
       border: 2px solid $text-color-1;

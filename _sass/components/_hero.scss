@@ -23,7 +23,11 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
-    // text and hr colors
+    h1 {
+      font-size: map-get($base, font-size-h1-lg);
+      font-weight: 700
+    }
+    
     h1,h2 {
       color: $text-color-1;
       font-family: "Josefin Sans", sans-serif;
