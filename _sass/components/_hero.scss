@@ -1,0 +1,52 @@
+.hero-container {
+  height: 30vh;
+  min-height: 200px;
+  background-color: #3c7cde;
+  position: relative;
+  margin: 0 -3rem;
+
+  .hero-image {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-text {
+    width: 100%;
+
+    // vertical centering
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    // text and hr colors
+    h1,h2 {
+      color: $text-color-1;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    h2 {
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: map-get($base, font-size-h1-md);
+      font-weight: 700
+    }
+
+    hr {
+      border-bottom: 1px solid $text-color-1;
+      color: rgba(0,0,0,0);
+    }
+
+    hr {
+      width: 80%;
+      margin-left: 10%
+    }
+  }
+}
