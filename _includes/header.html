@@ -10,7 +10,7 @@
         <div class="header__brand">
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
-          <a href="{{ __return }}"><img src="{{ __return }}img/header-logo.png" height=64 /></a>
+          <a href="{{ __return }}" class="header-image-container"><img src="{{ __return }}img/header-logo.png" height=64 /></a>
         </div>
         {%- if site.search.provider -%}
           <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
@@ -62,6 +62,7 @@
           {%- endif -%}
         </ul>
       </nav>
+      {%- include mobile_menu.html -%}
       {%- endif -%}
     </div>
   </header>

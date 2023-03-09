@@ -1,0 +1,47 @@
+<div id="mobile-menu-icon" onclick="togglemenu()">
+  <hr />
+  <hr />
+  <hr />
+</div>
+
+<div id="mobile-menu">
+  <div id="links-container">
+    <ul class="main-list">
+    {%- for _item in site.data.navigation.header -%}
+      {%- include snippets/get-nav-url.html path=_item.url -%}
+      {%- assign _nav_url = __return -%}
+      {%- include snippets/get-nav-url.html path=page.url -%}
+      {%- assign _page_url = __return -%}
+      {%- include snippets/get-string-from-locale-config.html locale=_item.titles -%}
+      <li>
+        <a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a>
+        {%- if _item.subheadings -%}
+        <ul class="submenu">
+        {%- for _subheading in _item.subheadings -%}
+        {%- include snippets/get-nav-url.html path=_subheading.url -%}
+        {%- assign _subheading_url = __return -%}
+        <li>
+          <a href="{{ _subheading_url }}">{{ _subheading.title }}</a>
+        </li>
+        {%- endfor -%}
+        </ul>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+<script>
+  const togglemenu = () => {
+    if (document.querySelector("#mobile-menu").className == "") {
+      document.querySelector("#mobile-menu").className = "expanded"
+      document.querySelector("#mobile-menu-icon").className = "expanded"
+      document.querySelector("html").style.overflowY = "hidden"
+    } else {
+      document.querySelector("#mobile-menu").className = ""
+      document.querySelector("#mobile-menu-icon").className = ""
+      document.querySelector("html").style.overflowY = "scroll"
+    }
+  }
+</script>
