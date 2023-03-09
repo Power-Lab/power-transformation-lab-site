@@ -28,24 +28,5 @@
       color: $text-color-1;
       font-family: "Josefin Sans", sans-serif;
     }
-
-    h2 {
-      font-weight: 600;
-    }
-
-    h1 {
-      font-size: map-get($base, font-size-h1-md);
-      font-weight: 700
-    }
-
-    hr {
-      border-bottom: 1px solid $text-color-1;
-      color: rgba(0,0,0,0);
-    }
-
-    hr {
-      width: 80%;
-      margin-left: 10%
-    }
   }
 }

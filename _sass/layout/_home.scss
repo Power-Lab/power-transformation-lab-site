@@ -1,1 +1,22 @@
+.layout--home {
+  .hero-text {
+    h2 {
+      font-weight: 600;
+    }
 
+    h1 {
+      font-size: map-get($base, font-size-h1-lg);
+      font-weight: 700
+    }
+
+    hr {
+      border: 2px solid $text-color-1;
+      color: rgba(0,0,0,0);
+    }
+
+    hr {
+      width: 80%;
+      margin-left: 10%
+    }
+  }
+}
