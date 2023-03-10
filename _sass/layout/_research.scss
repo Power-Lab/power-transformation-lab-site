@@ -1,4 +1,7 @@
 .layout--research {
+  .section-header {
+    font-size: map-get($base, font-size-h2-xl)
+  }
   #research-hero-text {
     height: 135px;
 
@@ -104,6 +107,20 @@
     border-top: none;
   }
 
+  h2.item__header {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    position: relative;
+  }
+
+  h2.item__header::before {
+    content: "•";
+    position: absolute;
+    top: 0;
+    left: -18px;
+  }
+
   hr {
     background-color: rgba(0,0,0,0);
     border-bottom: 1px solid #658129;
@@ -132,4 +149,9 @@
     // clearfix
     overflow: auto;
   }
+
+  article.item {
+    margin-left:36px;
+  }
+
 }

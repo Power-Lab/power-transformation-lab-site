@@ -13,20 +13,37 @@ show_title: false
     <h3>Researching achievable, sustainable infrastructure solutions for all the world regions</h3>
   </div>
 </div>
-<h2>Power Transformation Lab Focus</h2>
-<div id="triple-box-container">
-  <a class="box">
-    <h3>{{ page.box1 }}</h3>
-  </a>
-  <a class="box">
-    <h3>{{ page.box2 }}</h3>
-  </a>
-  <a class="box">
-    <h3>{{ page.box3 }}</h3>
-  </a>
+<div class="grid grid--p-3">
+  <div class="cell cell--12 cell--lg-8">
+    <h2 class="section-header">Power Transformation Lab Focus</h2>
+    <div id="triple-box-container">
+      <a class="box">
+        <h3>{{ page.box1 }}</h3>
+      </a>
+      <a class="box">
+        <h3>{{ page.box2 }}</h3>
+      </a>
+      <a class="box">
+        <h3>{{ page.box3 }}</h3>
+      </a>
+    </div>
+    {{ content }}
+  </div>
+  <div class="cell cell--12 cell--lg-4">
+    <h2 class="section-header">Recent Articles</h2>
+      {% assign _paper_tag = "papers" %}
+      {% assign _paper_list = site.posts | where_exp:"item","item.tags contains _paper_tag"%}
+      {% assign _recent_papers = _paper_list | slice:0,3 %}
+      {%- include article-list.html 
+        articles=_recent_papers 
+        type='item'
+        article_type='BlogPosting'
+        show_excerpt=true
+        show_readmore=true
+        show_info=false
+      -%}
+  </div>
 </div>
-
-{{ content }}
 
 <script>
   {%- include scripts/research.js -%}
