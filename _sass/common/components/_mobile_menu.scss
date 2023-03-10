@@ -64,24 +64,6 @@
   transition: height 200ms;
 }
 #mobile-menu.expanded {
-  height: 85vh;
-  overflow: visible;
-}
-
-// darken site when menu is open
-#mobile-menu::after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  height: 0;
-  background-color: rgba(0,0,0,0);
-  transition: background-color 200ms;
-}
-
-#mobile-menu.expanded::after {
   height: 100vh;
-  background-color: rgba(0,0,0,0.75);
 }
+
