@@ -47,12 +47,11 @@
   }
 
   #research-hero-text:before {
-    $width: max(0px, calc((100vw - 1400px)/2));
     content: "";
     position: absolute;
     top: 0;
-    left: calc(-1 * $width);
-    width: $width;
+    left: calc(-1 * max(0px, calc((100vw - 1400px)/2)));
+    width: max(0px, calc((100vw - 1400px)/2));
     height: 135px;
     background-color: rgba($main-color-3, 0.7);
   }
