@@ -2,7 +2,6 @@
 <footer class="footer py-4 js-page-footer">
   <div class="main">
 
-    <img src="img/Power-Transformation-Lab-Final-Logo-1_1half.png" id="footer-img">
     {%- assign _site_author = site.author -%}
     {%- if _site_author.type == 'organization' -%}
       {%- assign _site_author_itemtype = 'http://schema.org/Organization' -%}
@@ -27,6 +26,7 @@
     {%- assign _locale_copyright_dates = __return -%}
     <div class="site-info mt-2">
       <div>
+      <img src="img/Power-Transformation-Lab-Final-Logo-1_1half.png" id="footer-img">
         {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
         {%- assign _locale_copyright_dates = __return -%}
         © {{ site.title }} {{ _locale_copyright_dates }},

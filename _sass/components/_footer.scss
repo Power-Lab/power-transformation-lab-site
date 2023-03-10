@@ -27,6 +27,13 @@
   #footer-img {
     height: 48px;
     position: absolute;
+    left: 24px;
+    bottom: 30px;
+    @include media-breakpoint-down(lg) {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+    }
   }
 }
 .footer__author-links {
