@@ -63,7 +63,6 @@
     margin: 24px 0;
     display: grid;
     grid-template-columns: repeat(3, calc(33.3% - 16px));
-    max-width: 800px;
     margin: 0 auto;
 
     @include media-breakpoint-down(md) {
