@@ -1,7 +1,14 @@
 .layout--home {
   .hero-text {
+    h1 {
+      padding: 0 32px;
+      @include media-breakpoint-down(md) {
+        font-size: map-get($base, font-size-h1-sm);
+      }
+    }
     h2 {
       font-weight: 600;
+      padding: 0 32px;
     }
 
 
