@@ -1,7 +1,8 @@
 .header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
   @include media-breakpoint-down(md) {
-    z-index: 99;
-    width: 100%;
     height: 64px;
   }
   background: $header-background;
