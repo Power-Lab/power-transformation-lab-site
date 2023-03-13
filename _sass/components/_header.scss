@@ -143,30 +143,32 @@
   display: inline-block;
 
   .dropdown-btn {
-    @include link-colors($text-color-1, $text-color-1)
+    @include link-colors($text-color-1, $text-color-1);
+    font-size: 16pt;
   }
 
   .dropdown-content {
-    height: 0px;
-    overflow: hidden;
+    max-height: 0px;
     position: absolute;
-    background-color: rgba(24, 24, 24, 0);
     min-width: 150px;
     z-index: 99;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 400ms;
+    padding-top: 23px;
   }
 
   :hover {
     .dropdown-content {
-      height: auto;
-      background-color: rgba(24, 24, 24, 0.5);
-      transition: background-color 100ms;
+      transform: scaleY(1);
     }
   }
 
   .dropdown-item {
-    padding: 2px;
+    padding: 4px;
     display: block;
-    @include link-colors($text-color-1, $text-color-1)
+    @include link-colors($text-color-1, $text-color-1);
+    background-color: rgba($main-color-2, 0.6);
   }
 }
 /*  remove active nav coloring until input from designer
