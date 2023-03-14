@@ -28,10 +28,10 @@
     height: 48px;
     position: absolute;
     left: 24px;
-    bottom: 30px;
+    bottom: 34px;
     @include media-breakpoint-down(lg) {
       display: block;
-      margin: 0 auto;
+      margin: 24px auto -24px ;
       position: relative;
     }
   }
@@ -40,5 +40,8 @@
   @include overflow(auto);
   .author-links {
     text-align: center;
+    ul {
+      padding: 0;
+    }
   }
 }
