@@ -18,14 +18,17 @@
 
     // vertical centering
     position: absolute;
-    top: 50%;
+    top: calc(50% - 100px);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 
     h1 {
-      font-size: map-get($base, font-size-h1-lg);
+      font-size: map-get($base, font-size-h1-xl);
       font-weight: 700
+    }
+    h2 {
+      font-size: map-get($base, font-size-h2-xl)
     }
     
     h1,h2 {
@@ -37,6 +40,24 @@
 
 .hero-spacer {
   height: calc(100vh - 80px);
+}
+
+.prompt-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  fill: rgba($text-color-1, 0.8);
+  &.dark {
+    fill: rgba(88, 88, 90, 0.8)
+  }
+  &:hover {
+    width: 120px;
+    height: 120px;
+    bottom: 20px;
+  }
+  transition: 100ms
 }
 
 @include media-breakpoint-down(md) {
