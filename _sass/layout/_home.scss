@@ -2,8 +2,12 @@
   .hero-text {
     h1 {
       padding: 0 32px;
+      @include media-breakpoint-down(lg) {
+        padding: 0 16px;
+        font-size: 3rem
+      }
       @include media-breakpoint-down(md) {
-        font-size: map-get($base, font-size-h1-sm);
+        font-size: 2rem
       }
     }
     h2 {

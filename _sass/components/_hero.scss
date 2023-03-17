@@ -24,11 +24,11 @@
     text-align: center;
 
     h1 {
-      font-size: map-get($base, font-size-h1-xl);
+      font-size: 5rem;
       font-weight: 700
     }
     h2 {
-      font-size: map-get($base, font-size-h2-xl)
+      font-size: 2rem
     }
     
     h1,h2 {
@@ -64,6 +64,14 @@
   .hero-container {
     height: calc(100vh - 64px);
     top: 64px;
+    .hero-text {
+      h1 {
+        font-size: 2.5rem
+      }
+      h2 {
+        font-size: 1.5rem
+      }
+    } 
   }
   .hero-spacer {
     height: calc(100vh - 64px);
