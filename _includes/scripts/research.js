@@ -4,7 +4,7 @@ document.querySelectorAll(".layout--research p img").forEach((element, index)=> 
   }
 })
 
-sectionTitles = [...document.querySelectorAll("h2")].slice(-3)
+sectionTitles = [...document.querySelectorAll("#lab-focus h2")].slice(-3)
 boxes = [...document.querySelectorAll(".box")]
 
 sectionTitles.forEach((h2, idx) => {
