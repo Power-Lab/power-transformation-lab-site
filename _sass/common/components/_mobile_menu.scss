@@ -1,15 +1,9 @@
 #mobile-menu-icon {
-  @include media-breakpoint-down(lg) {
-    display: block;
-  }
-  @include media-breakpoint-down(md) {
-    top: 20px;
-  }
   display: none;
   width: 30px;
   height: auto;
   position: absolute;
-  right: 16px;
+  right: 30px;
   top: 28px;
   cursor: pointer;
   hr {
@@ -21,6 +15,13 @@
     transition: margin 200ms;
   }
   z-index: 999;
+  @include media-breakpoint-down(lg) {
+    display: block;
+  }
+  @include media-breakpoint-down(md) {
+    top: 20px;
+    right: 16px;
+  }
 }
 #mobile-menu-icon.expanded {
   hr {
