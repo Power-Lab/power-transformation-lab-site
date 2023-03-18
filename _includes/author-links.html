@@ -22,7 +22,7 @@
     {%- include snippets/get-locale-string.html key='EMAIL_ME' -%}
     {%- if _author.email -%}
       <li title="{{ _locale_string_email }}">
-      <a class="button button--circle mail-button" itemprop="email" href="/contact" target="_blank">
+      <a class="button button--circle mail-button" itemprop="email" href="/contact" target="_blank" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
     {%- endif -%}
@@ -38,7 +38,7 @@
 
     {%- if _author.twitter -%}
       <li title="{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}">
-        <a class="button button--circle twitter-button" itemprop="sameAs" href="https://twitter.com/{{ _author.twitter }}" target="_blank">
+        <a class="button button--circle twitter-button" itemprop="sameAs" href="https://twitter.com/{{ _author.twitter }}" target="_blank" aria-label="Twitter">
           <div class="icon">{%- include svg/icon/social/twitter.svg -%}</div>
         </a>
       </li>
@@ -102,7 +102,7 @@
 
     {%- if _author.github -%}
       <li title="{{ _locale_string_follow | replace: '[NAME]', 'Github' }}">
-        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/{{ _author.github }}" target="_blank">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/{{ _author.github }}" target="_blank" aria-label="GitHub">
           <div class="icon">{%- include svg/icon/social/github.svg -%}</div>
         </a>
       </li>
