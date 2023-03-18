@@ -3,21 +3,20 @@
     font-size: map-get($base, font-size-h2-xl)
   }
   #research-hero-text {
-    height: 135px;
+    height: 165px;
 
     // vertical centering
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0;
-    right: calc(3rem + 135px);
+    right: calc(3rem + 165px);
     transform: translateY(-50%);
     text-align: center;
     background-color: rgba($main-color-3, 0.7);
     // shadow is gonna be difficult to do with how the angled corner is constructed
     // box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
-    clip: rect(0 80% 135px 0);
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       width: 100%;
       left: 0;
     }
@@ -32,8 +31,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      font-size: 2rem;
       @include media-breakpoint-down(lg) {
-        font-size: map-get($base, font-size-h3-sm);
+        font-size: 1.5rem
       }
     }
   }
@@ -43,8 +43,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(135px);
-    border-width: 135px 135px 0 0;
+    transform: translateX(165px);
+    border-width: 165px 165px 0 0;
     border-style: solid;
     border-color: rgba($main-color-3, 0.7) transparent;
   }
@@ -55,7 +55,7 @@
     top: 0;
     left: calc(-1 * max(0px, calc((100vw - 1400px)/2)));
     width: max(0px, calc((100vw - 1400px)/2));
-    height: 135px;
+    height: 165px;
     background-color: rgba($main-color-3, 0.7);
   }
 
