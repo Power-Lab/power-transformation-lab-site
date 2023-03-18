@@ -67,3 +67,14 @@
   height: 100vh;
 }
 
+#mobile-menu-up-arrow {
+  fill: $text-color-1;
+  position: absolute;
+  left: 50%;
+  transform: scaleY(-1) translateX(-50%);
+  bottom: 80px;
+  cursor: pointer;
+  @include media-breakpoint-down(md) {
+    bottom: 64px;
+  }
+}

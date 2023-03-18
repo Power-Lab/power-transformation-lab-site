@@ -30,18 +30,31 @@
     {%- endfor -%}
     </ul>
   </div>
+  {% include /svg/mobile-menu-up-arrow.svg %}
 </div>
 
 <script>
-  const togglemenu = () => {
-    if (document.querySelector("#mobile-menu").className == "") {
+  const expandmenu = () => {
       document.querySelector("#mobile-menu").className = "expanded"
       document.querySelector("#mobile-menu-icon").className = "expanded"
       document.querySelector("html").style.overflowY = "hidden"
-    } else {
+  }
+  const retractmenu = () => {
       document.querySelector("#mobile-menu").className = ""
       document.querySelector("#mobile-menu-icon").className = ""
       document.querySelector("html").style.overflowY = "scroll"
+  }
+  const togglemenu = () => {
+    if (document.querySelector("#mobile-menu").className == "") {
+      expandmenu()
+    } else {
+      retractmenu()
+    }
+  }
+  // if the window expands then make sure we close the menu so it doesn't reappear if the window shrinks
+  window.onresize = () => {
+    if (window.innerWidth > 1024) {
+      retractmenu()
     }
   }
 </script>
