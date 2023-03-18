@@ -77,4 +77,13 @@
   @include media-breakpoint-down(md) {
     bottom: 64px;
   }
+  &:hover {
+    width: 90px;
+    height: 90px;
+    bottom: 75px;
+    @include media-breakpoint-down(md) {
+      bottom: 59px;
+    }
+  }
+  transition: 100ms;
 }
