@@ -14,7 +14,12 @@ articles:
     excerpt_type: text
     show_readmore: true
 ---
-<div class="hero-container" style="background-image: url({{ page.hero_image }})">
+{% if page.fallback_color %}
+{% assign _bgcolor = page.fallback_color %}
+{% else %}
+{% assign _bgcolor = "ffffff" %}
+{% endif %}
+<div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
   <div class="hero-text">
     <h1>Publications</h1>
   </div>

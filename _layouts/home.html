@@ -26,8 +26,13 @@ titles:
   # @end locale config
 show_title: false
 ---
+{% if page.fallback_color %}
+{% assign _bgcolor = page.fallback_color %}
+{% else %}
+{% assign _bgcolor = "ffffff" %}
+{% endif %}
 <div class="layout--home">
-  <div class="hero-container" style="background-image: url({{ page.hero_image }})">
+  <div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
     <div class="hero-text">
       <h1>POWER TRANSFORMATION LAB</h1>
       <h2>Planning connections for a cleaner globe</h2>

@@ -2,6 +2,7 @@
 layout: research
 title: Research Areas
 hero_image: img/light-bulb-blue-sky.jpg
+fallback_color: 536eb1
 ---
 
 The Davidson Lab focuses on the engineering implications and institutional conflicts inherent in deploying low-
