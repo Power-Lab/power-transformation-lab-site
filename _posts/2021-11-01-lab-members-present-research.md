@@ -3,7 +3,7 @@ layout: paper
 title: "Lab Members Present Research at USAEE/IAEE North American Conference and Energy Policy Conference"
 subtitle: "Topics include renewable energy resource mapping and energy equity"
 tags: [home]
-image: /img/transmission_tower.jpg
+image: {{ site.baseurl }}/img/transmission_tower.jpg
 
 ---
 

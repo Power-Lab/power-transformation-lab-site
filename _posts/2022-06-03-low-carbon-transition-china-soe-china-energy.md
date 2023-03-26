@@ -3,7 +3,7 @@ layout: paper
 title: "Low-Carbon Transition Planning in China's Coal and Power SOEs: Case of China Energy"
 subtitle: "Davidson, M.R."
 tags: [papers]
-image: /img/wind_sm.jpg
+image: {{ site.baseurl }}/img/wind_sm.jpg
 
 ---
 

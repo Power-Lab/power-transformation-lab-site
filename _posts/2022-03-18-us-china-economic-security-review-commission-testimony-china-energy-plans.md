@@ -18,4 +18,4 @@ Recommendations for this Commission and for Congress:
 
 **[Watch the Hearing](https://www.uscc.gov/hearings/chinas-energy-plans-and-practices)**:
 
-[![](/img/uscc_2022_hearing_preview.png)](https://www.uscc.gov/hearings/chinas-energy-plans-and-practices)
+[![]({{ site.baseurl }}/img/uscc_2022_hearing_preview.png)](https://www.uscc.gov/hearings/chinas-energy-plans-and-practices)

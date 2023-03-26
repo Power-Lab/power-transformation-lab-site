@@ -3,7 +3,7 @@ layout: paper
 title: "Creating Subnational Climate Institutions in China"
 subtitle: "Davidson, M. R. (2019). Discussion Paper. <i>Harvard Project on Climate Agreements</i>."
 tags: [papers]
-image: /img/subnational_climate_Fig2_org_chart-sm.png
+image: {{ site.baseurl }}/img/subnational_climate_Fig2_org_chart-sm.png
 
 ---
 
@@ -17,7 +17,7 @@ Personnel decisions crucially determine many aspects of implementation: local of
 
 These findings have implications for the design and implementation of the national carbon market set to start around 2020. The newly-created Ministry of Ecology and Environment is the locus for climate change policy, but its authority within China’s complex institutional framework is still being developed, at both central and local levels. One important component of fully implementing a national carbon market will be to harmonize existing province- and city-level pilot GHG trading programs with the goal of generating efficient prices and eliminating cross-provincial trading barriers. However, this will be complicated by differing local policy designs and industry structures. More fundamentally, the interests of the provinces and municipalities with considerable (though not exclusive) authority over their pilot programs must be aligned with the central priority of advancing the national GHG trading system. Another challenge is the absence of a well-functioning market for electricity—the first sector targeted under the national carbon market. Designers of the national carbon market are therefore developing second-best “rate-based” approaches and “indirect emissions” permit systems. Ultimately, the success of the national carbon market will depend on electricity market reforms, which are being pursued in parallel and have an uncertain end-date.
 
-![Figure 2: Organizations, major policy levers, and factors affecting the implementation and durability of climate policy in China](/img/subnational_climate_Fig2_org_chart.png) _Figure 2: Organizations, major policy levers, and factors affecting the implementation and durability of climate policy in China_
+![Figure 2: Organizations, major policy levers, and factors affecting the implementation and durability of climate policy in China]({{ site.baseurl }}/img/subnational_climate_Fig2_org_chart.png) _Figure 2: Organizations, major policy levers, and factors affecting the implementation and durability of climate policy in China_
 
 [Download Full Paper](https://www.belfercenter.org/publication/creating-subnational-climate-institutions-china)
 

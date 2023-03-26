@@ -3,7 +3,7 @@ layout: paper
 title: "Climate Cooperation With China Can Power the World – Sustainably"
 subtitle: "Davidson, M., & Wang, Y. (2021). <i>The Diplomat</i>."
 tags: [papers]
-image: /img/transmission_tower.jpg
+image: {{ site.baseurl }}/img/transmission_tower.jpg
 
 ---
 

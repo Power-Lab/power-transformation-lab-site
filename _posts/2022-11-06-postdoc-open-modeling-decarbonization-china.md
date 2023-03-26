@@ -3,7 +3,7 @@ layout: post
 title: "Job Opening: Postdoc in Open Modeling of Decarbonization in China"
 subtitle: "Examine renewable energy, power markets, finance models"
 tags: [post, home]
-image: /img/transmission_tower.jpg
+image: {{ site.baseurl }}/img/transmission_tower.jpg
 ---
 
 The [UC San Diego School of Global Policy and Strategy](http://gps.ucsd.edu/) (GPS) is hiring one or more postdoctoral researchers to conduct open modeling studies of accelerated decarbonization, with a particular focus on China. The postdoc will join the lab of the PI, Michael Davidson, Assistant Professor in GPS and the Department of Mechanical and Aerospace Engineering.

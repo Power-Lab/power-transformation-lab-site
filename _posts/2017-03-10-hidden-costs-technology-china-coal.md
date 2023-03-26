@@ -18,7 +18,7 @@ A review of the Chinese and English literature on the topic is combined with sem
 
 **Results**
 
-![Coal power technology development and deployment ](/img/AAAS-Poster-Hidden-costs-Feb-2017-coal-development.png) _Figure - Interactions of coal power technology development and deployment processes and electricity systems planning and operation_
+![Coal power technology development and deployment ]({{ site.baseurl }}/img/AAAS-Poster-Hidden-costs-Feb-2017-coal-development.png) _Figure - Interactions of coal power technology development and deployment processes and electricity systems planning and operation_
 
 
 Key features of China’s electricity sector such as volatile demand growth, underdeveloped power markets and significant political intervention have caused the suboptimal use of advanced coal units. The complexities of operational conditions are largely ignored in the small set of metrics that characterize technology development plans, which may assume for political and other reasons a set of ideal benchmark conditions (e.g., high economic growth leading to steady utilization). Further, the centralized targets and technology development plans made at arms-length of localized system operation have led to difficulties in addressing these concerns in subsequent designs, leading to increased costs, emissions and political frictions.

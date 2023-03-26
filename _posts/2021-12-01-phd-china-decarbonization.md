@@ -3,7 +3,7 @@ layout: post
 title: "PhD Student Recruitment: Modeling China's Decarbonization Pathways"
 subtitle: "MAE PhD student recruitment"
 tags: [home, post]
-image: /img/wind_sm.jpg
+image: {{ site.baseurl }}/img/wind_sm.jpg
 ---
 
 Prof. Michael Davidson in the Department of Mechanical and Aerospace Engineering (MAE) and the School of Global Policy and Strategy (GPS) at UC San Diego is seeking to recruit an MAE PhD student to join the Davidson Lab to model China’s decarbonization pathways starting in Fall 2022.

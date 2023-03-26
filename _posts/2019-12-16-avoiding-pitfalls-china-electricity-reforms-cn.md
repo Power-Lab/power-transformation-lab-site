@@ -3,7 +3,7 @@ layout: paper
 title: "规避中国电力改革中的隐患"
 subtitle: "Davidson, M. R. and Ignacio Pérez-Arriaga. (2020). <i>The Energy Journal</i>."
 tags: [papers]
-image: /img/pitfalls_yn_dax_vol_price-sm.png
+image: {{ site.baseurl }}/img/pitfalls_yn_dax_vol_price-sm.png
 
 ---
 [Read English summary](/2019-12-16-avoiding-pitfalls-china-electricity-reforms/)
@@ -16,7 +16,7 @@ image: /img/pitfalls_yn_dax_vol_price-sm.png
 
 本研究揭示了三种可能的改革路径：保持现状，如加强行政及地方特殊措施，然而这样市场极有可能陷入停滞；通过流动性二级市场实现自主调度；或通过大规模的期货合同金融化加强统一调度。中国改革政策或应增强中央监管机构并标准化市场设计，以推动省际协作。统一的过渡机制政策可以令持矛盾或反对意见的地方政府融入改革。中国在提高效率和灵活性过程中所遇到的困难同样出现在印度等其他新兴市场，因此未来研究可探讨如何将标准的自由化模型应用于不同环境背景。
 
-![云南日前交易量和价格, 2017-2018](/img/pitfalls_yn_dax_vol_price.png) _云南日前交易量和价格, 2017-2018. 来源: 昆明电力交易中心_
+![云南日前交易量和价格, 2017-2018]({{ site.baseurl }}/img/pitfalls_yn_dax_vol_price.png) _云南日前交易量和价格, 2017-2018. 来源: 昆明电力交易中心_
 
 [阅读论文](https://doi.org/10.5547/01956574.41.3.mdav)
 
