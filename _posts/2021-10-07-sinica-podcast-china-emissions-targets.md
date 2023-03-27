@@ -3,7 +3,7 @@ layout: article
 title: "Podcast: Can China meet its ambitious emissions targets?"
 subtitle: "<i>Sinica supchina</i>."
 tags: [home]
-image: {{ site.baseurl }}/img/wind_farm.png
+image: /img/wind_farm.png
 
 ---
 

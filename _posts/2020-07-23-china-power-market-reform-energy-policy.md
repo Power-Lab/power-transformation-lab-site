@@ -3,7 +3,7 @@ layout: paper
 title: "Power market reform in China: Motivations, progress, and recommendations"
 subtitle: "Guo, H., Davidson, M. R., Chen, Q., Zhang, D., Jiang, N., Xia, Q., Kang, C., and Zhang, X. (2020). <i>Energy Policy</i>"
 tags: [papers]
-image: {{ site.baseurl }}/img/transmission_tower.jpg
+image: /img/transmission_tower.jpg
 
 ---
 

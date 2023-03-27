@@ -3,7 +3,7 @@ layout: paper
 title: "规避中国电力改革中的隐患"
 subtitle: "Davidson, M. R. and Ignacio Pérez-Arriaga. (2020). <i>The Energy Journal</i>."
 tags: [papers]
-image: {{ site.baseurl }}/img/pitfalls_yn_dax_vol_price-sm.png
+image: /img/pitfalls_yn_dax_vol_price-sm.png
 
 ---
 [Read English summary](/2019-12-16-avoiding-pitfalls-china-electricity-reforms/)

@@ -3,7 +3,7 @@ layout: paper
 title: "Lab Members Present Research at Undergraduate Research Symposia"
 subtitle: "Topics include renewable energy resource mapping, energy equity, and the politics of regionalized power systems"
 tags:
-image: {{ site.baseurl }}/img/transmission_tower.jpg
+image: /img/transmission_tower.jpg
 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "New Course FA20: MAE207 Electric Power Systems Modeling"
 subtitle: "Applying optimization to solve energy systems engineering problems"
 tags: [post]
-image: https://julialang.org/assets/infra/logo.svg
+image: "https://julialang.org/assets/infra/logo.svg"
 ---
 
 

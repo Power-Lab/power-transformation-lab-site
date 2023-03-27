@@ -3,7 +3,7 @@ layout: paper
 title: "Limitations of reanalysis data for wind power applications"
 subtitle: "Davidson, M. R., Millstein, D. <i>Wind Energy</i>."
 tags: [papers, home]
-image: {{ site.baseurl }}/img/wind_sm.jpg
+image: /img/wind_sm.jpg
 
 ---
 

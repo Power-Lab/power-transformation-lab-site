@@ -3,7 +3,7 @@ layout: post
 title: "Geodata v0.1 package launched"
 subtitle: "Open-source python package that helps to wrangle high-dimensional weather model data and diverse geospatial datasets to address questions of renewable energy planning and siting (and more)"
 tags: [home]
-image: https://github.com/east-winds/geodata/raw/master/images/geodata_workflow_chart.png
+image: "https://github.com/east-winds/geodata/raw/master/images/geodata_workflow_chart.png"
 ---
 
 **Geodata** is a Python library of geospatial data collection and "pre-analysis" tools. Geospatial and gridded datasets of physical variables are ubiquitous and increasingly high resolution. Long time-series gridded datasets can be generated as part of earth system models, and due to their geographic coverage they can have wider applications, including in engineering and social sciences. Geospatial (GIS) files can encode various physical, social, economic, and political data. However, working with these datasets often has significant startup costs due to their diverse sources, data formats, resolutions, and large file sizes.

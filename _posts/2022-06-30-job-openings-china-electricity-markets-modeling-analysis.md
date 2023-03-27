@@ -3,7 +3,7 @@ layout: post
 title: "Job Openings: Postdoc and Research Associate on China Electricity Markets Modeling and Analysis"
 subtitle: "Develop open analytical capabilities to align market reforms with carbon neutrality"
 tags: [post]
-image: {{ site.baseurl }}/img/transmission_tower.jpg
+image: /img/transmission_tower.jpg
 ---
 
 ## ARCHIVED
