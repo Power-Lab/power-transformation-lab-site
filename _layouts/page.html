@@ -208,7 +208,9 @@ layout: base
                   {%- include article-header.html article=page -%}
                   {%- include article-info.html article=page -%}
                 {%- endif -%}
-
+                {% if page.image %}
+                <img src="{{ site.baseurl }}{{ page.image }}" class="page-header-image"/>
+                {% endif %}
                     <div class="js-article-content">{{ content }}</div>
                     {%- if _comment != false -%}
                       <section class="page__comments d-print-none">{%- include comments.html -%}</section>
