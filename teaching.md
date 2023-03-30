@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Teaching
-image: img/ucsd_campus_small.png
 ---
 
 
