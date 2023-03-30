@@ -162,9 +162,12 @@
       @include link-colors($text-color-1, $text-color-1);
       background-color: rgba($main-color-2, 0.6);
       backdrop-filter: blur(10px);
+      &:focus-visible {
+        border: 2px solid black;
+      }
     }
 
-    &:hover {
+    &:hover, &:focus-within {
       .dropdown-content {
         height: auto;
       }
