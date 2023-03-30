@@ -3,14 +3,14 @@ layout: page
 show_title: false
 ---
 <div id="team-container">
-  <h2>Meet The Lab</h2>
+  <h2 class="section-header">Meet The Lab</h2>
   <div class="large-bio-container clearfix">
     <div class="bio">
     {% assign _mainbio = site.team | first %}
-    <h3>{{ _mainbio.name }}</h3>
     <div class="grid-container">
       <div class="grid grid--p-3">
         <div class="cell cell--12 cell--lg-6">
+          <h3>{{ _mainbio.name }}</h3>
           <img src={{ _mainbio.img }} alt="Portrait of {{ _mainbio.name }}">
         </div>
         <div class="cell cell--12 cell--lg-6">

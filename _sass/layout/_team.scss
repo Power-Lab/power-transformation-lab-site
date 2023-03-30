@@ -10,7 +10,11 @@
     text-align: center
   }
   h2 {
-    font-size: map-get($base, font-size-h2-lg)
+    font-size: map-get($base, font-size-h2-xl)
+  }
+
+  h3 {
+    font-size: map-get($base, font-size-h3-lg)
   }
 
   .large-bio-container img {
