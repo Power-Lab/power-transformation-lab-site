@@ -141,35 +141,34 @@
 
   position: relative;
   display: inline-block;
-
-  .dropdown-btn {
-    @include link-colors($text-color-1, $text-color-1);
-    font-size: 16pt;
-  }
-
-  .dropdown-content {
-    max-height: 0px;
-    position: absolute;
-    min-width: 150px;
-    z-index: 99;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 400ms;
-    padding-top: 23px;
-  }
-
-  :hover {
-    .dropdown-content {
-      transform: scaleY(1);
+  .dropdown {
+    .dropdown-btn {
+      @include link-colors($text-color-1, $text-color-1);
+      font-size: 16pt;
     }
-  }
+    
+    .dropdown-content {
+      overflow: hidden;
+      height: 0px;
+      position: absolute;
+      min-width: 150px;
+      z-index: 99;
+      padding-top: 23px;
+    }
 
-  .dropdown-item {
-    padding: 4px;
-    display: block;
-    @include link-colors($text-color-1, $text-color-1);
-    background-color: rgba($main-color-2, 0.6);
-    backdrop-filter: blur(10px);
+    .dropdown-item {
+      padding: 4px;
+      display: block;
+      @include link-colors($text-color-1, $text-color-1);
+      background-color: rgba($main-color-2, 0.6);
+      backdrop-filter: blur(10px);
+    }
+
+    &:hover {
+      .dropdown-content {
+        height: auto;
+      }
+    }
   }
 }
 /*  remove active nav coloring until input from designer
