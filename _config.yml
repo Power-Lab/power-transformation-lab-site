@@ -113,10 +113,24 @@ mermaid: # false (default), true
 chart: # false (default), true
 
 
-## => Paginate
-##############################
-paginate: 8
-paginate_path: /writing/page:num # don't change this unless for special need
+### jekyll-paginate-v2
+# most of these are defualts
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/writing/page/:num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  tag: ''
+  locale: ''
+  trail:
+    before: 0
+    after: 0
+  extension: html
+  indexpage: 'index'
 
 
 ## => Sources
@@ -239,7 +253,7 @@ defaults:
 ##############################
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jemoji
   - jekyll-seo-tag

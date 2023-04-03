@@ -4,3 +4,4 @@ source "https://rubygems.org"
 gemspec
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-seo-tag', group: :jekyll_plugins
+gem 'jekyll-paginate-v2', group: :jekyll_plugins
