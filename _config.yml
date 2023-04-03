@@ -117,20 +117,10 @@ chart: # false (default), true
 # most of these are defualts
 pagination:
   enabled: true
-  debug: false
-  collection: 'posts'
   per_page: 10
-  permalink: '/writing/page/:num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-  tag: ''
-  locale: ''
-  trail:
-    before: 0
-    after: 0
-  extension: html
-  indexpage: 'index'
 
 
 ## => Sources
