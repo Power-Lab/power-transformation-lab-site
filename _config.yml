@@ -68,7 +68,7 @@ paths:
   rss     : # "/feed.xml" (default)
 
   research: "/research.html"
-  publications: "/publications.html"
+  publications: "/publications/"
 
   news: "/news.html"
 
