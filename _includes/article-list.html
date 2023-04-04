@@ -13,7 +13,8 @@
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 
-{%- if _filter_tag -%}
+{%- if include.filter_tag -%}
+{%- assign _filter_tag = include.filter_tag-%}
 {%- assign _sorted_list = _sorted_list | where_exp:"item","item.tags contains _filter_tag" -%}
 {%- endif -%}
 
