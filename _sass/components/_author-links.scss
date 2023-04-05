@@ -38,6 +38,9 @@
       .npm-button {
         @include clickable($text-color-1, $npm-color);
       }
+      .button:focus {
+        border: 2px dashed gray
+      }
     }
   }
 }
