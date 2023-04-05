@@ -6,3 +6,10 @@ const scrollToFirstContent = () => {
     window.scrollTo(0, vh - 80)
   }
 }
+
+const promptArrow = document.querySelector(".prompt-arrow")
+promptArrow.addEventListener("keydown", e => {
+  if (e.key == "Enter") {
+    scrollToFirstContent()
+  }
+})

@@ -7,6 +7,17 @@
     height: 64px;
   }
   background: $header-background;
+  #skip-to-content {
+    position: absolute;
+    top: -80px;
+    left: 24px;
+    &:focus {
+      top: 24px;
+    }
+    transition: top 200ms;
+    background-color: #111111;
+    padding: 16px;
+  }
   a {
     font-weight: 600;
     text-decoration: none !important;

@@ -6,6 +6,7 @@
   <header class="header" {%- if include.background -%} style="background: {{ include.background }};" {%- endif -%}>
 {%- endif -%}
     <div class="main">
+      <a id="skip-to-content" href="">Skip To Content</a>
       <div class="header__title">
         <div class="header__brand">
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
