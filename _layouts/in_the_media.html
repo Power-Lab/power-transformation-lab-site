@@ -1,0 +1,15 @@
+---
+layout: page
+---
+<h1>In The Media</h1>
+<div class="in-the-media">
+  {% assign _recent_media = site.in_the_media | reverse %}
+  {%- include article-list.html
+    articles=_recent_media 
+    type='grid'
+    article_type="media_mentions"
+    show_excerpt=true
+    show_readmore=false
+    show_info=true
+  -%}
+</div>
