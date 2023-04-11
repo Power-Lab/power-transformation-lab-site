@@ -1,5 +1,5 @@
 ---
-layout: hero_page
+layout: publications
 hero_image: img/possible_hero_photos/DSC_8642.JPG
 title: Publications
 published: true
