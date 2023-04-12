@@ -3,13 +3,13 @@
     font-size: map-get($base, font-size-h2-xl)
   }
   #research-hero-text {
-    height: 165px;
+    height: 200px;
 
     // vertical centering
     position: absolute;
     top: 45%;
     left: 0;
-    right: calc(3rem + 165px);
+    right: calc(3rem + 200px);
     transform: translateY(-50%);
     text-align: center;
     background-color: rgba($main-color-3, 0.7);
@@ -24,16 +24,20 @@
     // text and hr colors
     h3 {
       color: $text-color-1;
-      width: 80%;
+      width: 90%;
       margin: auto auto;
       font-family: "Josefin Sans";
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2rem;
+      font-size: 2.65rem;
       @include media-breakpoint-down(lg) {
-        font-size: 1.5rem
+        font-size: 1.75rem;
+        padding: 0px 24px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 1.35rem;
       }
     }
   }
@@ -43,8 +47,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(165px);
-    border-width: 165px 165px 0 0;
+    transform: translateX(200px);
+    border-width: 200px 200px 0 0;
     border-style: solid;
     border-color: rgba($main-color-3, 0.7) transparent;
   }
@@ -55,7 +59,7 @@
     top: 0;
     left: calc(-1 * max(0px, calc((100vw - 1400px)/2)));
     width: max(0px, calc((100vw - 1400px)/2));
-    height: 165px;
+    height: 200px;
     background-color: rgba($main-color-3, 0.7);
   }
 
