@@ -35,27 +35,45 @@
 
 <script>
   let menuItems
+  let mobileMenu
+  let mobileMenuIcon
+  let upArrow
   document.addEventListener('DOMContentLoaded', () => {
     menuItems = document.querySelectorAll(".mobile-menu-item")
+    mobileMenu = document.querySelector("#mobile-menu")
+    mobileMenuIcon = document.querySelector("#mobile-menu-icon")
+    upArrow = document.querySelector("#mobile-menu-up-arrow")
+    mobileMenuIcon.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault()
+        togglemenu()
+      }
+    })
+    upArrow.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault()
+        togglemenu()
+      }
+    })
   })
   const expandmenu = () => {
-      document.querySelector("#mobile-menu").className = "expanded"
-      document.querySelector("#mobile-menu-icon").className = "expanded"
+      mobileMenu.className = "expanded"
+      mobileMenuIcon.className = "expanded"
       document.querySelector("html").style.overflowY = "hidden"
       menuItems.forEach(item => {
         item.setAttribute("tabindex", "0")
       })
   }
   const retractmenu = () => {
-      document.querySelector("#mobile-menu").className = ""
-      document.querySelector("#mobile-menu-icon").className = ""
+      mobileMenu.className = ""
+      mobileMenuIcon.className = ""
       document.querySelector("html").style.overflowY = "scroll"
       menuItems.forEach(item => {
         item.setAttribute("tabindex", "01")
       })
   }
   const togglemenu = () => {
-    if (document.querySelector("#mobile-menu").className == "") {
+    if (mobileMenu.className == "") {
       expandmenu()
     } else {
       retractmenu()
