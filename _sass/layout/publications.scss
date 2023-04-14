@@ -5,7 +5,15 @@
   .site-tags {
     margin-top: 32px;
     .tag-button {
-    @include clickable($text-color-3, $main-color-3, default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+      @include clickable($text-color-3, $main-color-3, default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
+      box-sizing: border-box !important;
+      &:focus {
+        background-color: darken($main-color-3, 10) !important;
+        border: 1px solid black;
+      }
+      &.active:focus {
+        background-color: darken($main-color-1, 10) !important;
+      }
     }
   }
   #download-cv {
