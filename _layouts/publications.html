@@ -2,5 +2,10 @@
 layout: hero_page
 ---
 <div class="layout__publications">
+{%- assign tags = "Refereed Journal Articles,Refereed Book Chapters and Other Publications,Working Papers and Reports,Code Releases,Posters,Dissertation" | split: "," -%}
+{%- include tags.html tags=tags pub_layout="true" -%}
 {{ content }}
 </div>
+<script>
+  {%- include scripts/publication_selections.js -%}
+</script>

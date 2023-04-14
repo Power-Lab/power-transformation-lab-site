@@ -2,6 +2,11 @@
 {%- assign _tag_min_size = 1 -%}
 {%- assign _tag_cur_size = 1 -%}
 {%- assign _tags = site.tags | sort -%}
+
+{%- if include.tags -%}
+{%- assign _tags = include.tags -%}
+{%- endif -%}
+
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1].size -%}
   {%- if _tag_cur_size > _tag_max_size -%}
@@ -18,9 +23,15 @@
 <div class="site-tags js-tags">
   <ul class="menu">
     <li>
+      {%- if include.pub_layout -%}
+      <button type="button" class="button button--secondary button--pill tag-button tag-button--all" data-encode="">
+        Show All
+      </button>
+      {%- else -%}
       <button type="button" class="button button--secondary button--pill tag-button tag-button--all" data-encode="">
         Show All<div class="tag-button__count">{{ site.posts | size }}</div>
       </button>
+      {%- endif -%}
     </li>
     {%- for _tag in _tags -%}
       {%- assign _tag_cur_size = _tag[1].size -%}
@@ -43,10 +54,18 @@
       {%- else -%}
         {%- assign _c_index = 4 -%}
       {%- endif -%}
+      {%- if include.pub_layout -%}
+        <li><button type="button" class="button button--pill tag-button
+            tag-button-{{ _c_index }}" data-encode="{{ _tag | downcase |
+            replace: ' ', '-'}}">
+          <span>{{ _tag }}</span>
+        </button>
+      {%- else -%}
       <li><button type="button" class="button button--pill tag-button tag-button-{{ _c_index }}" data-encode="{{ _tag[0] | strip | url_encode }}">
           <span>{{ _tag[0] | strip }}</span><div class="tag-button__count">{{ _tag[1].size }}</div>
         </button>
       </li>
+      {%- endif -%}
     {%- endfor -%}
   </ul>
 </div>
