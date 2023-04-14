@@ -34,19 +34,4 @@ show_title: false
   {% endfor %}
   </div>
   </div>
-  <h2>Alumni</h2>
-  <div class="grid-container">
-  <div class="grid-bio-container grid grid--p-3">
-  {% assign _alumni = site.team | where: 'alumni','true' %}
-  {% for _member in _alumni %}
-    <div class="bio cell cell--12 cell--md-6 cell--lg-4 content">
-      <h3>{{ _member.name }}</h3>
-      {% if _member.img %}
-      <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
-      {% endif %}
-      {{ _member.content }}
-    </div>
-  {% endfor %}
-  </div>
-  </div>
 </div>
