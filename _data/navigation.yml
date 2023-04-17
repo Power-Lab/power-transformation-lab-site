@@ -10,22 +10,32 @@ header:
     subheadings:
       - title: Publications
         url: /publications.html
+      - title: Models and Data
+        url: /models_and_data.html
 
   - titles:
       en: NEWS
     url: /news.html
 
+    subheadings:
+      - title: In the Media
+        url: /in_the_media.html
+      - title: Lab Updates
+        url: /lab_updates/
+
   - titles:
       en      : &EN       ABOUT
     url: /about.html
 
-    subheadings: 
-    - title: Meet The Lab
+    subheadings:
+    - title: Team
       url: /team.html
+    - title: Teaching
+      url: /teaching.html
     - title: Opportunities
       url: /opportunities.html
     - title: Study @ UCSD
-      url: /teaching.html
+      url: /study_at_ucsd.html
 
   - titles:
       en      : &EN       CONTACT

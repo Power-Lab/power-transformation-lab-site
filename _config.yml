@@ -38,7 +38,7 @@ author:
   name      : Power Transformation Lab
   url       : https://pwrlab.org
   avatar    : # path or url of avatar image (square)
-  bio       : 
+  bio       :
   email     : mrdavidson AT ucsd.edu
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : east_winds
@@ -69,17 +69,20 @@ paths:
 
   research: "/research.html"
   publications: "/publications.html"
+  models_and_data: "/models_and_data.html"
 
   news: "/news.html"
+  in_the_media: "/in_the_media.html"
+  lab_updates: "/lab_updates/"
 
   about: "/about.html"
   team: "/team.html"
   teaching: "/teaching.html"
   opportunities: "/opportunities.html"
+  study_at_ucsd: "/study_at_ucsd.html"
 
   contact: "/contact.html"
 
-  writing: "/writing/"
 
 
 ## Collections

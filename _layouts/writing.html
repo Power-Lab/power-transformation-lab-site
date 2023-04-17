@@ -2,7 +2,7 @@
 layout: articles
 titles:
   # @start locale config
-  en      : &EN       Writing
+  en      : &EN       Lab Updates
   # @end locale config
 show_title: false
 articles:
@@ -13,6 +13,15 @@ articles:
   show_readmore: true
   show_info: true
 ---
+{%- assign _bgcolor = "1199ff" -%}
+<div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
+  <div class="hero-text">
+    <h1>{{ page.title }}</h1>
+  </div>
+  {% include svg/down-arrow2-svgrepo-com.svg dark=page.dark_arrow %}
+</div>
+<div class="hero-spacer"></div>
+<script> {% include scripts/components/hero.js %}</script>
 <div class="layout--writing">
   {%- include paginator.html -%}
 </div>
