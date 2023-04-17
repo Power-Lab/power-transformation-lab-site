@@ -33,7 +33,7 @@
   display: none;
   @include media-breakpoint-down(lg) {
     display: block;
-    overflow: hidden;
+    overflow-y: scroll;
     position: fixed;
     top: 80px;
     left: 0;
@@ -54,11 +54,19 @@
     .main-list {
       list-style: none;
       padding-left: 36px;
+      overflow: scroll;
+      height: 100vh;
+      width: 100vw;
       ul {
         list-style-type: square;
       }
       @include media-breakpoint-down(md) {
         padding-left: 16px;
+      }
+      &::after {
+        content: "";
+        height: 180px;
+        display: block;
       }
     }
   }
@@ -73,18 +81,14 @@
   position: absolute;
   left: 50%;
   transform: scaleY(-1) translateX(-50%);
-  bottom: 80px;
-  cursor: pointer;
+  bottom: 94px;
   @include media-breakpoint-down(md) {
-    bottom: 64px;
+    bottom: 70px;
   }
+  cursor: pointer;
   &:hover {
     width: 90px;
     height: 90px;
-    bottom: 75px;
-    @include media-breakpoint-down(md) {
-      bottom: 59px;
-    }
   }
   transition: 100ms;
 }
