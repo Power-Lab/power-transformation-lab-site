@@ -1,5 +1,5 @@
 const categoryList = []
-let showALlTag
+let showAllTag
 let selectionButtons
 document.addEventListener("DOMContentLoaded", () => {
   showAllTag = document.querySelector(".tag-button--all")
