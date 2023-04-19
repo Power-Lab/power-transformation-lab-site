@@ -22,7 +22,7 @@
     font-weight: 600;
     text-decoration: none !important;
     // this is what changes link hover color in the navbar
-    @include link-colors($header-text-color, $header-text-color); 
+    @include link-colors($header-text-color, $header-text-color);
   }
   .main {
     @include flexbox();
@@ -113,7 +113,7 @@
   #site-title {
     line-height: 20px
   }
-  
+
 }
 
 .navigation {
@@ -157,22 +157,22 @@
       @include link-colors($text-color-1, $text-color-1);
       font-size: 16pt;
     }
-    
+
     .dropdown-content {
       overflow: hidden;
       height: 0px;
       position: absolute;
       min-width: 150px;
       z-index: 99;
-      padding-top: 23px;
+      margin-top: 23px;
+      background-color: rgba($main-color-2, 0.6);
+      backdrop-filter: blur(10px);
     }
 
     .dropdown-item {
       padding: 4px;
       display: block;
       @include link-colors($text-color-1, $text-color-1);
-      background-color: rgba($main-color-2, 0.6);
-      backdrop-filter: blur(10px);
       &:focus-visible {
         border: 2px solid black;
       }
