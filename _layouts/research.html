@@ -23,17 +23,7 @@ show_title: false
 <script> {% include scripts/components/hero.js %}</script>
 <div class="grid grid--p-3">
   <div class="cell cell--12 cell--lg-8" id="lab-focus">
-    <div id="triple-box-container">
-      <a class="box">
-        <h3>{{ page.box1 }}</h3>
-      </a>
-      <a class="box">
-        <h3>{{ page.box2 }}</h3>
-      </a>
-      <a class="box">
-        <h3>{{ page.box3 }}</h3>
-      </a>
-    </div>
+    {%- include triple_link_box.html -%}
     {{ content }}
   </div>
   <div class="cell cell--12 cell--lg-4">
