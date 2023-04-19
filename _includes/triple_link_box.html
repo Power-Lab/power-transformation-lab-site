@@ -1,0 +1,28 @@
+{% if include.images %}
+<div class="triple-box-container">
+  <a class="box img-bg" href={{ page.link1 }} style="background-image:
+    url({{ include.img_1 }});">
+    <h3>{{ page.box1 }}</h3>
+  </a>
+  <a class="box img-bg" href={{ page.link2 }} style="background-image:
+  url({{ include.img_2 }});">
+    <h3>{{ page.box2 }}</h3>
+  </a>
+  <a class="box img-bg" href={{ page.link3 }} style="background-image:
+  url({{ include.img_3 }})">
+    <h3>{{ page.box3 }}</h3>
+  </a>
+</div>
+{% else %}
+<div class="triple-box-container">
+  <a class="box" href={{ page.link1 }}>
+    <h3>{{ page.box1 }}</h3>
+  </a>
+  <a class="box" href={{ page.link2 }}>
+    <h3>{{ page.box2 }}</h3>
+  </a>
+  <a class="box" href={{ page.link3 }}>
+    <h3>{{ page.box3 }}</h3>
+  </a>
+</div>
+{% endif %}
