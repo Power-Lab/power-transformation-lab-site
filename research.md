@@ -5,29 +5,32 @@ hero_image: img/light-bulb-blue-sky.jpg
 fallback_color: 536eb1
 ---
 
-The Davidson Lab focuses on the engineering implications and institutional conflicts inherent in deploying low-
-carbon energy at scale. We have particular interests in understanding the political systems of Asia (with a focus on
+## Renewable energy resource planning
 
-China and India) as well as the western U.S. Our research topics include renewable resource assessments, power
-system operations, and political economy of markets.
+![Windmills](img/possible_hero_photos/wind_bg.jpg)
+Reaching high penetrations (>50%) of intermittent renewable energy requires careful assessment of resource quality, land use, supporting infrastructure, and power system reliability. Our work combines high-resolution weather data and geospatial layers to rank infrastructure siting decisions, and develops novel algorithmic combinations with capacity expansion planning optimizations.
 
-## Renewable Resource Assessment and Planning for High-Penetration Futures
-
-[![Modelling the potential for wind energy integration on China's coal-heavy electricity grid <](img/wind-resource-map.png)][r1]
-Reaching high penetrations (>50%) of intermittent renewable energy will require careful assessment of resource quality, land use requirements, supporting infrastructure, and power system reliability. Meso-scale reanalysis models provide granular continental-scale datasets, which when combined with GIS layers can generate and rank infrastructure siting decisions. Work in this area focuses on validating errors in these datasets for power applications, and developing novel algorithmic combinations with expansion planning optimizations.
-
-## Power System Operation Under Uncertainty and Heterogeneous Dispatch Paradigms
-
-[![Modeling Unit Commitment in Political Context: Case of China's Partially Restructured Electricity Sector >](img/power-system-dispatch.png)][r2]
-Grid integration outcomes of renewable energy in practice depend on the interactions of uncertainty (e.g., forecast error) and the sequential nature of dispatching and scheduling decisions. Optimal configurations assuming perfect foresight are often insufficient in decarbonization research. Work in this area looks at the increasing use and complexity of energy markets and forecasting tools, developing new dispatch optimizations and solution techniques to capture large scenario and constraint spaces.
-
-## Political Economy of Low-Carbon Infrastructure Innovation and Markets
-
-[![Technology Integration in China’s Electricity System: Central Targets and Local Challenges <](img/local-gov-incentives-diagram.png)][r3]
-Electric power governance typically protects incumbent firms and preserves status quo institutions, and in general is ill-suited to the technical demands of a low-carbon energy system. With the falling cost of renewable energy, political barriers are becoming relatively more salient to the cost and pace of the transition. Work in this area includes deep case explorations of infrastructure management and innovation institutions, particularly in contexts with rapidly growing energy demands, and the political determinants of market efficiency.
+### Key Questions
+- Where should we prioritize and what are the localized impacts of rapid renewable energy build-out?
+- What are land use constraints of low-carbon energy and appropriate technological pathways to address them?
 
 
+## Affordable and reliable low-carbon power market models
 
-[r1]: /2016-06-20-modelling-wind-energy-potential-China/
-[r2]: /2018-04-02-unit-commitment-china-political-context-ieee/
-[r3]: /2019-06-30-cup-technology-integration-china-electricity/
+![Windmills](img/possible_hero_photos/DSC_8677.JPG)
+Grid integration of renewable energy depends on the structure of operations and markets, which vary in terms of effectiveness in managing variability and uncertainty. Our work examines real-world dispatch and scheduling institutions in both advanced and emerging power markets in order to develop affordable and reliable solutions to low-carbon energy development.
+
+### Key Questions
+- What are the efficiencies and emissions of non-standard power market designs?
+- How much, where, and for what compensation is firm capacity needed to operate the system reliably?
+
+
+## Political economy of industrial policy and low-carbon transitions in firms
+
+![Cargo ships](img/possible_hero_photos/DSC_8047.JPG)
+Climate goals are increasingly being furthered by a range of policy tools, including industrial policy designed to stimulate localization of manufacturing. These policies must balance key trade-offs in maintaining political support while taking advantage of globalization-induced economies of scale. At the center of these efforts is the role of the firm and its decisions to embrace (or not) a low-carbon transition. With state-owned enterprises dominant in many countries’ energy sectors, typical models of firm behavior may be insufficient.
+
+### Key Questions
+- What are the most effective policies for achieving both climate and domestic industrial development goals?
+- What incentives are necessary to encourage firm low-carbon transitions and how should they be designed in contexts with high levels of state ownership?
+

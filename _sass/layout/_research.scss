@@ -1,6 +1,7 @@
 .layout--research {
   .section-header {
-    font-size: map-get($base, font-size-h2-xl)
+    font-size: map-get($base, font-size-h2-xl);
+    text-align: center;
   }
   #research-hero-text {
     height: 200px;
@@ -64,10 +65,9 @@
   }
 
   #triple-box-container {
-    margin: 24px 0;
+    margin: 36px 0 24px 0;
     display: grid;
     grid-template-columns: repeat(3, calc(33.3% - 16px));
-    margin: 0 auto;
 
     @include media-breakpoint-down(md) {
       grid-template-columns: auto;
@@ -144,6 +144,10 @@
       margin-right: 0;
     }
 
+  }
+
+  #lab-focus h2 {
+    font-size: map-get($base, font-size-h2-xl);
   }
 
   p {
