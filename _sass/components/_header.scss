@@ -150,12 +150,16 @@
     @include split-line(bottom, 4px, transparent);
   }
 
+  height: 100%;
   position: relative;
   display: inline-block;
   .dropdown {
+    height: 100%;
     .dropdown-btn {
       @include link-colors($text-color-1, $text-color-1);
       font-size: 16pt;
+      display: block;
+      margin-top: 23px;
     }
 
     .dropdown-content {
