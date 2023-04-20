@@ -115,6 +115,11 @@
     font-size: map-get($base, font-size-h2-xl);
   }
 
+  #key-questions,#key-questions-1,#key-questions-2 {
+    border-left: 4px solid $main-color-3;
+    padding-left: 12px;
+  }
+
   p {
     // clearfix
     overflow: auto;
