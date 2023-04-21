@@ -47,11 +47,11 @@
   }
   #links-container {
     position: absolute;
-    font-size: 28pt;
     li {
       color: $text-color-1;
     }
     .main-list {
+      font-size: 28pt;
       list-style: none;
       padding-left: 36px;
       overflow: scroll;
@@ -62,6 +62,7 @@
       }
       @include media-breakpoint-down(md) {
         padding-left: 16px;
+        font-size: 24pt;
       }
       &::after {
         content: "";
