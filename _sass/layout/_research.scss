@@ -32,13 +32,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2.65rem;
+      font-size: 1.7rem;
       @include media-breakpoint-down(lg) {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         padding: 0px 24px;
       }
       @include media-breakpoint-down(md) {
-        font-size: 1.35rem;
+        font-size: 1.1rem;
       }
     }
   }
