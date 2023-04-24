@@ -52,6 +52,9 @@
     border-width: 200px 200px 0 0;
     border-style: solid;
     border-color: rgba($main-color-3, 0.7) transparent;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 
   #research-hero-text:before {
