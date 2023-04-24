@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: hero_page
+hero_image: img/ucsd_campus_quad.png
 title: Study @ UCSD
 ---
 ## Openings
