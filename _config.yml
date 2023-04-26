@@ -58,6 +58,10 @@ author:
 repository: Power-Lab/power-transformation-lab-site
 repository_tree: main
 
+## => Sass configuration
+sass:
+  style: compressed
+
 
 ## => Paths
 ##############################
