@@ -6,13 +6,32 @@ document.addEventListener("DOMContentLoaded", () => {
   selectionButtons = document.querySelectorAll(".tag-button-4")
 
   showAllTag.addEventListener("click", show_all)
+  showAllTag.querySelector(".tag-button__count").innerHTML = document.querySelectorAll(".layout__publications li").length - 7 // very naive should fix this later
   selectionButtons.forEach(button => {
+    const buttonData = button.getAttribute("data-encode")
     button.addEventListener("click", e => {
-      showCategory(button.getAttribute("data-encode"))
+      showCategory(buttonData)
     })
-    categoryList.push(button.getAttribute("data-encode"))
+    categoryList.push(buttonData)
+    button.querySelector(".tag-button__count").innerHTML = countItems(buttonData)
   })
 })
+
+const countItems = category => {
+  const h2Element = document.getElementById(category);
+  const liElement = h2Element.nextElementSibling.firstElementChild
+  if (!h2Element) return; // return if h2 element doesn't exist
+
+  // get all sibling elements after the h2 element
+  let nextSibling = liElement.nextElementSibling;
+  let total = 1
+  while (nextSibling) {
+    if (nextSibling.tagName === 'H2') break;
+    nextSibling = nextSibling.nextElementSibling;
+    total = total + 1
+  }
+  return total
+}
 
 const show_all = () => {
   categoryList.forEach(category => {
