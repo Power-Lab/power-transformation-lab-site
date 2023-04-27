@@ -21,6 +21,11 @@
     margin-top: 12px;
   }
 
+  .alumni ul li {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
   @include media-breakpoint-down(lg) {
     .large-bio-container img {
       margin-top: 0

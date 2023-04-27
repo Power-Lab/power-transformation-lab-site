@@ -21,6 +21,7 @@ show_title: false
     </div>
   </div>
   {% assign _non_alumni = site.team | where: 'alumni', nil %}
+  {% assign _alumni = site.team | where: 'alumni', true %}
   <div class="grid-container">
   <div class="grid-bio-container grid grid--p-3">
   {% for _member in _non_alumni offset: 1%}
@@ -32,6 +33,14 @@ show_title: false
       {{ _member.content }}
     </div>
   {% endfor %}
+  <div class="alumni bio cell cell--12 cell--md-6 cell--lg-4 content">
+    <h3>Alumni</h3>
+    <ul>
+      {% for _alum in _alumni %}
+        <li>{{ _alum.name }}</li>
+      {% endfor %}
+    </ul>
+  </div>
   </div>
   </div>
 </div>
