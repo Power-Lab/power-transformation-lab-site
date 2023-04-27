@@ -30,6 +30,7 @@ published: true
 
 
 ## Refereed Book Chapters and Other Publications ##
+- **Davidson, M. R.** (2018). [Creating Markets for Wind Electricity in China: Case Studies in Energy Policy and Regulation](/dissertation-wind-markets-china/) (Ph.D. Thesis). Massachusetts Institute of Technology.
 
 - Lee, H., Schrag, D. P., Bunn, M., **Davidson, M.**, Peng, W., Wang, P., & Mao, Z. (2021). [Foundations for a Low-Carbon Energy System in China](https://www.cambridge.org/core/books/foundations-for-a-lowcarbon-energy-system-in-china/1E9D1A1911D0395E1DC3503919138358). _Cambridge University Press_.
 
@@ -76,9 +77,3 @@ published: true
 - **Davidson, M. R.** (2017). [Hidden Costs of Technology Development by the Plan: Case of China's Coal Fleet Upgrading](/2017-03-10-hidden-costs-technology-china-coal/). American Association for the Advancement of Science 2017 Annual Meeting.
 
 - **Davidson, M.** and Qi, T. (2015). "[Re-Analysis Data for Fine Temporal Resolution Wind Power Estimation: A Comparison of Boundary Layer Parameterizations](/2015-11-06-gcc-reanalysis-data-wind-applications/)." Graduate Climate Conference, Woods Hole Oceanographic Institution. Woods Hole, MA.
-
-## Dissertation ##
-
-- **Davidson, M. R.** (2018). [Creating Markets for Wind Electricity in China: Case Studies in Energy Policy and Regulation](/dissertation-wind-markets-china/) (Ph.D. Thesis). Massachusetts Institute of Technology.
-
-

@@ -6,15 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
   selectionButtons = document.querySelectorAll(".tag-button-4")
 
   showAllTag.addEventListener("click", show_all)
-  showAllTag.querySelector(".tag-button__count").innerHTML = document.querySelectorAll(".layout__publications li").length - 7 // very naive should fix this later
+  let total_count = 0
   selectionButtons.forEach(button => {
     const buttonData = button.getAttribute("data-encode")
     button.addEventListener("click", e => {
       showCategory(buttonData)
     })
     categoryList.push(buttonData)
-    button.querySelector(".tag-button__count").innerHTML = countItems(buttonData)
+    const itemCount = countItems(buttonData)
+    button.querySelector(".tag-button__count").innerHTML = itemCount
+    total_count = total_count + itemCount
   })
+  showAllTag.querySelector(".tag-button__count").innerHTML = total_count
 })
 
 const countItems = category => {
