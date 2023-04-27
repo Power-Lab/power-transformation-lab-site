@@ -1,6 +1,6 @@
 ---
-name: Shiny Choudhury
 img: https://drive.google.com/uc?export=view&id=1t9-F35PkHwJeBstpR-YsY3cherOF0EtM
+name: Shiny Choudhury
 ---
 
 
