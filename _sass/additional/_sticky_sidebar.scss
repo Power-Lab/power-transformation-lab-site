@@ -1,0 +1,11 @@
+.sticky-sidebar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 64px;
+  height: 1px;
+  @include media-breakpoint-down(lg) {
+    position: relative;
+    position: -webkit-relative
+  }
+}
+

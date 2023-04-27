@@ -27,7 +27,7 @@ show_title: false
     {%- include triple_link_box.html -%}
     {{ content }}
   </div>
-  <div class="cell cell--12 cell--lg-4">
+  <div class="cell cell--12 cell--lg-4 sticky-sidebar">
     <h2 class="section-header">Recent Articles</h2>
       {% assign _paper_tag = "papers" %}
       {% assign _paper_list = site.posts | where_exp:"item","item.tags contains _paper_tag"%}

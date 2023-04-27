@@ -19,7 +19,8 @@ titles:
         {%- include scripts/archieve.js -%}
       </script>
     </div>
-    <div id="in-the-media-container" class="cell cell--12 cell--lg-4">
+    <div id="in-the-media-container" class="cell cell--12 cell--lg-4
+      sticky-sidebar">
       <h2 class="section-header">Recent Media Updates</h2>
       <ul>
       {% assign _recent_media = site.in_the_media | reverse | slice:0,2 %}
