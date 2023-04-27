@@ -28,7 +28,9 @@ show_title: false
     <div class="bio cell cell--12 cell--md-6 cell--lg-4 content">
       <h3>{{ _member.name }}</h3>
       {% if _member.img %}
-      <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
+      <div class="square-image-container">
+        <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
+      </div>
       {% endif %}
       {{ _member.content }}
     </div>
