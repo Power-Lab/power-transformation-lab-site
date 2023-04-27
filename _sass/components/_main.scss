@@ -1,13 +1,13 @@
 .main {
   width: 100%;
   max-width: map-get($layout, content-max-width);
-  padding: 0 map-get($spacers, 5);
+  padding: 0 64px;
   margin: 0 auto;
   @include media-breakpoint-down(lg) {
-    padding: 0 map-get($spacers, 4);
+    padding: 0 48px;
   }
   @include media-breakpoint-down(md) {
-    padding: 0 map-get($spacers, 3);
+    padding: 0 32px;
   }
 }
 

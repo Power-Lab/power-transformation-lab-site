@@ -1,7 +1,7 @@
 .layout--research {
   .section-header {
     font-size: map-get($base, font-size-h2-xl);
-    text-align: center;
+    margin-top: 0;
   }
   #research-hero-text {
     height: 200px;
@@ -70,6 +70,8 @@
 
   h2 {
     border-top: 2px solid $main-color-3;
+    margin-top: 36px;
+    padding-top: 24px;
   }
 
   h2:first-of-type {
@@ -81,13 +83,7 @@
     padding-top: 0;
     border-top: none;
     position: relative;
-  }
-
-  h2.item__header::before {
-    content: "•";
-    position: absolute;
-    top: 0;
-    left: -18px;
+    font-size: 1.5rem;
   }
 
   hr {
@@ -97,8 +93,8 @@
 
   p img {
     float: left;
-    margin-right: 12px;
-    max-width: 60%;
+    margin-right: 28px;
+    max-width: 45%;
 
     @include media-breakpoint-down(md) {
       width: 100%;
@@ -108,7 +104,7 @@
     // this style is applied in scripts/research.js because nth-of-type only works on siblings instead of across the whole document
     &.right-align {
       float: right;
-      margin-left: 12px;
+      margin-left: 28px;
       margin-right: 0;
     }
 
@@ -126,10 +122,18 @@
   p {
     // clearfix
     overflow: auto;
+    text-align: justify;
+    text-justify: auto;
   }
 
-  article.item {
-    margin-left:36px;
+  p,li {
+    line-height: 2rem;
   }
 
+  .sticky-sidebar {
+    padding-left: 18px;
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+  }
 }

@@ -30,7 +30,7 @@
     h2 {
       font-size: 2rem
     }
-    
+
     h1,h2 {
       color: $text-color-1;
       font-family: "Josefin Sans", sans-serif;
@@ -39,7 +39,7 @@
 }
 
 .hero-spacer {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 48px);
 }
 
 .prompt-arrow {
@@ -71,7 +71,7 @@
       h2 {
         font-size: 1.5rem
       }
-    } 
+    }
   }
   .hero-spacer {
     height: calc(100vh - 64px);
