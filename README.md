@@ -29,7 +29,8 @@ accessible by the navigation bar (except `archive.html`).
 | Archive| `/archive.html` | `archive.html` |
 
 ## Adding posts
-Posts are added just like normal jekyll to "_posts".
+Posts are added just like normal jekyll to "_posts". See `Features` for featured
+posts.
 
 ## Adding team members
 To add a team member, add a new markdown file to the `_team` directory. They are
@@ -48,5 +49,17 @@ Finally, the content of the md file will be the person's bio.
 ## Adding media mentions
 Add a markdown file to `in_the_media/`. They are sorted alphabetically also,
 with the 3 last ones being displayed as recent on the news page. The front
-matter is very simple: it has the variables `title`, `link`, and `description` (all 3 are required).
-In the future, images may be implemented.
+matter is very simple: it has the variables `title`, `link`, and `description` (all 3 are required). Images should be used for featured media mentions. See `Features`.
+
+## Features (NOT YET IMPLEMENTED)
+For media mentions and posts, three of them should be selected to be featured.
+If more than 3 are chosen then some will be lost. Featured posts will appear as
+large items on the main "Lab updates" page. Featured media mentions will appear
+on the "media mentions" page, again as three large item , with all media mentions
+listed below them. Currently, the sidebar on "Lab updates" displays the most
+recent media mentions instead of the featured ones; this behavior may change in
+the future.
+
+Featured items most have both `featured: true` in the front-matter and also a
+`feature-img` variable that specifies the path to the image that should be
+displayed with it.
