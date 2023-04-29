@@ -28,6 +28,7 @@ show_title: false
     {{ content }}
   </div>
   <div class="cell cell--12 cell--lg-4 sticky-sidebar">
+    <div class="content">
     <h2 class="section-header">Recent Articles</h2>
       {% assign _paper_tag = "papers" %}
       {% assign _paper_list = site.posts | where_exp:"item","item.tags contains _paper_tag"%}
@@ -40,6 +41,7 @@ show_title: false
         show_readmore=true
         show_info=false
       -%}
+    </div>
   </div>
 </div>
 

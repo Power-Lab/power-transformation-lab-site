@@ -1,6 +1,7 @@
 .layout--news {
   .section-header {
-    font-size: map-get($base, font-size-h2-xl)
+    font-size: map-get($base, font-size-h2-xl);
+    margin-top: 0;
   }
 
   .media-card {

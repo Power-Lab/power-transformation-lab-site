@@ -21,6 +21,7 @@ titles:
     </div>
     <div id="in-the-media-container" class="cell cell--12 cell--lg-4
       sticky-sidebar">
+      <div class="content">
       <h2 class="section-header">Recent Media Updates</h2>
       <ul>
       {% assign _recent_media = site.in_the_media | reverse | slice:0,2 %}
@@ -35,6 +36,7 @@ titles:
       {% endfor %}
       </ul>
       <a href="{{ site.baseurl }}/in_the_media.html">View More </a>
+      </div>
     </div>
   </div>
 </div>
