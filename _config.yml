@@ -239,8 +239,7 @@ defaults:
       layout: article
       sharing: true
       license: true
-      aside:
-        toc: true
+      aside: false
       show_edit_on_github: false
       show_subscribe: true
       pageview: true
