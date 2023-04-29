@@ -32,6 +32,10 @@ accessible by the navigation bar (except `archive.html`).
 Posts are added just like normal jekyll to "_posts". See `Features` for featured
 posts.
 
+*NOT YET IMPLEMENTED:* Posts also have an optional "archive_title" variable that can be added
+which will change the title that appears in the condensed archive view, but not
+on the top of the article itself.
+
 ## Adding team members
 To add a team member, add a new markdown file to the `_team` directory. They are
 listed on the team page alphabetically, so currently they are prefixed with a
