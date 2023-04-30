@@ -77,7 +77,7 @@ paths:
 
   news: "/news.html"
   in_the_media: "/in_the_media.html"
-  lab_updates: "/lab_updates/"
+  lab_updates: "/lab_updates.html"
 
   about: "/about.html"
   team: "/team.html"

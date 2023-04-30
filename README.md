@@ -19,7 +19,7 @@ accessible by the navigation bar (except `archive.html`).
 | Models and Data| `/models_and_data.html` | `models_and_data.html` |
 | News| `/news.html` | `news.md` |
 | In The Media| `/in_the_media.html` | `in_the_media.html` |
-| Lab Updates| `/lab_updates/` | `lab_updates/index.html` |
+| Lab Updates| `/lab_updates.html` | `lab_updates.md` |
 | About| `/about.html` | `about.html` |
 | Team| `/team.html` | `team.md` |
 | Teaching| `/teaching.html` | `teaching.md` |

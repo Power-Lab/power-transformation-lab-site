@@ -21,7 +21,7 @@ header:
       - title: In the Media
         url: /in_the_media.html
       - title: Lab Updates
-        url: /lab_updates/
+        url: /lab_updates.html
 
   - titles:
       en      : &EN       ABOUT
