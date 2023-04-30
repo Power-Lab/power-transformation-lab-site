@@ -2,7 +2,7 @@
 layout: paper
 title: "Creating Subnational Climate Institutions in China"
 subtitle: "Davidson, M. R. (2019). Discussion Paper. <i>Harvard Project on Climate Agreements</i>."
-tags: [papers]
+tags: [papers, featured]
 image: /img/subnational_climate_Fig2_org_chart-sm.png
 
 ---
