@@ -39,7 +39,7 @@
 }
 
 .hero-spacer {
-  height: calc(100vh - 48px);
+  height: calc(100vh);
 }
 
 .prompt-arrow {
@@ -74,6 +74,6 @@
     }
   }
   .hero-spacer {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 16px);
   }
 }
