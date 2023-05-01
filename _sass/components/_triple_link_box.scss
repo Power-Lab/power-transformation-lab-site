@@ -11,6 +11,9 @@
 
   justify-content: space-between;
   font-family: "Josefin Sans", sans-serif;
+  &.triple-image .box {
+    padding: 0px;
+  }
   .box {
     background-color: $main-color-1;
     padding: 16px;
