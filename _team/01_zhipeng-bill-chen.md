@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1MFn43LGRIhtxZsdsUEkZkaZC9ru8L3uH
+img: img/team/01_zhipeng-bill-chen.png
 name: Zhipeng (Bill) Chen
 ---
 

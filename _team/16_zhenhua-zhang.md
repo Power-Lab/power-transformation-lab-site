@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1e7e5XSKfoMXHa6KybJvMIaENGKtTvF_1
+img: img/team/16_zhenhua-zhang.png
 name: Zhenhua Zhang
 ---
 

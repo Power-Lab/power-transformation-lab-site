@@ -1,6 +1,6 @@
 ---
 name: Prof. Michael Davidson
-img: https://drive.google.com/uc?export=view&id=1Sd919W4hk0rYeZrfNE_o6Tvk1W4g6-3e
+img: img/team/00_michael-davidson.png
 ---
 
 I am an assistant professor in the [School of Global Policy and Strategy](http://gps.ucsd.edu/) and the [Mechanical and Aerospace Engineering Department](http://maeweb.ucsd.edu/) at the University of California, San Diego. I study the engineering implications and institutional conflicts inherent in deploying low-carbon energy at scale. See my [research areas](/research/) and [papers](/papers/) for more details.

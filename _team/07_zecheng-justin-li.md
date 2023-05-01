@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1GwOPOsIL4vKhPTnyY4N9H3tyWfXThsdL
+img: img/team/07_zecheng-justin-li.png
 name: Zecheng (Justin) Li
 ---
 

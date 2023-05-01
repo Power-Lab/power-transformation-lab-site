@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1zcUBqeE08gUOtsslyjMe6ugo8Fq7pybB
+img: img/team/15_boyu-yao.png
 name: Boyu Yao
 ---
 

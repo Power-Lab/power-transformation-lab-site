@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1HjpU9VFBOYrwoqxfnLH1lOAcDgbY4fhF
+img: img/team/06_dr-fikri-kucuksayacigil.png
 name: Dr. Fikri Kucuksayacigil
 ---
 

@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1EvHiMYMdxzdgULYdKNEJ32OzIcmojRby
+img: img/team/13_yuting-christine-wan.png
 name: Yuting (Christine) Wan
 ---
 

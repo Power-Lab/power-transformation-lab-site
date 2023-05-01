@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1o6LYmCVQjcvUaiRmmesSnmNPbPkcrFKZ
+img: img/team/11_jenny-nicolas.png
 name: Jenny Nicolas
 ---
 

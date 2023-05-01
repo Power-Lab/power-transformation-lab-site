@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1F1oDj0HB_S_uLS-rQOgZF2LgjHkMgRIC
+img: img/team/09_yumeng-liu.png
 name: Yumeng Liu
 ---
 

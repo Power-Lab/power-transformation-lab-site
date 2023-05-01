@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1eH-wRoNXd1OXwDjIoeL0keMsJkddcro-
+img: img/team/12_dinah-shi.png
 name: Dinah Shi
 ---
 
