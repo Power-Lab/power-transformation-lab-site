@@ -1,4 +1,7 @@
 .layout--research {
+  h1 {
+    font-size: 3rem;
+  }
   .section-header {
     font-size: map-get($base, font-size-h2-xl);
     margin-top: 0;
