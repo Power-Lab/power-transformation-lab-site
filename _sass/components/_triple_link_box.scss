@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, calc(33.3% - 16px));
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     grid-row-gap: 8px;
