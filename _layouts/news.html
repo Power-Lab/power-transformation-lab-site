@@ -9,6 +9,8 @@ titles:
   <div id="news-content-container" class="grid grid--p-3">
     <div id="lab-updates-container" class="cell cell--12 cell--lg-8">
       <h2 class="section-header">Featured Lab Updates</h2>
+      <a href="{{ site.baseurl }}/lab_updates.html" class="click-for-more">Click here for all lab
+        updates</a>
       {%- include article-list.html
       articles=site.posts
       type='item'
@@ -23,6 +25,8 @@ titles:
       sticky-sidebar">
       <div class="content">
       <h2 class="section-header">Recent Media Updates</h2>
+      <a href="{{ site.baseurl }}/in_the_media.html" class="click-for-more">Click here for all media
+        mentions </a>
       <ul>
       {% assign _recent_media = site.in_the_media | reverse | slice:0,2 %}
       {% for media_mention in _recent_media %}
@@ -35,7 +39,6 @@ titles:
         </a></li>
       {% endfor %}
       </ul>
-      <a href="{{ site.baseurl }}/in_the_media.html">View More </a>
       </div>
     </div>
   </div>
