@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1h8iXwT4SOSuYRvzTKvO4GNxYPbXfaWBD
+img: img/team/04_ruibin-ian-deng.png
 name: Ruibin (Ian) Deng
 ---
 

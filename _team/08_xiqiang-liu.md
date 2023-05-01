@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=10LRi-doqfOu7zrfJ9D121kipmwP9Ql-Z
+img: img/team/08_xiqiang-liu.png
 name: Xiqiang Liu
 ---
 

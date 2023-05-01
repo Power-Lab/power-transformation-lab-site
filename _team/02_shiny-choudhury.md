@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1t9-F35PkHwJeBstpR-YsY3cherOF0EtM
+img: img/team/02_shiny-choudhury.png
 name: Shiny Choudhury
 ---
 

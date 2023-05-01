@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1H9ctPW7cjugb994RLcfyk5VOAGfoFQUz
+img: img/team/05_nikki-emam.png
 name: Nikki Emam
 ---
 

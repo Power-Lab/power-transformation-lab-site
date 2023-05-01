@@ -1,5 +1,5 @@
 ---
-img: https://drive.google.com/uc?export=view&id=1FFMqH4YJHd5N0tsdOttFT8FGgrl7tS-e
+img: img/team/10_chen-pammy-long.png
 name: Chen (Pammy) Long
 ---
 

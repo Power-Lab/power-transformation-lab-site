@@ -55,7 +55,7 @@ Add a markdown file to `in_the_media/`. They are sorted alphabetically also,
 with the 3 last ones being displayed as recent on the news page. The front
 matter is very simple: it has the variables `title`, `link`, and `description` (all 3 are required). Images should be used for featured media mentions. See `Features`.
 
-## Features (NOT YET IMPLEMENTED)
+## Featured items (media mentions and lab posts)
 For media mentions and posts, three of them should be selected to be featured.
 If more than 3 are chosen then some will be lost. Featured posts will appear as
 large items on the main "Lab updates" page. Featured media mentions will appear

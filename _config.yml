@@ -22,7 +22,7 @@ url     : # the base hostname & protocol for your site e.g. https://www.someone.
 baseurl : /power-transformation-lab-site # does not include hostname
 title   : Power Transformation Lab
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale
 
 
 ## => Language and Timezone

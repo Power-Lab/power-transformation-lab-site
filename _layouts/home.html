@@ -46,5 +46,22 @@ show_title: false
   {%- include scripts/home.js -%}
 </script>
 
-{{ content }}
+<p>
+<img src="img/logo_no_text.png" id="mini-logo" />
+The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale. We work across multiple geographies and with academic, government, civil society, and industry partners to advance research and solutions to climate and environmental challenges.
+</p>
+
+{% include triple_link_box.html
+  images = true
+  img_1 = "img/possible_hero_photos/DSC_7872.JPG"
+  img_2 = "img/possible_hero_photos/DSC_7872.JPG"
+  img_3 = "img/possible_hero_photos/DSC_7872.JPG"
+  box1 = "Our Research"
+  box2 = "Our Impact"
+  box3 = "Our Team"
+  link1 = "research.html"
+  link2 = "news.html"
+  link3 = "team.html"
+%}
+
 </div>
