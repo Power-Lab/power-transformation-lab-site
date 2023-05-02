@@ -124,6 +124,8 @@
                 <header>
                   <a href="{{ _article.link }}"><h2 class="card__header">{{ _article.title }}</h2></a>
                 </header>
+                {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
+                <p class="article-date"><i class="far fa-calendar-alt"></i> {{ _article.date  | date: __return }}</p>
                 <p>{{ _article.description }}</p>
               </div>
           </div>
