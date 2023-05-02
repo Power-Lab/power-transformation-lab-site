@@ -5,7 +5,7 @@ default:
   paths:
     root: /
     home: /
-    archive:  /archive.html
+    archive:  /lab_updates.html
     rss:  /feed.xml
   mathjax: false
   mathjax_autoNumber: false

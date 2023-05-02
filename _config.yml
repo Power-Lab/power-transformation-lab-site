@@ -68,7 +68,7 @@ sass:
 paths:
   root    : # title link url, "/" (default)
   home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
+  archive : "/lab_updates.html"
   rss     : # "/feed.xml" (default)
 
   research: "/research.html"
