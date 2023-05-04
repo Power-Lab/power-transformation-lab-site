@@ -48,6 +48,11 @@
   #mini-logo {
     width: 100px;
     margin-right: 84px;
+    padding-bottom: 64px;
+    @include media-breakpoint-down(lg) {
+      margin-right: 32px;
+      padding-bottom: 16px;
+    }
     @include media-breakpoint-down(md) {
       display: none
     }
