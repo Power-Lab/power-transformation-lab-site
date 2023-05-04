@@ -4,6 +4,7 @@ title: "Quantifying the cost savings of global solar photovoltaic supply chains"
 subtitle: "Helveston, J.P., He, G., & Davidson, M.R. <i>Nature</i>."
 tags: [papers, home]
 image: /img/solar_sm.jpg
+archive_title_prefix: "Paper: "
 
 ---
 

@@ -32,9 +32,20 @@ accessible by the navigation bar (except `archive.html`).
 Posts are added just like normal jekyll to "_posts". See `Features` for featured
 posts.
 
-*NOT YET IMPLEMENTED:* Posts also have an optional "archive_title" variable that can be added
-which will change the title that appears in the condensed archive view, but not
-on the top of the article itself.
+Posts also have an optional "archive_title_prefix" variable that can be added
+which will change the title that appears in the `lab_updates` page (which
+uses the `archive` layout), but not
+on the top of the article itself. It should include a colon any any spacing,
+because it is simply prepended to the article title. For example, a
+file with front-matter
+```
+---
+title: My Post Title
+archive_title_prefix: "Update: "
+---
+```
+would have `Update: My Post Title` displayed in `lab_updates`, but would still
+just have `My Post Title` on top of the page if you clicked on it.
 
 ## Adding team members
 To add a team member, add a new markdown file to the `_team` directory. They are
