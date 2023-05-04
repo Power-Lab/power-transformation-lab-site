@@ -26,6 +26,7 @@ accessible by the navigation bar (except `archive.html`).
 | Opportunities| `/opportunities.html` | `opportunities.md` |
 | Study At UCSD| `/study_at_ucsd.html` | `study_at_ucsd.md` |
 | Contact| `/contact.html` | `contact.md` |
+| Archive| `/archive.html` | `archive.html` |
 
 ## Adding posts
 Posts are added just like normal jekyll to "_posts". See `Features` for featured
