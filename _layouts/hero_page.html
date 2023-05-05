@@ -8,7 +8,11 @@ show_title: false
 {% assign _bgcolor = "ffffff" %}
 {% endif %}
 <div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
+  {% if page.banner_color %}
+  <div class="hero-text" style="background-color:{{ page.banner_color }}">
+  {% else %}
   <div class="hero-text">
+  {% endif %}
     <h1>{{ page.title }}</h1>
   </div>
   {% include svg/down-arrow2-svgrepo-com.svg dark=page.dark_arrow %}
