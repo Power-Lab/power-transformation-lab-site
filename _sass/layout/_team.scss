@@ -1,6 +1,10 @@
 
 #team-container {
+  .grid-container {
+    margin: -1rem /* this and the margin:0 a few lines below fixes shadow overflow issues for the team member images*/
+  }
   .grid-bio-container {
+    margin: 0;
     .square-image-container {
       width: 100%;
       max-width: 500px;
@@ -33,9 +37,28 @@
     font-size: map-get($base, font-size-h3-lg)
   }
 
-  .large-bio-container img {
-    margin-top: 12px;
-    width: 100%;
+  .mainbio-header {
+    width: 50%;
+    float: left;
+    padding-right: 24px;
+    img {
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      float: none;
+      padding-right: 0;
+    }
+  }
+
+  img {
+    box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.3);
+  }
+
+  p {
+    font-size: 1rem
   }
 
   .alumni ul li {
