@@ -3,7 +3,6 @@ layout: post
 title: "Podcast: Clean energy and China’s long road to power market reform"
 subtitle: "<i>Environment China</i>."
 tags:
-image: /img/wind_farm.png
 
 ---
 
