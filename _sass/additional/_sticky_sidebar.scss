@@ -12,6 +12,8 @@
   .content {
     border-left: 4px solid $main-color-3;
     padding-left: 32px;
+    max-height: calc(100vh - 240px);
+    overflow: scroll;
   }
 }
 
