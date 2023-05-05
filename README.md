@@ -6,10 +6,10 @@ README TODOS:
 This site uses a modified version of [TeXt Theme](https://github.com/kitian616/jekyll-TeXt-theme).
 
 ## Site pages
-Site pages are the `.md` files in the root of the directory (and the `lab_updates`) directory.
+Site pages are the `.md` files in the root of the repository.
 They are all generated to be static, but some of them behave more dynamically
-then others, doing things like listing the most recent posts. They are the pages
-accessible by the navigation bar (except `archive.html`).
+then others, doing things like listing the most recent posts. They are all
+accessible via the navigation bar.
 
 | Title | Site URL | File |
 |-|-|-|
@@ -26,7 +26,24 @@ accessible by the navigation bar (except `archive.html`).
 | Opportunities| `/opportunities.html` | `opportunities.md` |
 | Study At UCSD| `/study_at_ucsd.html` | `study_at_ucsd.md` |
 | Contact| `/contact.html` | `contact.md` |
-| Archive| `/archive.html` | `archive.html` |
+
+
+### Hero pages
+
+Styles for hero pages are defined in `_sass/components/_hero.scss`. A page may
+either use the `hero_page` layout (which itself uses the `page` layout) such as
+the "About" page, or it could write out its own HTML like on the home and
+research pages, if custom styles have to be applied.
+
+Hero pages have a required `hero_image` field which is the image URL for the
+background image. Additionally, there are two optional variables that can be
+set:
+
+- `fallback_color`: A fallback color to use for the background in case
+  the image cannot load
+- `banner_color`: An optional background color for the div containing the hero
+  text, to create the effect of the hero text being a banner.
+
 
 ## Adding posts
 Posts are added just like normal jekyll to "_posts". See `Features` for featured
@@ -49,8 +66,9 @@ just have `My Post Title` on top of the page if you clicked on it.
 
 ## Adding team members
 To add a team member, add a new markdown file to the `_team` directory. They are
-listed on the team page alphabetically, so currently they are prefixed with a
-2-digit number.
+listed on the team page alphabetically by filename, so currently they are prefixed with a
+2-digit number. It would be possible to force a custom order on the files by
+configuring the `team` collection in `config.md`. [See here for details](https://jekyllrb.com/docs/collections/#custom-sorting-of-documents)
 
 The front matter is laid out as follows:
 - `name`: Required, self-explanatory
