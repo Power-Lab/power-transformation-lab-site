@@ -36,6 +36,11 @@
     color: $text-color-1
   }
 
+  &.small-text .box.img-bg h3 {
+    font-size: 1.5rem;
+  }
+
+
   .box.img-bg {
     background-color:  black;
     width: 100%;
@@ -48,11 +53,12 @@
     box-shadow: inset 0 0 10000px rgba(0,0,0,0.6);
 
     h3 {
+      padding: 0 12px;
       width: 100%;
       text-align: center;
       font-size: map-get($base, font-size-h2-xl);
       @include media-breakpoint-down(lg) {
-        font-size: map-get($base, font-size-h3-lg)
+        font-size: 2.25rem;
       }
       position: absolute;
       top: 50%;

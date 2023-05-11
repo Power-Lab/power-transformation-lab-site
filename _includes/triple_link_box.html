@@ -1,5 +1,9 @@
 {% if include.images %}
+{% if include.small_text %}
+<div class="triple-box-container triple-image small-text">
+{% else %}
 <div class="triple-box-container triple-image">
+{% endif %}
   <a class="box img-bg" href={{ include.link1 }} style="background-image:
     url({{ include.img_1 }});">
     <h3>{{ include.box1 }}</h3>
