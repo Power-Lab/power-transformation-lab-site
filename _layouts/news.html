@@ -24,21 +24,24 @@ titles:
     <div id="in-the-media-container" class="cell cell--12 cell--lg-4
       sticky-sidebar">
       <div class="content">
-      <h2 class="section-header">Recent Media Updates</h2>
-      <a href="{{ site.baseurl }}/in_the_media.html" class="click-for-more">Click here for all media
-        mentions </a>
-      <ul>
-      {% assign _recent_media = site.in_the_media | reverse | slice:0,2 %}
-      {% for media_mention in _recent_media %}
-      <li><a class="media-card" href="{{ media_mention.link }}" target="_blank">
-        <h3>{{ media_mention.title }}</h3>
-        {% if media_mention.image %}
-        <p>Image Placeholder</p>
-        {% endif %}
-        <p>{{ media_mention.description }}</p>
-        </a></li>
-      {% endfor %}
-      </ul>
+        <div class="content-inner">
+          <h2 class="section-header">Recent Media Updates</h2>
+          <a href="{{ site.baseurl }}/in_the_media.html" class="click-for-more">Click here for all media
+            mentions </a>
+          <ul>
+          {% assign _recent_media = site.in_the_media | reverse | slice:0,2 %}
+          {% for media_mention in _recent_media %}
+          <li><a class="media-card" href="{{ media_mention.link }}" target="_blank">
+            <h3>{{ media_mention.title }}</h3>
+            {% if media_mention.image %}
+            <p>Image Placeholder</p>
+            {% endif %}
+            <p>{{ media_mention.description }}</p>
+            </a></li>
+          {% endfor %}
+          </ul>
+        </div>
+        <img src="img/logo_no_text.png" class="sidebar-bottom-img" width=64 />
       </div>
     </div>
   </div>

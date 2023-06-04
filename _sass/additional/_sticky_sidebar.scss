@@ -3,21 +3,30 @@
   position: -webkit-sticky;
   top: 64px;
   height: 1px;
+  .sidebar-bottom-img {
+    display: block;
+    margin: 16px auto 0 auto;
+  }
   @include media-breakpoint-down(lg) {
     position: relative;
     position: -webkit-relative;
     top: unset;
     height: auto;
+    .sidebar-bottom-img {
+      display: none;
+    }
   }
   .content {
-    border-left: 4px solid $main-color-3;
-    padding-left: 32px;
-    max-height: calc(100vh - 240px);
+    max-height: calc(100vh - 250px);
     overflow: scroll;
     h2 {
       margin-top: 0;
       padding-top: 0;
     }
+  }
+  .content-inner {
+    border-left: 4px solid $main-color-3;
+    padding-left: 32px;
   }
   &.pad-top {
     padding-top: 64px;
