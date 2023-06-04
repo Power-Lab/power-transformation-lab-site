@@ -2,6 +2,15 @@
 layout: page
 show_title: false
 ---
+<div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
+  <div class="hero-text">
+    <h1 style="background-color: rgba(0,0,0,0.2)">{{ page.title }}</h1>
+  </div>
+  {% include svg/down-arrow2-svgrepo-com.svg dark=page.dark_arrow %}
+</div>
+<div class="hero-spacer"></div>
+<script> {% include scripts/components/hero.js %}</script>
+
 <div id="team-container">
   <h2 class="section-header">Meet The Lab</h2>
   <div class="large-bio-container clearfix">

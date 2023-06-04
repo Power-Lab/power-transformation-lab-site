@@ -1,7 +1,7 @@
 ---
 layout: research
 title: Research Areas
-hero_image: img/light-bulb-blue-sky.jpg
+hero_image: img/hero_backgrounds/Research-page.jpg
 fallback_color: 536eb1
 ---
 

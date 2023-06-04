@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: hero_page
 title: Teaching
+hero_image: img/hero_backgrounds/Teaching-page.jpg
 ---
 
 
@@ -64,7 +65,7 @@ The course will introduce students to the theories and concepts that help explai
 
 #### Learning Objectives
 
-By the end of this class students will be familiar with a wide range of theories that help explain how “politics” shapes policy outcomes in many different types of political systems.  They will also have deeper knowledge of a wide range of energy and environmental policy domains.  They will be conversant in major policy debates, aware of the frontier arguments about the role of the state and the market in addressing policy failures, and able to articulate contrasting perspectives.  This course will also give students experience with debating key topics, making effective presentations and interventions, writing policy memos, and writing a fuller length research and policy paper.  
+By the end of this class students will be familiar with a wide range of theories that help explain how “politics” shapes policy outcomes in many different types of political systems.  They will also have deeper knowledge of a wide range of energy and environmental policy domains.  They will be conversant in major policy debates, aware of the frontier arguments about the role of the state and the market in addressing policy failures, and able to articulate contrasting perspectives.  This course will also give students experience with debating key topics, making effective presentations and interventions, writing policy memos, and writing a fuller length research and policy paper.
 
 
 

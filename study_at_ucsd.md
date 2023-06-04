@@ -1,6 +1,6 @@
 ---
 layout: hero_page
-hero_image: img/ucsd_campus_quad.png
+hero_image: img/hero_backgrounds/Study-at-UCSD-page.jpg
 title: Study @ UCSD
 ---
 
