@@ -16,7 +16,9 @@
     target=site.data.variables.default.page.show_tags
     source0=layout.show_tags source1=include.article.show_tags -%}
   {%- assign _show_tags = __return -%}
-  {%- if _show_tags and include.article.tags[0] -%}
+  {%- if include.force_hide_tags -%}
+    {%- assign _show_tags = false -%}
+  {%- elsif _show_tags and include.article.tags[0] -%}
     {%- assign _show_tags = true -%}
   {%- else -%}
     {%- assign _show_tags = false -%}

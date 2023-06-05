@@ -76,11 +76,17 @@
               <p><a href="{{ _article_url }}">{{ _locale_readmore }}</a></p>
             {%- endif -%}
           </div>
+          {%- if include.force_hide_tags -%}
+            {%- assign _force_hide_tags = true -%}
+          {%- else -%}
+            {%- assign _force_hide_tags = false -%}
+          {%- endif -%}
           {%- if include.show_info -%}
             {%- include snippets/assign.html target=site.data.variables.default.page.pageview
               source0=_article.pageview -%}
             {%- assign _show_pageview = __return -%}
-            {%- include article-info.html article=_article show_pageview=_show_pageview -%}
+            {%- include article-info.html article=_article
+            show_pageview=_show_pageview force_hide_tags=_force_hide_tags -%}
           {%- endif -%}
         </div>
       </article>
