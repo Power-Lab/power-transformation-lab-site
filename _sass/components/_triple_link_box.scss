@@ -52,6 +52,11 @@
     position: relative;
     box-shadow: inset 0 0 10000px rgba(0,0,0,0.6);
 
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 0;
+      height: 40vw;
+    }
+
     h3 {
       padding: 0 12px;
       width: 100%;
