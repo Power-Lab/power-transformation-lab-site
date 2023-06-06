@@ -14,14 +14,26 @@
   background-size: cover;
 
   .hero-text {
-    width: 100%;
+    //width: 100%;
 
-    // vertical centering
     position: absolute;
-    top: calc(50% - 100px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    // center positioning
+    // top: calc(50% - 100px);
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // text-align: center;
+
+    // bottom left positioning
+    bottom: 96px;
+    left: 96px;
+
+    // revert to center positioning on smaller screens
+    @include media-breakpoint-down(lg) {
+      top: calc(50% - 100px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 
     h1 {
       font-size: 5rem;
