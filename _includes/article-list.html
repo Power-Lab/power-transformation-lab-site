@@ -119,6 +119,9 @@
           <a itemprop="headline" class="item__header" href="{{ _article_url
             }}">{{ _article.archive_title_prefix }}{{ _article.title }}</a></div>
       </li>
+      {%- if forloop.last -%}
+            </ul></section>
+      {%- endif -%}
 
     {%- elsif include.type == 'grid' -%}
       {%- if include.article_type == "media_mentions" -%}
