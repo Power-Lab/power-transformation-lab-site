@@ -1,6 +1,6 @@
 ---
 layout: publications
-hero_image: img/possible_hero_photos/DSC_8642.JPG
+fallback_color: 658129
 title: Publications
 published: true
 ---
