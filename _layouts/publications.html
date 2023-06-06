@@ -2,10 +2,21 @@
 layout: hero_page
 ---
 <div class="layout__publications">
-{%- assign tags = "Refereed Journal Articles,Refereed Book Chapters and Other Publications,Working Papers and Reports,Code Releases,Posters" | split: "," -%}
-{%- include tags.html tags=tags pub_layout="true" -%}
-{{ content }}
+  {% include triple_link_box.html
+    box1 = "filter 1"
+    box2 = "filter 2"
+    box3 = "filter 3"
+    link1 = "filter1"
+    link2 = "filter2"
+    link3 = "filter3"
+  %}
+
+  {%- assign papers_list = site.posts | where_exp:"item","item.tags contains 'papers'" -%}
+  {% for article in papers_list %}
+  <h4 class="article-title">{{ article.title }}</h4>
+  <p class="citation">{{ article.subtitle }}</p>
+  {% endfor %}
 </div>
 <script>
-  {%- include scripts/publication_selections.js -%}
+{% include scripts/publications.js %}
 </script>

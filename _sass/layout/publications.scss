@@ -1,18 +1,9 @@
 .layout__publications {
-  h2 {
-    font-size: map-get($base, font-size-h2-xl)
+  .article-title {
+    font-size: 1.4rem;
   }
-  .site-tags {
-    margin-top: 32px;
-    .tag-button {
-      &:focus {
-        background-color: darken($main-color-3, 10);
-      }
-      @include clickable($text-color-3, $main-color-3, default, default, $text-color-2,$main-color-2, $text-color-2,$main-color-2);
-      box-sizing: border-box !important;
-    }
-  }
-  #download-cv {
-    text-align: center;
+  .citation {
+    margin-left: 32px;
+    font-size: 1rem;
   }
 }
