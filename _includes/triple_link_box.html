@@ -6,15 +6,30 @@
 {% endif %}
   <a class="box img-bg" href={{ include.link1 }} style="background-image:
     url({{ include.img_1 }});">
+    <div class="text-content">
     <h3>{{ include.box1 }}</h3>
+    {% if include.text1 %}
+    <p class="box-text">{{ include.text1 }}</p>
+    {% endif %}
+    </div>
   </a>
   <a class="box img-bg" href={{ include.link2 }} style="background-image:
   url({{ include.img_2 }});">
+    <div class="text-content">
     <h3>{{ include.box2 }}</h3>
+    {% if include.text2 %}
+    <p class="box-text">{{ include.text2 }}</p>
+    {% endif %}
+    </div>
   </a>
   <a class="box img-bg" href={{ include.link3 }} style="background-image:
   url({{ include.img_3 }})">
+    <div class="text-content">
     <h3>{{ include.box3 }}</h3>
+    {% if include.text3 %}
+    <p class="box-text">{{ include.text3 }}</p>
+    {% endif %}
+    </div>
   </a>
 </div>
 {% else %}
