@@ -1,6 +1,6 @@
 ---
 layout: research
-title: Research Areas
+title: Research
 hero_image: img/hero_backgrounds/Research-page.jpg
 fallback_color: 536eb1
 ---
