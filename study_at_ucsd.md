@@ -35,6 +35,26 @@ Advising on relevant thesis research and other research opportunities for course
 Undergraduates in [MAE][mae-bs] or across the school of engineering may inquire about participating in a research project. A minimum time commitment and high degree of motivation are required. Research can be for course credit, stipend, or hourly pay depending on the student’s preference and funding availability.
 
 **Desired programming language competencies: python, R, and/or julia**
+## School of Global Policy & Strategy
+
+### Masters degrees
+
+GPS offers a variety of [masters degrees][gps-masters]. The [admissions office][gps-admissions] will be better prepared to answer questions on the differences among the programs. A limited number of research assistantships may become available for GPS masters students on an ad-hoc basis.
+
+Interested students are highly encouraged to take relevant energy policy courses, including:
+- GPPS 428 (Winter, Davidson). Politics of Energy and Environmental Regulation
+- GPPA 472 (Fall, Martin). Latin American Environmental and Energy Policy
+- GPPS 473 (Fall, Herberg). Political Economy of Energy in Asia
+- GPPS 490 (Winter, Davidson). Energy and Environmental Policy in Asia
+
+For life tips on a career in energy policy, [Dan Kammen's website][kammen] is a good start.
+
+### Joint Ph.D. in Political Science and International Affairs
+
+The Department of Political Science and GPS offer a joint [Ph.D. in Political Science and International Affairs][gps-phd]. This prepares students for careers in political science, including a core curriculum shared with the political science Ph.D. degree.
+## Course schedules
+
+The UCSD Schedule of Classes is somewhat difficult to navigate, so here is a set of "quickview" scripts to find out when classes are typically taught and what your favorite profs are teaching: [ucsd-class-schedule-quickview][git-quickview]
 
 [mae]: http://www.ucsd.edu/catalog/courses/MAE.html
 [ece]: http://www.ucsd.edu/catalog/courses/ECE.html
@@ -50,3 +70,7 @@ Undergraduates in [MAE][mae-bs] or across the school of engineering may inquire 
 [ispo-funding]: https://ispo.ucsd.edu/advising/financial/scholarships-grants.html
 [caltech-funding]: https://www.gradoffice.caltech.edu/financialsupport/ExternalInternational
 
+[gps-masters]: http://gps.ucsd.edu/admissions/degrees-at-a-glance.html
+[gps-admissions]: http://gps.ucsd.edu/admissions/contact-admission.html
+[kammen]: http://kammen.berkeley.edu/advice.html
+[gps-phd]: https://polisci.ucsd.edu/grad/prospective-students/interdisciplinary-phd-program/index.html

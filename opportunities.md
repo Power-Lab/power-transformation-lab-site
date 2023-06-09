@@ -17,32 +17,10 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 - If you are a fellowship recipient with funding
 
 
-## School of Global Policy & Strategy
-
-### Masters degrees
-
-GPS offers a variety of [masters degrees][gps-masters]. The [admissions office][gps-admissions] will be better prepared to answer questions on the differences among the programs. A limited number of research assistantships may become available for GPS masters students on an ad-hoc basis.
-
-Interested students are highly encouraged to take relevant energy policy courses, including:
-- GPPS 428 (Winter, Davidson). Politics of Energy and Environmental Regulation
-- GPPA 472 (Fall, Martin). Latin American Environmental and Energy Policy
-- GPPS 473 (Fall, Herberg). Political Economy of Energy in Asia
-- GPPS 490 (Winter, Davidson). Energy and Environmental Policy in Asia
-
-For life tips on a career in energy policy, [Dan Kammen's website][kammen] is a good start.
-
-### Joint Ph.D. in Political Science and International Affairs
-
-The Department of Political Science and GPS offer a joint [Ph.D. in Political Science and International Affairs][gps-phd]. This prepares students for careers in political science, including a core curriculum shared with the political science Ph.D. degree.
-
 ## Power and Energy Systems @ UCSD
 
 The [Power and Energy Systems Group @ UCSD][ucsd-pes] is designed to integrate power and energy systems research/programs and enhance the community of power and energy systems researchers on campus. We facilitate collaborations among students and faculty across departments/centers, provide feedback to students' work through biweekly meetings, and provide graduate student career mentoring.
 
-
-## Course schedules
-
-The UCSD Schedule of Classes is somewhat difficult to navigate, so here is a set of "quickview" scripts to find out when classes are typically taught and what your favorite profs are teaching: [ucsd-class-schedule-quickview][git-quickview]
 
 ## Other Opportunities
 
