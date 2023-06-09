@@ -3,18 +3,38 @@ layout: hero_page
 ---
 <div class="layout__publications">
   {% include triple_link_box.html
-    box1 = "filter 1"
-    box2 = "filter 2"
-    box3 = "filter 3"
-    link1 = "filter1"
-    link2 = "filter2"
-    link3 = "filter3"
+    box1 = "Renewable energy planning"
+    box2 = "Power markets"
+    box3 = "Political economy"
+    link1 = "renewable_energy_planning"
+    link2 = "power_markets"
+    link3 = "political_economy"
   %}
+
+  <p><a id="show-all" href="">Show All</a></p>
 
   {%- assign papers_list = site.posts | where_exp:"item","item.tags contains 'papers'" -%}
   {% for article in papers_list %}
-  <h4 class="article-title">{{ article.title }}</h4>
-  <p class="citation">{{ article.subtitle }}</p>
+
+    {% assign category = "none" %}
+
+    {% assign renewable_energy_planning = article.tags | where_exp: "item", "item contains 'renewable_energy_planning'"%}
+    {% assign power_markets = article.tags | where_exp: "item", "item contains
+    'power_markets'" %}
+    {% assign political_economy = article.tags | where_exp: "item", "item contains 'political_economy'"%}
+
+    {% if renewable_energy_planning.size > 0 %}
+      {% assign category = "renewable_energy_planning" %}
+    {% elsif power_markets.size > 0 %}
+      {% assign category = "power_markets" %}
+    {% elsif political_economy.size > 0 %}
+      {% assign category = "political_economy" %}
+    {% endif %}
+
+    <div class="article-container" data-encode= "{{category}}">
+      <h4 class="article-title">{{ article.title }}</h4>
+      <p class="citation">{{ article.subtitle }}</p>
+    </div>
   {% endfor %}
 </div>
 <script>
