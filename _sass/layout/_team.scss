@@ -71,4 +71,23 @@
       margin-top: 0
     }
   }
+
+  .member-bio {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.8em;
+    max-height: 7.2em;
+    transition: max-height 300ms;
+  }
+
+  .member-bio.active {
+    display: block;
+    max-height: 9999px;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
 }

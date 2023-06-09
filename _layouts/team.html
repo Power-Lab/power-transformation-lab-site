@@ -26,7 +26,10 @@ show_title: false
         <img src={{ _member.img }} alt="Portrait of {{ _member.name }}">
       </div>
       {% endif %}
+      <div class="member-bio" data-encode="{{ _member.name | slugify }}">
       {{ _member.content }}
+      </div>
+      <p><a class="read-more" href="" data-encode="{{ _member.name | slugify }}">Read More</a></p>
     </div>
   {% endfor %}
   <div class="alumni bio cell cell--12 cell--md-6 cell--lg-4 content">
@@ -40,3 +43,4 @@ show_title: false
   </div>
   </div>
 </div>
+<script>{% include scripts/team.js %}</script>
