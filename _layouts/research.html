@@ -11,20 +11,11 @@ show_title: false
 {% else %}
 {% assign _bgcolor = "ffffff" %}
 {% endif %}
+{% include hero_main.html %}
 <div class="layout--research">
-  <div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
-    <div id="research-hero-text">
-      <h3>The Power Lab focuses on renewable energy resource planning, affordable and reliable low-carbon power markets, and the political economy of industrial policy and low-carbon transitions in firms.
-</h3>
-    </div>
-    {% include svg/down-arrow2-svgrepo-com.svg dark="true" %}
-  </div>
-  <div class="hero-spacer">
-  </div>
-<script> {% include scripts/components/hero.js %}</script>
 <div class="grid grid--p-3">
   <div class="cell cell--12 cell--lg-8" id="lab-focus">
-    <h1>Power Lab Research</h1>
+    <p>The Power Lab focuses on renewable energy resource planning, affordable and reliable low-carbon power markets, and the political economy of industrial policy and low-carbon transitions in firms.</p>
     {%- include triple_link_box.html -%}
     {{ content }}
   </div>
