@@ -2,6 +2,7 @@
 layout: hero_page
 title: Opportunities
 show_title: false
+long_title: true
 image: img/ucsd_campus_small.png
 hero_image: img/hero_backgrounds/Opportunities-page.jpg
 ---

@@ -43,6 +43,8 @@ set:
   the image cannot load
 - `banner_color`: An optional background color for the div containing the hero
   text, to create the effect of the hero text being a banner.
+- `long_title`: Optional boolean that makes the font size of the title smaller
+  on screen sizes between the `lg` and `md` breakpoints
 
 
 ## Adding posts

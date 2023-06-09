@@ -3,11 +3,16 @@
 {% else %}
 {% assign _bgcolor = "ffffff" %}
 {% endif %}
+{% if page.long_title %}
+{% assign long = "long" %}
+{% else %}
+{% assign long = "" %}
+{% endif %}
 <div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
   {% if page.banner_color %}
-  <div class="hero-text" style="background-color:{{ page.banner_color }}">
+  <div class="hero-text {{ long }}" style="background-color:{{ page.banner_color }}">
   {% else %}
-  <div class="hero-text">
+  <div class="hero-text {{ long }}">
   {% endif %}
     <h1>{{ page.title | upcase }}</h1>
   </div>
