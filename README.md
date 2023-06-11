@@ -51,6 +51,8 @@ set:
 Posts are added just like normal jekyll to "_posts". See `Features` for featured
 posts.
 
+### Archive Title Prefix
+
 Posts also have an optional "archive_title_prefix" variable that can be added
 which will change the title that appears in the `lab_updates` page (which
 uses the `archive` layout), but not
@@ -65,6 +67,22 @@ archive_title_prefix: "Update: "
 ```
 would have `Update: My Post Title` displayed in `lab_updates`, but would still
 just have `My Post Title` on top of the page if you clicked on it.
+
+### Publications page categories
+
+Any post with the tag `papers` will show up on the publications page, which has
+three buttons to sort the papers into the categories of "Renewable energy
+planning", "Power markets", and "Political economy".
+
+This sorting is accmoplished by adding one of the tags
+`renewable_energy_planning`, `power_markets`, or `political_economy` to the
+post. For example, the post
+`_posts/2022-06-03-low-carbon-transition-china-soe-china-energy.md` has tags
+`[papers, renewable_energy_planning]` so it will show up under the "Renewable
+energy planning" category.
+
+Currently, multiple categories is not supported.
+
 
 ## Adding team members
 To add a team member, add a new markdown file to the `_team` directory. They are
