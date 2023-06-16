@@ -9,9 +9,9 @@ show_title: false
   <div class="large-bio-container clearfix">
     {% assign _mainbio = site.team | first %}
     <div class="mainbio-header">
-      <h3>{{ _mainbio.name }}</h3>
       <img src={{ _mainbio.img }} alt="Portrait of {{ _mainbio.name }}">
     </div>
+    <h3>{{ _mainbio.name }}</h3>
     {{ _mainbio.content }}
   </div>
   {% assign _non_alumni = site.team | where: 'alumni', nil %}
