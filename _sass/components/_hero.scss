@@ -13,6 +13,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  // temporary safari fix
+  @supports (-webkit-overflow-scrolling: touch) {
+    @include media-breakpoint-down(lg) {
+      background-attachment: scroll;
+    }
+  }
+
   .hero-text {
 
     position: absolute;
