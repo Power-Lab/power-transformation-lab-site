@@ -40,4 +40,57 @@
       display: none
     }
   }
+
+  #bottom-hero-spacer {
+    width: 1px;
+    height: 700px;
+    #bottom-hero {
+      position: absolute;
+      width: 100vw;
+      height: 600px;
+      left: 0;
+      bottom: 165px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #e5eaf4;
+      @include media-breakpoint-down(lg) {
+        background-size: cover;
+      }
+
+      .text-container {
+        display: block;
+        font-family: "Josefin Sans",sans-serif;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        background-color: rgba(107, 131, 185, 0.3);
+        text-align: center;
+        padding: 36px 0;
+        h2 {
+          color: $text-color-1;
+          font-size: 2.5rem;
+          font-weight: 700;
+          margin-top: 0;
+          padding-top: 8px;
+          @include media-breakpoint-down(md) {
+            font-size: 2rem;
+          }
+        }
+        p {
+          color: $text-color-1;
+          font-size: 1.8rem;
+          font-weight: 600;
+          @include media-breakpoint-down(md) {
+            font-size: 1.5rem;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
