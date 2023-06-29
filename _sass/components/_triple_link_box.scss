@@ -70,13 +70,31 @@
       text-align: center;
       font-size: map-get($base, font-size-h2-xl);
       @include media-breakpoint-down(lg) {
-        font-size: 2.25rem;
+        font-size: 3.5rem;
+        text-align: left;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-left: 22px;
+        line-height: 0.8;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.5rem;
       }
     }
 
-    .box-text {
+    p {
       padding: 0 12px;
       font-size: 1.1rem;
+      @include media-breakpoint-down(lg) {
+        text-align: left;
+        font-size: 1.4rem;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 24px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 1.2rem;
+      }
     }
 
     &:hover {
