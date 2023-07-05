@@ -1,3 +1,18 @@
 .layout--about {
   margin-top: 36px;
+  .triple-box-container .box {
+    h3 {
+      background-color: rgba(252,175,23,0.4);
+    }
+    &:first-of-type {
+      h3 {
+        background-color: rgba(118,149,205,0.4);
+      }
+    }
+    &:last-of-type {
+      h3 {
+        background-color: rgba(101,129,41,0.4);
+      }
+    }
+  }
 }
