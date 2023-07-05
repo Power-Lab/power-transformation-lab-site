@@ -2,6 +2,7 @@
 title: Lab Updates
 layout: hero_page
 fallback_color: 7695ce
+hero_image: img/hero_backgrounds/Lab-Updates.jpg
 ---
 <div class="layout--archive js-all">
   {%- include tags.html -%}
