@@ -27,17 +27,19 @@
   p {
     overflow: auto;
   }
-  #mini-logo {
+  #mini-logo-container {
+    display: inline-block;
     float: right;
     width: 34%;
-    padding: 0 100px 100px 100px;
     @include media-breakpoint-down(lg) {
-      wdith: 30vw;
-      padding-left: 12px;
-    }
-    @include media-breakpoint-down(md) {
       display: none
     }
+  }
+  #mini-logo {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    max-width: 200px;
   }
 
   #bottom-hero-spacer {
