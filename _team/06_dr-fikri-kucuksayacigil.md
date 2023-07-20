@@ -1,6 +1,7 @@
 ---
 img: img/team/06_dr-fikri-kucuksayacigil.png
 name: Dr. Fikri Kucuksayacigil
+alumni: true
 ---
 
 
