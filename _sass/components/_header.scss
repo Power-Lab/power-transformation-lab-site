@@ -176,6 +176,7 @@
     .dropdown-item {
       padding: 4px;
       display: block;
+      white-space: nowrap;
       @include link-colors($text-color-1, $text-color-1);
       &:focus-visible {
         border: 2px solid black;
