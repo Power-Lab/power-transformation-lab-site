@@ -2,7 +2,7 @@
 layout: paper
 title: 'Politics of Power in China: Institutional Bottlenecks to Reducing Wind Curtailment Through Improved Transmission'
 subtitle: Davidson, M. R. (2013). International Association for Energy Economics (IAEE) Energy Forum.
-tags: [papers]
+tags: [papers, political_economy, renewable_energy_planning]
 
 ---
 

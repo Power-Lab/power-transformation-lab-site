@@ -2,7 +2,7 @@
 layout: paper
 title: "Technology Integration in China’s Electricity System: Central Targets and Local Challenges"
 subtitle: "Davidson, M. R. (2019). In <i>Policy, Regulation and Innovation in China's Electricity and Telecom Industries.</i>"
-tags: [papers]
+tags: [papers, political_economy]
 
 ---
 

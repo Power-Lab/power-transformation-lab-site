@@ -2,7 +2,7 @@
 layout: paper
 title: "Policies and Institutions to Support Carbon Neutrality in China by 2060"
 subtitle: "Davidson, M., Karplus, V. J., Zhang, D., & Zhang, X. <i>Economics of Energy & Environmental Policy</i>."
-tags: [papers]
+tags: [papers, political_economy, power_markets]
 image: /img/wind_sm.jpg
 
 ---

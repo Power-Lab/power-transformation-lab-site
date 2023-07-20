@@ -2,7 +2,7 @@
 layout: paper
 title: 'Toward a Political Economy Framework for Wind Integration: Does China Break the Mould?'
 subtitle: 'Davidson, M. R., Kahrl, F., and Karplus, V. J. (2016). In <i>The Political Economy of Clean Energy Transitions.</i>'
-tags: [papers]
+tags: [papers, political_economy, renewable_energy_planning]
 
 ---
 

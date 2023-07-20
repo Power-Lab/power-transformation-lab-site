@@ -2,7 +2,7 @@
 layout: paper
 title: "The impact of COVID-19 on the power sector in Karnataka, India"
 subtitle: "Iychettira, K., Hou, X., Davidson, M., & Urpelainen, J. (2020). <i>Initiative for Sustainable Energy Policy</i>."
-tags: [papers]
+tags: [papers, power_markets]
 image: /img/india-transmission-tower.png
 
 ---
