@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: 'Toward a Political Economy Framework for Wind Integration: Does China Break the Mould?'
-subtitle: Davidson, M. R., Kahrl, F., and Karplus, V. J. (2016). UNU-WIDER.
+subtitle: Davidson, M. R., Kahrl, F., and Karplus, V. J. UNU-WIDER.
 tags: [papers, political_economy, renewable_energy_planning]
 
 ---

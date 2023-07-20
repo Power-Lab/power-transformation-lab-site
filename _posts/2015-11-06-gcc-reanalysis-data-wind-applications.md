@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Re-Analysis Data for Fine Temporal Resolution Wind Power Estimation: A Comparison of Boundary Layer Parameterizations"
-subtitle: Davidson, M. R., and Qi, T. (2015). Graduate Climate Conference, Woods Hole Oceanographic Institution. Woods Hole, MA.
+subtitle: Davidson, M. R., and Qi, T. Graduate Climate Conference, Woods Hole Oceanographic Institution. Woods Hole, MA.
 tags: [papers, renewable_energy_planning]
 
 ---
