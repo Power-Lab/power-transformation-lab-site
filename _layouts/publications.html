@@ -32,7 +32,7 @@ layout: hero_page
     {% endif %}
 
     <div class="article-container" data-encode= "{{category}}">
-      <h4 class="article-title">{{ article.title }}</h4>
+      <h4 class="article-title">{{ article.title }} ({{ article.date | date: "%Y" }})</h4>
       <p class="citation">{{ article.subtitle }}</p>
     </div>
   {% endfor %}
