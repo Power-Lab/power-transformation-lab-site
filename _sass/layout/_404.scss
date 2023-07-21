@@ -1,14 +1,30 @@
 .layout--404 {
-  .sign {
-    display: table;
-    margin: map-get($spacers, 4) auto;
-    margin-top: map-get($spacers, 5);
-    h1 {
-      font-size: map-get($base, font-size-xl) * 4;
-      line-height: 1;
-    }
-    p {
-      font-size: map-get($base, font-size-xl) * 1.2;
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .text-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+  }
+  .messagebox p {
+    font-size: 1.8rem;
+  }
+  .grid-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-gap: 8px;
+    a {
+      @include link-colors($text-color-1, $text-color-1);
+      background-color: $main-color-3;
+      padding: 12px;
+      text-align: center;
     }
   }
 }

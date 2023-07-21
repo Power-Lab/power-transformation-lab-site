@@ -4,9 +4,29 @@ title: 404
 show_title: false
 ---
 <div class="layout--404">
-  <div class="sign">
-    <h1>404</h1>
-    <p>Page not found :(</p>
+  <div class="hero-container">
+    <div class="content">
+
+      <div class="text-container">
+        <div>
+          <h1>Error 404</h1>
+        </div>
+        <div class="messagebox">
+          <p>We apologize for the disconnect!</p>
+          <p>It appears that the link you have requested is not available.</p>
+          <p>Click below to navigate to other pages.</p>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/research">Research</a>
+        <a href="{{ site.baseurl }}/news">News</a>
+        <a href="{{ site.baseurl }}/lab_updates">Lab Updates</a>
+        <a href="{{ site.baseurl }}/about">About</a>
+        <a href="{{ site.baseurl }}/contact">Contact</a>
+      </div>
+    </div>
   </div>
 </div>
 
