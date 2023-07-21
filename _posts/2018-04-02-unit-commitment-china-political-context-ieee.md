@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Modeling Unit Commitment in Political Context: Case of China's Partially Restructured Electricity Sector"
-subtitle: Davidson, M. R., Pérez-Arriaga, J. I. <i>IEEE Transactions on Power Systems<i/>.
+subtitle: Davidson, M. R., Pérez-Arriaga, J. I. <i>IEEE Transactions on Power Systems</i>.
 tags: [papers, power_markets, political_economy]
 
 ---
