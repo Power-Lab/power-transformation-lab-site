@@ -18,7 +18,7 @@
 ##############################
 text_skin: custom # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://pwrlab.org
 baseurl : /power-transformation-lab-site # does not include hostname
 title   : Power Transformation Lab
 description: > # this means to ignore newlines until "Language & timezone"
@@ -253,3 +253,4 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-seo-tag
+  - jekyll-target-blank
