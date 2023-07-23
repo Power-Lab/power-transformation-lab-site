@@ -69,6 +69,7 @@ would have `Update: My Post Title` displayed in `lab_updates`, but would still
 just have `My Post Title` on top of the page if you clicked on it.
 
 ### Publications page categories
+#### Paper Topic
 
 Any post with the tag `papers` will show up on the publications page, which has
 three buttons to sort the papers into the categories of "Renewable energy
@@ -81,7 +82,18 @@ post. For example, the post
 `[papers, renewable_energy_planning]` so it will show up under the "Renewable
 energy planning" category.
 
-Currently, multiple categories is not supported.
+Currently, multiple categories is not supported. Papers without one of these
+tags will appear when all are shown but not under any category.
+
+#### Paper Type
+In a similar manner to above, papers are categorized by type into "Journal
+Articles", "Refereed Book Chapters and Other Publications", "Working Papers and
+Reports", and "Posters".
+
+To categorize posts into these types, the tags `journal_article`,
+`refereed_and_other`, `working_and_reports`, and `posters` should be used.
+
+Untagged papers will not appear in any section.
 
 
 ## Adding team members
