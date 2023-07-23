@@ -2,7 +2,7 @@
 layout: post
 title: Winner, Social Sciences Category, 2017 AAAS Student Poster Competition
 subtitle: "Hidden Costs of Technology Development by the Plan: Case of China's Coal Fleet Upgrading"
-tags:
+tags: papers, posters
 
 ---
 

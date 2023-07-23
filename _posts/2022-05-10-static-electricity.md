@@ -2,7 +2,7 @@
 layout: paper
 title: "Static Electricity: Institutional and Ideational Barriers to China’s Market Reforms"
 subtitle: "Davidson, M. R., Pearson, M. M. <i>Studies in Comparative International Development</i>."
-tags: [papers, power_markets, political_economy]
+tags: [papers, power_markets, political_economy, journal_article]
 image: /img/coal-plant-sm.jpg
 
 ---

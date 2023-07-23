@@ -2,7 +2,7 @@
 layout: paper
 title: "规避中国电力改革中的隐患"
 subtitle: "Davidson, M. R. and Ignacio Pérez-Arriaga. <i>The Energy Journal</i>."
-tags: [papers, power_markets]
+tags: [papers, power_markets, journal_article]
 image: /img/pitfalls_yn_dax_vol_price-sm.png
 
 ---

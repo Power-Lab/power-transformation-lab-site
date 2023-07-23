@@ -2,7 +2,7 @@
 layout: post
 title: "Creating Markets for Wind Electricity in China: Case Studies in Energy Policy and Regulation"
 subtitle: Dissertation
-tags: [papers, renewable_energy_planning, power_markets, political_economy]
+tags: [papers, renewable_energy_planning, power_markets, political_economy, refereed_and_other]
 
 ---
 

@@ -2,7 +2,7 @@
 layout: paper
 title: "The Challenges of Coal Phaseout: Coal Plant Development and Foreign Finance in Indonesia and Vietnam"
 subtitle: "Gao, X., Davidson, M., Busby, J., Shearer, C., Eisenman, J. <i>Global Environmental Politics</i>."
-tags: [papers, political_economy]
+tags: [papers, political_economy, journal_article]
 image: /img/coal-plant-sm.jpg
 
 ---

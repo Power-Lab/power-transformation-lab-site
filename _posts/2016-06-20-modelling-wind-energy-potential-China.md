@@ -2,7 +2,7 @@
 layout: paper
 title: Modelling the potential for wind energy integration on China’s coal-heavy electricity grid
 subtitle: Davidson, M. R., Zhang, D., Xiong, W., Zhang, X., and Karplus, V. J. Nature Energy.
-tags: [papers, renewable_energy_planning]
+tags: [papers, renewable_energy_planning, journal_article]
 
 ---
 

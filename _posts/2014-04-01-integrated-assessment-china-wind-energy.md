@@ -2,7 +2,7 @@
 layout: paper
 title: An Integrated Assessment of China’s Wind Energy Potential
 subtitle: Zhang, D., Davidson, M. R., Gunturu, B., Zhang, X., and Karplus, V. J. MIT Joint Program on the Science and Policy of Global Change.
-tags: [papers, renewable_energy_planning]
+tags: [papers, renewable_energy_planning, working_and_reports]
 
 ---
 

@@ -2,7 +2,7 @@
 layout: paper
 title: "Avoiding Pitfalls in China’s Electricity Sector Reforms"
 subtitle: "Davidson, M. R. and Ignacio Pérez-Arriaga. <i>The Energy Journal</i>."
-tags: [papers, power_markets]
+tags: [papers, power_markets, journal_article]
 image: /img/pitfalls_yn_dax_vol_price-sm.png
 
 ---

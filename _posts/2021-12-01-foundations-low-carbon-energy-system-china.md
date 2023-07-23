@@ -2,7 +2,7 @@
 layout: paper
 title: "Foundations for a Low-Carbon Energy System in China"
 subtitle: "Lee, H., Schrag, D. P., Bunn, M., Davidson, M., Peng, W., Wang, P., & Mao, Z. <i>Cambridge University Press</i>."
-tags: [papers, political_economy, power_markets, renewable_energy_planning]
+tags: [papers, political_economy, power_markets, renewable_energy_planning, refereed_and_other]
 image: https://assets.cambridge.org/97811088/42389/cover/9781108842389.jpg
 
 ---

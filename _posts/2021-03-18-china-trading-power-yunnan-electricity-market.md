@@ -2,7 +2,7 @@
 layout: paper
 title: "China Trading Power: Improving Environmental and Economic Efficiency of Yunnan’s Electricity Market"
 subtitle: "Liu, Shuangquan and Michael Davidson. <i>Harvard Kennedy School Belfer Center for Science and International Affairs</i>."
-tags: [papers, power_markets]
+tags: [papers, power_markets, working_and_reports]
 image: /img/Baihetan.jpeg
 
 ---

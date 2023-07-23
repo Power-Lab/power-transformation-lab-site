@@ -2,7 +2,7 @@
 layout: paper
 title: "The Role of Trade in Addressing Climate Change: Recommendations for Policies and Practices"
 subtitle: "Bowen, R., Broz, J. L., Burney, J., Costello, C., Davidson, M. R., Li, H., & Rauch, J. E. <i>UC San Diego Center for Commerce and Diplomacy Task Force on Climate and Trade</i>."
-tags: [papers, political_economy]
+tags: [papers, political_economy, working_and_reports]
 image: https://ccd.ucsd.edu/_images/misc/logo_ccd_v2.png
 
 ---

@@ -2,7 +2,7 @@
 layout: paper
 title: "China’s Power Outage: The Real Reasons Behind Beijing’s Energy Crisis"
 subtitle: "Davidson, M. <i>Foreign Affairs</i>."
-tags: [papers, power_markets, political_economy]
+tags: [papers, power_markets, political_economy, refereed_and_other]
 image: /img/coal-plant-sm.jpg
 
 ---

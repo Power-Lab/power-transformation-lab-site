@@ -2,7 +2,7 @@
 layout: paper
 title: "中国电力交易：提升云南电力市场的环境与经济效益"
 subtitle: "Liu, Shuangquan and Michael Davidson. <i>Harvard Kennedy School Belfer Center for Science and International Affairs</i>."
-tags: [papers, power_markets]
+tags: [papers, power_markets, working_and_reports]
 image: /img/Baihetan.jpeg
 
 ---
