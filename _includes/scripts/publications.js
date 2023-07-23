@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     box.addEventListener("click", e => {
       e.preventDefault()
       document.querySelectorAll("div.article-container").forEach(div => {
-        if (div.getAttribute("data-encode") == filterTitle) {
+        if (div.getAttribute("data-encode-topic") == filterTitle) {
           div.style.display = "block";
         } else {
           div.style.display = "none"

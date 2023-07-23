@@ -15,4 +15,9 @@
     box-shadow: 6px 6px 10px 0px rgba(0,0,0,.3);
     font-family: "Josefin Sans", sans-serif
   }
+
+  .section-header {
+    border-left: 6px solid $main-color-3;
+    padding: 8px 12px;
+  }
 }

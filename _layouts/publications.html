@@ -14,28 +14,23 @@ layout: hero_page
   <p><a id="show-all" href="">Show All</a></p>
 
   {%- assign papers_list = site.posts | where_exp:"item","item.tags contains 'papers'" -%}
-  {% for article in papers_list %}
 
-    {% assign category = "none" %}
+  {%- assign journal_articles_list = papers_list | where_exp:"item","item.tags contains 'journal_article'" -%}
+  <h2 class="section-header">Journal Articles</h2>
+  {%- include publications_section.html article_list = journal_articles_list -%}
 
-    {% assign renewable_energy_planning = article.tags | where_exp: "item", "item contains 'renewable_energy_planning'"%}
-    {% assign power_markets = article.tags | where_exp: "item", "item contains
-    'power_markets'" %}
-    {% assign political_economy = article.tags | where_exp: "item", "item contains 'political_economy'"%}
+  {%- assign refereed_other_list = papers_list | where_exp:"item","item.tags contains 'refereed_and_other'" -%}
+  <h2 class="section-header">Refereed Book Chapters and Other Publications</h2>
+  {%- include publications_section.html article_list = refereed_other_list -%}
 
-    {% if renewable_energy_planning.size > 0 %}
-      {% assign category = "renewable_energy_planning" %}
-    {% elsif power_markets.size > 0 %}
-      {% assign category = "power_markets" %}
-    {% elsif political_economy.size > 0 %}
-      {% assign category = "political_economy" %}
-    {% endif %}
+  {%- assign working_reports_list = papers_list | where_exp:"item","item.tags contains 'working_and_reports'" -%}
+  <h2 class="section-header">Working Papers and Reports</h2>
+  {%- include publications_section.html article_list = working_reports_list -%}
 
-    <div class="article-container" data-encode= "{{category}}">
-      <h4 class="article-title">{{ article.title }} ({{ article.date | date: "%Y" }})</h4>
-      <p class="citation">{{ article.subtitle }}</p>
-    </div>
-  {% endfor %}
+  {%- assign posters_list = papers_list | where_exp:"item","item.tags contains 'posters'" -%}
+  <h2 class="section-header">Posters</h2>
+  {%- include publications_section.html article_list = posters_list -%}
+
 </div>
 <script>
 {% include scripts/publications.js %}
