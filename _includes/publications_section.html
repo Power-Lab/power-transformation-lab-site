@@ -1,0 +1,23 @@
+{% for article in include.article_list %}
+
+  {% assign topic = "none" %}
+
+  {% assign renewable_energy_planning = article.tags | where_exp: "item", "item contains 'renewable_energy_planning'"%}
+  {% assign power_markets = article.tags | where_exp: "item", "item contains
+  'power_markets'" %}
+  {% assign political_economy = article.tags | where_exp: "item", "item contains 'political_economy'"%}
+
+  {% if renewable_energy_planning.size > 0 %}
+    {% assign topic = "renewable_energy_planning" %}
+  {% elsif power_markets.size > 0 %}
+    {% assign topic = "power_markets" %}
+  {% elsif political_economy.size > 0 %}
+    {% assign topic = "political_economy" %}
+  {% endif %}
+
+  <div class="article-container" data-encode-topic="{{topic}}"
+    data-encode-type="{{type}}">
+    <h4 class="article-title">{{ article.title }} ({{ article.date | date: "%Y" }})</h4>
+    <p class="citation">{{ article.subtitle }}</p>
+  </div>
+{% endfor %}

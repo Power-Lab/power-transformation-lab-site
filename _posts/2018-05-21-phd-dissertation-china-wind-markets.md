@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating Markets for Wind Electricity in China: Case Studies in Energy Policy and Regulation"
-subtitle: Dissertation
+subtitle: "Davidson, M.R. (2018). <i>Creating Markets for Wind Electricity in China: Case Studies in Energy Policy and Regulation</i> (Ph.D. Thesis). Massachusetts Institute of Technology."
 tags: [papers, renewable_energy_planning, power_markets, political_economy, refereed_and_other]
 
 ---
