@@ -2,7 +2,7 @@
 layout: paper
 title: "Renewable Energy Pathways to Carbon Neutrality in China"
 subtitle: "California-China Climate Institute, Power Transformation Lab, Institute of Energy, Environment and Economy"
-tags: [papers, political_economy]
+tags: [papers, political_economy, featured]
 image: /img/wind_sm.jpg
 
 ---

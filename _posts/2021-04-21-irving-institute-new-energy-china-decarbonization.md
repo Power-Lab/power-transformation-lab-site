@@ -2,7 +2,6 @@
 layout: post
 title: "Carbon Neutrality in China: What's Behind the Numbers?"
 subtitle: "New Energy: Conversations with Early-Career Energy Researchers | Irving Institute, Dartmouth"
-tags: featured
 image: /img/China_transmission.png
 youtubeId: GTxYKvoXuRw
 excerpt_separator: <!--more-->

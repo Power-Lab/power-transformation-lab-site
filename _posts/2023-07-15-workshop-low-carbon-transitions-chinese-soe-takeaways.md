@@ -2,14 +2,12 @@
 layout: paper
 title: "Workshop on Low-Carbon Transitions in Chinese State-Owned Enterprises: Six Key Take-Aways"
 subtitle: "UC San Diego 21st Century China Center, Power Transformation Lab"
-tags: [papers, political_economy]
+tags: [papers, political_economy, featured]
 image: /img/wind_sm.jpg
 
 ---
 
-These takeaways represent significant points made during the discussion at the ”Workshop on Low-Carbon
-Transitions in Chinese SOEs” held at UC San Diego on February 23-24, 2023. They are not consensus
-observations.
+These takeaways represent significant points made during the discussion at the ”Workshop on Low-Carbon Transitions in Chinese SOEs” held at UC San Diego on February 23-24, 2023. They are not consensus observations.
 
 [Download Publication](https://drive.google.com/file/d/1Tic1KEfz10yH50yiWGksMc8XqmxiPog7/view?usp=sharing
 )

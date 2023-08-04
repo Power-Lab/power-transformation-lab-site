@@ -2,7 +2,7 @@
 layout: paper
 title: "Hard to Say Goodbye: South Korea, Japan, and China as the Last Lenders for Coal"
 subtitle: "Davidson, M., Gao, X., Busby, J., Shearer, C., Eisenman, J. <i>Environmental Politics</i>."
-tags: [papers, political_economy]
+tags: [papers, political_economy, featured]
 image: /img/coal-plant-sm.jpg
 
 ---
