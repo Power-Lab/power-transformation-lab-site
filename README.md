@@ -139,3 +139,12 @@ Featured media mentions will appear on the "In The Media" page, as three large i
 It is required to set an `img` in the front-matter as well. The image can be
 from locally within the repo or an externally hosted image.
 Currently, featured media mentions do *not* appear on the News page - the News page will list the most recent ones.
+
+## Jekyll-admin
+The `jekyll-admin` plugin is installed, which means after setting up the
+development environment and running `bundle exec jekyll serve`, there is a
+useful admin console hosted at `localhost:4000/admin`. This makes it easy to
+view, edit, and add/delete posts, media mentions, and team members. The admin
+console is only run locally and is not hosted in production.
+
+More information can be found at the [jekyll-admin repo](https://github.com/jekyll/jekyll-admin).
