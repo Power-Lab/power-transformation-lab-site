@@ -47,6 +47,12 @@
       }
     }
 
+    @include media-breakpoint-down(md) {
+      &.long h1 {
+        font-size: 2rem;
+      }
+    }
+
     h1 {
       font-size: 5rem;
       font-weight: 700;
