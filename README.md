@@ -27,6 +27,8 @@ accessible via the navigation bar.
 | Study At UCSD| `/study_at_ucsd.html` | `study_at_ucsd.md` |
 | Contact| `/contact.html` | `contact.md` |
 
+Additionally, a 404 page is located at "404.html".
+
 
 ### Hero pages
 

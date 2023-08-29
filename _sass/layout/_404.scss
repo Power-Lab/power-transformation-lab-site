@@ -13,6 +13,9 @@
   }
   .messagebox p {
     font-size: 1.8rem;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.3rem;
+    }
   }
   .grid-container {
     margin-top: 24px;
@@ -25,6 +28,10 @@
       background-color: $main-color-3;
       padding: 12px;
       text-align: center;
+    }
+    @include media-breakpoint-down(lg) {
+      grid-template-rows: repeat(6, auto);
+      grid-template-columns: auto;
     }
   }
 }
