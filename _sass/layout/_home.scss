@@ -27,6 +27,10 @@
   p {
     overflow: auto;
   }
+  .body-text {
+    text-align: justify;
+    text-justify: auto;
+  }
   #mini-logo-container {
     display: inline-block;
     float: right;
