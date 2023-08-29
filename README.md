@@ -42,9 +42,10 @@ background image. Additionally, there are two optional variables that can be
 set:
 
 - `fallback_color`: A fallback color to use for the background in case
-  the image cannot load
+  the image cannot load. This is in `rrggbb` format, notably without the `#`.
 - `banner_color`: An optional background color for the div containing the hero
-  text, to create the effect of the hero text being a banner.
+  text, to create the effect of the hero text being a banner. This color is in
+  `#rrggbb` format.
 - `long_title`: Optional boolean that makes the font size of the title smaller
   on screen sizes between the `lg` and `md` breakpoints
 
@@ -73,7 +74,7 @@ just have `My Post Title` on top of the page if you clicked on it.
 ### Publications page categories
 #### Paper Topic
 
-Any post with the tag `papers` will show up on the publications page, which has
+Any post with the tag `papers` will show up on the "Publications" page, which has
 three buttons to sort the papers into the categories of "Renewable energy
 planning", "Power markets", and "Political economy".
 
@@ -84,7 +85,7 @@ post. For example, the post
 `[papers, renewable_energy_planning]` so it will show up under the "Renewable
 energy planning" category.
 
-Currently, multiple categories is not supported. Papers without one of these
+Currently, having multiple categories for a single paper is not supported. Papers without any of these
 tags will appear when all are shown but not under any category.
 
 #### Paper Type
@@ -95,38 +96,46 @@ Reports", and "Posters".
 To categorize posts into these types, the tags `journal_article`,
 `refereed_and_other`, `working_and_reports`, and `posters` should be used.
 
-Untagged papers will not appear in any section.
+Currently, papers without any of these tags will not appear in any section.
 
 
 ## Adding team members
 To add a team member, add a new markdown file to the `_team` directory. They are
 listed on the team page alphabetically by filename, so currently they are prefixed with a
 2-digit number. It would be possible to force a custom order on the files by
-configuring the `team` collection in `config.md`. [See here for details](https://jekyllrb.com/docs/collections/#custom-sorting-of-documents)
+configuring the `team` collection in `config.md`. [See here for details.](https://jekyllrb.com/docs/collections/#custom-sorting-of-documents)
 
 The front matter is laid out as follows:
 - `name`: Required, self-explanatory
 - `img`: Portrait or some other picture that will be displayed above their name.
   Optional.
-- `alumni`: If set to `true`, this will not display on the page. This behavior
-  may change in the future.
+- `alumni`: If set to `true`, the name will be shown in a list at the bottom of
+  the page instead of the image and bio being displayed normally.
 
-Finally, the content of the md file will be the person's bio.
+Finally, the main content section of the file will be the person's bio.
 
 ## Adding media mentions
 Add a markdown file to `in_the_media/`. They are sorted alphabetically also,
-with the 3 last ones being displayed as recent on the news page. The front
-matter is very simple: it has the variables `title`, `link`, and `description` (all 3 are required). Images should be used for featured media mentions. See `Features`.
+with the 3 last ones being displayed as recent on the news page, so it is
+recommended to prepend the date to each one.
+
+All of the information in a media mention file is contained within the front
+matter. The four required fields are `title`, `link`, `description`, and `date`.
+The date should be in standard Jekyll `yyyy-mm-dd` format.
+
 
 ## Featured items (media mentions and lab posts)
-For media mentions and posts, three of them should be selected to be featured.
-If more than 3 are chosen then some will be lost. Featured posts will appear as
-large items on the main "Lab updates" page. Featured media mentions will appear
-on the "media mentions" page, again as three large item , with all media mentions
-listed below them. Currently, the sidebar on "Lab updates" displays the most
-recent media mentions instead of the featured ones; this behavior may change in
-the future.
 
-Featured items most have both `featured: true` in the front-matter and also a
-`feature-img` variable that specifies the path to the image that should be
-displayed with it.
+To feature a media mention or lab post, add `featured: true` to the front-matter.
+
+### Posts
+Featured posts will appear in the "Featured Lab Updates" section on the News
+page. There is no limit to how many posts can be featured. They will be
+displayed with the most recent on top.
+
+### Media Mentions
+
+Featured media mentions will appear on the "In The Media" page, as three large items, with all media mentions listed below them.
+It is required to set an `img` in the front-matter as well. The image can be
+from locally within the repo or an externally hosted image.
+Currently, featured media mentions do *not* appear on the News page - the News page will list the most recent ones.
