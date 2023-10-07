@@ -1,6 +1,7 @@
 ---
 img: img/team/05_nikki-emam.png
 name: Nikki Emam
+alumni: true
 ---
 
 

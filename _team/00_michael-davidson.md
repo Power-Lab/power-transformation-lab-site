@@ -11,7 +11,7 @@ Previously, I was a post-doctoral research fellow in the [Harvard Kennedy School
 
 [**Download CV**](https://drive.google.com/file/d/1K7R3tf54fY_FYJubj97W3yP5Oazb3Fci/view?usp=sharing)
 
-My office locations (when on-campus activities resume):
+My office locations:
 - MAE: [EBUII][ebuii]-465 (4th floor)
 - GPS: [RBC][rbc]-1414 (4th floor)
 

@@ -1,6 +1,7 @@
 ---
 img: img/team/12_dinah-shi.png
 name: Dinah Shi
+alumni: true
 ---
 
 

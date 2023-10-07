@@ -9,7 +9,9 @@ hero_image: img/hero_backgrounds/Teaching-page.jpg
 
 Visit the [UCSD course schedule][ucsd-courseschedule] to see current offerings.
 
-But since the UCSD Schedule of Classes is somewhat difficult to navigate, here is a set of "quickview" scripts to find out when classes are typically taught and what your favorite profs teach: [ucsd-class-schedule-quickview][git-quickview]
+But since the UCSD Schedule of Classes is somewhat difficult to navigate, here is a set of "quickview" scripts to find out when classes are typically taught and what your favorite profs teach: [ucsd-class-schedule-quickview][git-quickview].
+
+Below are courses taught by Prof. Davidson.
 
 ### MAE 107: Computational Methods in Engineering
 
@@ -36,7 +38,7 @@ Apply basic techniques to speed up computational times based on what is happenin
 
 
 
-### MAE 207: Electric Power Systems Modeling
+### MAE 243: Electric Power Systems Modeling
 
 #### Catalog Description
 
@@ -54,7 +56,7 @@ The course will cover the following canonical electric power systems models:
 4.	DC Optimal Power Flow
 5.	Advanced Capacity Expansion Planning
 
-Course materials and sample code are available publicly at the [course repo](https://github.com/east-winds/power-systems-optimization). These are being jointly developed with **[Prof. Jesse Jenkins](https://mae.princeton.edu/people/faculty/jenkins)** for use also in a course at Princeton University.
+Course materials and sample code are available publicly at the [course repo][mae-243-repo]. These are being jointly developed with **[Prof. Jesse Jenkins](https://mae.princeton.edu/people/faculty/jenkins)** for use also in a course at Princeton University.
 
 
 ### GPPS 428: The Politics of Energy and Environmental Policy
@@ -96,3 +98,4 @@ The broad aim of the course is for students to be able, in key Asian contexts, t
 
 [ucsd-courseschedule]: https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudentResult.htm
 [git-quickview]: https://github.com/east-winds/ucsd-class-schedule-quickview
+[mae-243-repo]: https://github.com/Power-Systems-Optimization-Course/power-systems-optimization

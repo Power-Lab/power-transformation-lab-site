@@ -2,7 +2,7 @@
 layout: paper
 title: "Risks of decoupling from China on low-carbon technologies"
 subtitle: "Davidson, M. R., Karplus, V. J., Lewis, J. I., Nahm, J., & Wang, A. <i>Science</i>."
-tags: [papers, political_economy, journal_article]
+tags: [papers, political_economy, journal_article, featured]
 image: /img/wind_sm.jpg
 
 ---

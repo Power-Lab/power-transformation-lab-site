@@ -1,6 +1,7 @@
 ---
 img: img/team/01_zhipeng-bill-chen.png
 name: Zhipeng (Bill) Chen
+alumni: true
 ---
 
 

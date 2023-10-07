@@ -1,6 +1,7 @@
 ---
 img: img/team/15_boyu-yao.png
 name: Boyu Yao
+alumni: true
 ---
 
 

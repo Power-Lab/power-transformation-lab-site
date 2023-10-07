@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "The Paths to Net Zero: How Technology Can Save the Planet"
-subtitle: "Azevedo, Davidson, Jenkins, Karplus & Victor. <i>Foreign Affairs</i>."
+subtitle: "Azevedo, I., Davidson, M. R., Jenkins, J. D., Karplus, V. J., and Victor, D. G. <i>Foreign Affairs</i>."
 tags: [papers, renewable_energy_planning, refereed_and_other]
 
 ---

@@ -2,7 +2,7 @@
 layout: paper
 title: "Workshop on Low-Carbon Transitions in Chinese State-Owned Enterprises: Six Key Take-Aways"
 subtitle: "UC San Diego 21st Century China Center, Power Transformation Lab"
-tags: [papers, political_economy, featured]
+tags: [papers, political_economy, featured, working_and_reports]
 image: /img/wind_sm.jpg
 
 ---
