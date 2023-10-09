@@ -1,6 +1,6 @@
 ---
 name: Micah Gilbert
-img: img/team/28_micah_gilbert.png
+img: img/team/28_micah-gilbert.png
 ---
 
 I'm a third-year math major at UCSD and an aspiring web developer. I collaborated with

@@ -1,5 +1,5 @@
 ---
-img: img/team/zhouhan_fang.jpeg
+img: img/team/zhouhan-fang.jpeg
 name: Zhuohan Fang
 ---
 
