@@ -16,7 +16,7 @@ The [Power and Energy Systems Group @ UCSD][ucsd-pes] integrates power and energ
 The [MAE PhD][mae-phd] curriculum consists of 9 courses, of which at least 3 form the basis of our qualifying exams. Much leeway is granted to the student, in discussion with their committee, in terms of how these courses are put together. Course descriptions can be found here: [MAE][mae], [ECE][ece], [MATH][math], and [GPS][gps]. Some courses that students in energy systems have taken include (see the [MAE Energy Systems Track][mae-energy-systems] for more options):
 - Energy systems:
   - MAE 206 / GPGN 491. Energy Systems and Innovation
-  - [MAE 243. Electric Power Systems Modeling](/2020-09-03-new-course-mae207-power-systems-modeling/) ([course repo](https://github.com/Power-Systems-Optimization-Course/power-systems-optimization))
+  - [MAE 243. Electric Power Systems Modeling]({% post_url 2020-09-03-new-course-mae207-power-systems-modeling %}) ([course repo](https://github.com/Power-Systems-Optimization-Course/power-systems-optimization))
 - Policy / Economics:
   - GPPS 428. Politics of Energy and Environmental Regulation
   - GPCO 401. Microeconomics for Policy and Management
