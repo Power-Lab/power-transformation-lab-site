@@ -17,7 +17,7 @@
 
   <div class="article-container" data-encode-topic="{{topic}}"
     data-encode-type="{{type}}">
-    <a href="{{ article.relative_path }}"<h4 class="article-title">{{ article.title }} ({{ article.date |
+    <a href="{{site.baseurl}}{{ article.url }}"<h4 class="article-title">{{ article.title }} ({{ article.date |
         date: "%Y" }})</h4></a>
     <p class="citation">{{ article.subtitle }}</p>
   </div>
