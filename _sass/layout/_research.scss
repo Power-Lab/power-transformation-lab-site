@@ -75,4 +75,19 @@
       padding-left: 0;
     }
   }
+
+  @include media-breakpoint-down(lg) {
+    .layout--research #lab-focus {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        text-align: left;
+        img {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
 }
