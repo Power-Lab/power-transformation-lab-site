@@ -85,6 +85,10 @@
     line-height: 1.8em;
     max-height: 7.2em;
     transition: max-height 300ms;
+    p {
+      font-size: 0.9rem;
+      line-height: 1.6rem;
+    }
   }
 
   .member-bio.active {

@@ -17,16 +17,14 @@
       }
     }
   }
-  @include media-breakpoint-down(lg) {
-    p {
-      line-height: 1.7rem;
-      font-size: 1rem;
-    }
-  }
   @include media-breakpoint-down(md) {
     .triple-box-container .box {
       padding-bottom: 100%;
       height: 0;
+    }
+    p {
+      line-height: 1.7rem;
+      font-size: 1rem;
     }
   }
 }
