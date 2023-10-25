@@ -5,31 +5,9 @@ fallback_color: 536eb1
 hero_image: img/hero_backgrounds/In-the-Media.jpg
 ---
 <div class="in-the-media">
-  {% assign _featured = site.in_the_media | where: "featured", "true" | reverse %}
-  {% assign _img1 = _featured[0].img %}
-  {% assign _img2 = _featured[1].img %}
-  {% assign _img3 = _featured[2].img %}
-  {% assign _box1 = _featured[0].title %}
-  {% assign _box2 = _featured[1].title %}
-  {% assign _box3 = _featured[2].title %}
-  {% assign _link1 = _featured[0].link %}
-  {% assign _link2 = _featured[1].link %}
-  {% assign _link3 = _featured[2].link %}
-  {%- include triple_link_box.html
-    images = true
-    small_text = true
-    img_1 = _img1
-    img_2 = _img2
-    img_3 = _img3
-    box1 = _box1
-    box2 = _box2
-    box3 = _box3
-    link1 = _link1
-    link2 = _link2
-    link3 = _link3
-  -%}
 
-  {% assign _recent_media = site.in_the_media | reverse %}
+  {% assign _recent_media = site.in_the_media | sort: "featured" | reverse %}
+
   {%- include article-list.html
     articles=_recent_media
     type='grid'

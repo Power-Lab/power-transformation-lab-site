@@ -4,4 +4,5 @@ link: https://www.wsj.com/articles/kerrys-china-trip-restores-talks-on-climate-c
 description: Michael Davidson discusses U.S.-China climate communications
 featured: true
 date: 2023-07-19
+img: img/wsj_kerry_interview.jpg
 ---
