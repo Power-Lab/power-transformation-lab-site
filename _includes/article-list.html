@@ -128,7 +128,8 @@
         <div class="cell cell--12 cell--md-6 cell--lg-4">
           <div class="card card--flat">
             {%- if _article.img -%}
-              <div class="card__image"><img src="{{ _article.img }}" /></div>
+              <div class="card__image media-mention" style="background-image:
+                url({{ _article.img }})"></div>
             {%- endif -%}
               <div class="card__content">
                 <header>
