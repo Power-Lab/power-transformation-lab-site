@@ -63,6 +63,10 @@
     overflow: auto;
     text-align: justify;
     text-justify: auto;
+    @include media-breakpoint-down(lg) {
+      text-align: left;
+      text-justify: unset;
+    }
   }
 
   p,li {
@@ -77,16 +81,25 @@
   }
 
   @include media-breakpoint-down(lg) {
-    .layout--research #lab-focus {
+    #lab-focus {
       h2 {
         font-size: 2rem;
       }
       p {
         font-size: 1rem;
-        text-align: left;
         img {
           margin-bottom: 16px;
         }
+      }
+      li {
+      font-size: 1rem;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    #lab-focus {
+      h2 {
+        font-size: 1.7rem;
       }
     }
   }

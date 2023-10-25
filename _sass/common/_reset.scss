@@ -177,3 +177,10 @@ input {
 p {
   line-height: 2rem;
 }
+
+@include media-breakpoint-down(lg) {
+  article p, article li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

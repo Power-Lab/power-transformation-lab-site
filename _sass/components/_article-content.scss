@@ -1,4 +1,9 @@
 .article__content {
+  @include media-breakpoint-down(lg) {
+    p {
+      font-size: 1rem;
+    }
+  }
   line-height: map-get($base, line-height-lg);
   word-wrap: break-word;
   @media print {

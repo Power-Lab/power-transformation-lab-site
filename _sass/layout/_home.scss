@@ -22,6 +22,9 @@
         margin: 0 32px;
         font-size: 1.75rem;
       }
+      @include media-breakpoint-down(md) {
+        font-size: 1.5rem;
+      }
     }
   }
   p {
@@ -30,6 +33,10 @@
   .body-text {
     text-align: justify;
     text-justify: auto;
+    @include media-breakpoint-down(lg) {
+      text-align: left;
+      text-justify: unset;
+    }
   }
   #mini-logo-container {
     display: inline-block;
@@ -69,6 +76,10 @@
       }
       .box-text {
         font-family: "Montserrat", sans-serif;
+        overflow: hidden;
+        @include media-breakpoint-down(md) {
+          font-size: 1.4rem;
+        }
       }
     }
 
