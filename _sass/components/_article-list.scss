@@ -17,11 +17,34 @@
     font-size: 0.85rem;
   }
   .card__image.media-mention {
+    display: block;
     height: 200px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+
+    .banner-title {
+      font-family: "Josefin Sans", sans-serif;
+      background-color: rgba(101,129,41,0.8);
+      color: white;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+      font-size: 1.4rem;
+      @include media-breakpoint-down(lg) {
+        font-size: 1.2rem;
+      }
+      padding: 0 12px;
+    }
+
+    &:hover {
+      transform: translateY(-10px)
+    }
+
   }
 }
 .article-list__group-header {

@@ -128,13 +128,17 @@
         <div class="cell cell--12 cell--md-6 cell--lg-4">
           <div class="card card--flat">
             {%- if _article.img -%}
-              <div class="card__image media-mention" style="background-image:
-                url({{ _article.img }})"></div>
+            <a href="{{ _article.url }}" class="card__image media-mention" style="background-image:
+                url({{ _article.img }})">
+                <span class="banner-title">{{ _article.title }}</span>
+              </a>
             {%- endif -%}
               <div class="card__content">
+                {%- if _article.img -%}{%- else -%}
                 <header>
                   <a href="{{ _article.link }}"><h2 class="card__header">{{ _article.title }}</h2></a>
                 </header>
+                {%- endif -%}
                 {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
                 <p class="article-date"><i class="far fa-calendar-alt"></i> {{ _article.date  | date: __return }}</p>
                 <p>{{ _article.description }}</p>
