@@ -93,6 +93,7 @@ paths:
 collections:
   - in_the_media
   - team
+  - alert_banner
 
 ## => Post
 ##############################

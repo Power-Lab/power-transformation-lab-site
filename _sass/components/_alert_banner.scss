@@ -1,0 +1,64 @@
+#alert-banner {
+  z-index: 99999;
+  background-color: $main-color-1;
+  box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  position: fixed;
+  top: 100px;
+  left: -400px;
+  opacity: 0.2;
+  width: 400px;
+  padding: 8px 8px 8px 8px;
+
+  &.shown {
+    left: 100px;
+    opacity: 1;
+  }
+
+  transition: all 500ms linear;
+
+  @include media-breakpoint-down(lg) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    &.shown {
+      top: 120px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 50px);
+    &.shown {
+      top: 104px;
+    }
+  }
+
+  a {
+    @include link-colors(#000000);
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  #text-container {
+    max-height: 250px;
+    margin-bottom: 40px;
+    overflow: scroll;
+  }
+
+  button {
+    font-weight: bold;
+    padding: 8px;
+  }
+
+  #hide {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  }

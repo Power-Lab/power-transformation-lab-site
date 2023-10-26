@@ -1,0 +1,19 @@
+<div id="alert-banner">
+  <div id="text-container">
+    {{ site.alert_banner | first }}
+  </div>
+  <button id="hide" onclick="hide()">Hide</button>
+</div>
+
+<script>
+  const hide = () => {
+    document.querySelector("#alert-banner").style.transition = "all 200ms linear"
+    document.querySelector("#alert-banner").classList.remove("shown")
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      document.querySelector("#alert-banner").classList.add("shown")
+    }, 3000)
+  })
+</script>

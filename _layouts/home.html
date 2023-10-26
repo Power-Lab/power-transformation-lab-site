@@ -31,6 +31,10 @@ show_title: false
 {% else %}
 {% assign _bgcolor = "ffffff" %}
 {% endif %}
+{% assign banner = site.alert_banner | first %}
+{% if banner.enabled %}
+{% include alert_banner.html %}
+{% endif %}
 <div class="layout--home">
   <div class="hero-container" style="background-image: url({{ page.hero_image }}); background-color: #{{ _bgcolor }}">
     <div class="hero-text">

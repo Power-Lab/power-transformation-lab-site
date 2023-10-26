@@ -140,6 +140,18 @@ It is required to set an `img` in the front-matter as well. The image can be
 from locally within the repo or an externally hosted image.
 Currently, featured media mentions do *not* appear on the News page - the News page will list the most recent ones.
 
+## Alert Banner
+
+The site has a capability to display a short message on a banner that pops up on
+top of the home page, for purposes such as temporarily making an external link
+available on the site for visitors.
+
+In the file `alert_banner.md`, the front-matter has the field `enabled` which
+will determine if the banner is enabled or not. Apart from that, any Markdown
+can be used in the body of the banner, though only links, bold and italic text,
+and lists have styles defined. Images and headers will likely not display
+correctly.
+
 ## Jekyll-admin
 The `jekyll-admin` plugin is installed, which means after setting up the
 development environment and running `bundle exec jekyll serve`, there is a
