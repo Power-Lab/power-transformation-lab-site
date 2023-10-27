@@ -34,25 +34,6 @@
     bottom: 96px;
     left: 96px;
 
-    // revert to center positioning on smaller screens
-    @include media-breakpoint-down(lg) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 100%;
-
-      &.long h1 {
-        font-size: 3rem;
-      }
-    }
-
-    @include media-breakpoint-down(md) {
-      &.long h1 {
-        font-size: 2rem;
-      }
-    }
-
     h1 {
       font-size: 5rem;
       font-weight: 700;
@@ -69,44 +50,61 @@
       font-family: "Josefin Sans", sans-serif;
     }
   }
-}
 
-.hero-spacer {
-  height: calc(100vh);
-}
 
-.prompt-arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 24px;
-  transform: translateX(-50%);
-  cursor: pointer;
-  fill: rgba($text-color-1, 0.8);
-  &.dark {
-    fill: rgba(88, 88, 90, 0.8)
+
+  .prompt-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    fill: rgba($text-color-1, 0.8);
+    &.dark {
+      fill: rgba(88, 88, 90, 0.8)
+    }
+    &:hover {
+      width: 120px;
+      height: 120px;
+      bottom: 20px;
+    }
+    transition: 100ms
   }
-  &:hover {
-    width: 120px;
-    height: 120px;
-    bottom: 20px;
-  }
-  transition: 100ms
-}
 
-@include media-breakpoint-down(md) {
-  .hero-container {
+  @include media-breakpoint-down(lg) {
+    .hero-text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+
+      &.long h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
     height: calc(100vh - 64px);
     top: 64px;
     .hero-text {
       h1 {
         font-size: 2.5rem
       }
+      &.long h1 {
+        font-size: 2rem;
+      }
       h2 {
         font-size: 1.5rem
       }
     }
   }
-  .hero-spacer {
-    height: calc(100vh - 16px);
+}
+
+.hero-spacer {
+  height: calc(100vh);
+  @include media-breakpoint-down(md) {
+    height: calc(100vh - 16px;)
   }
 }

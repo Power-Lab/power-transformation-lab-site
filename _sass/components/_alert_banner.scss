@@ -17,25 +17,6 @@
 
   transition: all 500ms linear;
 
-  @include media-breakpoint-down(lg) {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -100%);
-
-    &.shown {
-      top: 120px;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    width: calc(100vw - 50px);
-    &.shown {
-      top: 104px;
-    }
-  }
-
   a {
     @include link-colors(#000000);
   }
@@ -61,4 +42,23 @@
     bottom: 10px;
     left: 10px;
   }
+  @include media-breakpoint-down(lg) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    &.shown {
+      top: 120px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
+
+  @include media-breakpoint-down(md) {
+    width: calc(100vw - 50px);
+    &.shown {
+      top: 104px;
+    }
+  }
+
+}

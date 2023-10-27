@@ -1,19 +1,8 @@
 .layout--home {
   .hero-text {
-    @include media-breakpoint-down(md) {
-      top: 40%
-    }
     h1 {
       margin: 0 96px 0 0;
       padding: 0;
-      @include media-breakpoint-down(lg) {
-        font-size: 2.75rem;
-        margin: 0 32px;
-      }
-      @include media-breakpoint-down(md) {
-        font-size: 2rem;
-        margin: 0
-      }
     }
     h2 {
       display: inline-block;
@@ -22,13 +11,6 @@
       padding: 0 0 16px 0;
       border-bottom: 4px solid;
       margin-bottom: 24px;
-      @include media-breakpoint-down(lg) {
-        margin: 0 32px;
-        font-size: 1.75rem;
-      }
-      @include media-breakpoint-down(md) {
-        font-size: 1.5rem;
-      }
     }
   }
   p {
@@ -37,18 +19,11 @@
   .body-text {
     text-align: justify;
     text-justify: auto;
-    @include media-breakpoint-down(lg) {
-      text-align: left;
-      text-justify: unset;
-    }
   }
   #mini-logo-container {
     display: inline-block;
     float: right;
     width: 34%;
-    @include media-breakpoint-down(lg) {
-      display: none
-    }
   }
   #mini-logo {
     display: block;
@@ -81,9 +56,6 @@
       .box-text {
         font-family: "Montserrat", sans-serif;
         overflow: hidden;
-        @include media-breakpoint-down(md) {
-          font-size: 1.4rem;
-        }
       }
     }
 
@@ -97,23 +69,6 @@
       font-size: 2rem;
       font-weight: 400;
       line-height: 1
-    }
-
-    @include media-breakpoint-down(lg) {
-      .text-content {
-        padding: 0 40px;
-      }
-      h3 {
-        padding-bottom: 12px;
-      }
-      h3,p {
-        font-size: 1.5rem;
-      }
-    }
-    @include media-breakpoint-down(md) {
-      .text-content {
-        padding: 0 20px;
-      }
     }
   }
 
@@ -130,9 +85,6 @@
       background-position: center;
       background-repeat: no-repeat;
       background-color: #e5eaf4;
-      @include media-breakpoint-down(lg) {
-        background-size: cover;
-      }
 
       .text-container {
         display: block;
@@ -144,7 +96,7 @@
         width: 100%;
         background-color: rgba(107, 131, 185, 0.3);
         text-align: center;
-        padding: 36px 0;
+        padding: 36px;
         h2 {
           font-family: inherit;
           color: $text-color-1;
@@ -152,22 +104,83 @@
           font-weight: 700;
           margin-top: 0;
           padding-top: 8px;
-          @include media-breakpoint-down(md) {
-            font-size: 2rem;
-          }
         }
         p {
           color: $text-color-1;
           font-size: 1.8rem;
           font-weight: 600;
-          @include media-breakpoint-down(md) {
-            font-size: 1.5rem;
-          }
+          overflow: visible;
         }
         &:hover {
           text-decoration: none;
         }
       }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .hero-text {
+      top: 40%;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .triple-box-container.triple-image {
+      .box .box-text {
+        font-size: 1.4rem;
+      }
+      .text-content {
+        padding: 0 20px;
+      }
+    }
+
+    #bottom-hero-spacer #bottom-hero .text-container {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .hero-text {
+      h1 {
+        font-size: 2.75rem;
+        margin: 0 32px;
+      }
+      h2 {
+        font-size: 1.75rem;
+        margin: 0 32px;
+      }
+    }
+    .body-text {
+      text-align: left;
+      text-justify: unset;
+    }
+    #mini-logo-container {
+      display: none;
+    }
+
+    .triple-box-container.triple-image {
+      .text-content {
+        padding: 0 40px;
+      }
+      h3 {
+        padding-bottom: 12px;
+      }
+      h3,p {
+        font-size: 1.5rem;
+      }
+    }
+
+    #bottom-hero-spacer {
+      background-size: cover;
     }
   }
 }

@@ -4,9 +4,6 @@
   grid-template-columns: repeat(3, calc(33.3% - 16px));
 
   @include media-breakpoint-down(lg) {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
-    grid-row-gap: 8px;
   }
 
   justify-content: space-between;
@@ -53,11 +50,6 @@
     position: relative;
     box-shadow: inset 0 0 10000px rgba(0,0,0,0);
 
-    @include media-breakpoint-down(lg) {
-      padding-bottom: 0;
-      height: 40vw;
-    }
-
     .text-content {
       width: 100%;
       position: absolute;
@@ -70,7 +62,28 @@
       width: 100%;
       text-align: center;
       font-size: map-get($base, font-size-h2-xl);
-      @include media-breakpoint-down(lg) {
+    }
+
+    p {
+      padding: 0 12px;
+      font-size: 1.1rem;
+    }
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 10000px rgba(255,255,255,0.5);
+    transform: translateY(-10px);
+  }
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 8px;
+
+    .box.img-bg {
+      padding-bottom: 0;
+      height: 40vw;
+
+      h3 {
         font-size: 3.5rem;
         text-align: left;
         margin-bottom: 0;
@@ -78,29 +91,24 @@
         padding-left: 22px;
         line-height: 0.8;
       }
-      @include media-breakpoint-down(md) {
-        font-size: 2.5rem;
-      }
-    }
 
-    p {
-      padding: 0 12px;
-      font-size: 1.1rem;
-      @include media-breakpoint-down(lg) {
+      p {
         text-align: left;
         font-size: 1.4rem;
         margin-top: 0;
         padding-top: 0;
         padding-left: 24px;
       }
-      @include media-breakpoint-down(md) {
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .box.img-bg  {
+      h3 {
+        font-size: 2.5rem;
+      }
+      p {
         font-size: 1.2rem;
       }
-    }
-
-    &:hover {
-      box-shadow: inset 0 0 10000px rgba(255,255,255,0.5);
-      transform: translateY(-10px);
     }
   }
 }

@@ -35,10 +35,6 @@
     margin-right: 28px;
     max-width: 45%;
 
-    @include media-breakpoint-down(md) {
-      width: 100%;
-      max-width: none;
-    }
 
     // this style is applied in scripts/research.js because nth-of-type only works on siblings instead of across the whole document
     &.right-align {
@@ -63,10 +59,6 @@
     overflow: auto;
     text-align: justify;
     text-justify: auto;
-    @include media-breakpoint-down(lg) {
-      text-align: left;
-      text-justify: unset;
-    }
   }
 
   p,li {
@@ -75,12 +67,13 @@
 
   .sticky-sidebar {
     padding-left: 18px;
-    @include media-breakpoint-down(md) {
-      padding-left: 0;
-    }
   }
 
   @include media-breakpoint-down(lg) {
+    p {
+      text-align: left;
+      text-justify: unset;
+    }
     #lab-focus {
       h2 {
         font-size: 2rem;
@@ -97,6 +90,13 @@
     }
   }
   @include media-breakpoint-down(md) {
+    p img {
+      width: 100%;
+      max-width: none;
+    }
+    .sticky-sidebar {
+      padding-left: 0;
+    }
     #lab-focus {
       h2 {
         font-size: 1.7rem;
