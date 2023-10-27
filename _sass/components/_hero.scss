@@ -105,6 +105,6 @@
 .hero-spacer {
   height: calc(100vh);
   @include media-breakpoint-down(md) {
-    height: calc(100vh - 16px;)
+    height: calc(100vh - 16px);
   }
 }
