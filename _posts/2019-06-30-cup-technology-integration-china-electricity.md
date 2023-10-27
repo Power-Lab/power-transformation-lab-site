@@ -16,4 +16,4 @@ Recommended citation:
 
 Related work:
 
-**Davidson, M. R.** (2017). [Hidden Costs of Technology Development by the Plan: Case of China's Coal Fleet Upgrading](/2017-03-10-hidden-costs-technology-china-coal/). American Association for the Advancement of Science 2017 Annual Meeting.
+**Davidson, M. R.** (2017). [Hidden Costs of Technology Development by the Plan: Case of China's Coal Fleet Upgrading]({% post_url 2017-03-10-hidden-costs-technology-china-coal %}). American Association for the Advancement of Science 2017 Annual Meeting.

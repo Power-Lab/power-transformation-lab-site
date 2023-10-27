@@ -6,7 +6,7 @@ tags: [papers, power_markets, journal_article]
 image: /img/pitfalls_yn_dax_vol_price-sm.png
 
 ---
-[Read English summary](/2019-12-16-avoiding-pitfalls-china-electricity-reforms/)
+[Read English summary]({% post_url 2019-12-16-avoiding-pitfalls-china-electricity-reforms %})
 
 已有研究表明，电力产业结构升级十分困难。它需要数年的细致计划，且最终也可能无法建立有效的制度。近年来，中国重启了其拥有三十年历史的电力市场化改革。历史上，电力部门主要由中央或地方政府规划引导，而这项改革有望促进该部门的效率。然而，我们需要警惕一些“隐患”，即本轮改革可能无法实现其广义预期目标。
 

@@ -6,7 +6,7 @@ tags: [papers, power_markets, working_and_reports]
 image: /img/Baihetan.jpeg
 
 ---
-[Read English summary](/2021-03-18-china-trading-power-yunnan-electricity-market/)
+[Read English summary]({% post_url /2021-03-18-china-trading-power-yunnan-electricity-market %})
 
 从减缓气候变化及环境污染到为经济增长提供高性价比动力，中国的电力行业是解决许多迫在眉睫的公共政策挑战的关键。过去三十年间，许多改革都致力于提高中国电力行业效率，但完整成熟的电力市场却仍尚未成型。这一不完善的市场化转型一定程度上导致了电力行业面对全国范围的发电产能过剩和大量可再生能源弃电，以及未来低碳电网技术创新的不确定性。
 

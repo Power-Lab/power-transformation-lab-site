@@ -14,9 +14,9 @@ In this episode, we check in with a leading U.S. expert on China's power sector,
 
 **Further reading**
 
-Guo, H., Davidson, M. R., Chen, Q., Zhang, D., Jiang, N., Xia, Q., Kang, C., and Zhang, X. (2020). [Power market reform in China: Motivations, progress, and recommendations.](/2020-07-23-china-power-market-reform-energy-policy/) _Energy Policy_, 145, 111717.
+Guo, H., Davidson, M. R., Chen, Q., Zhang, D., Jiang, N., Xia, Q., Kang, C., and Zhang, X. (2020). [Power market reform in China: Motivations, progress, and recommendations.]({% post_url /2020-07-23-china-power-market-reform-energy-policy %}) _Energy Policy_, 145, 111717.
 
-Davidson, M. R., & Pérez-Arriaga, I. (2020). [Avoiding Pitfalls in Reforming China’s Electricity Sector](/2019-12-16-avoiding-pitfalls-china-electricity-reforms/). _The Energy Journal_, 41(3).
+Davidson, M. R., & Pérez-Arriaga, I. (2020). [Avoiding Pitfalls in Reforming China’s Electricity Sector]({% post_url 2019-12-16-avoiding-pitfalls-china-electricity-reforms %}). _The Energy Journal_, 41(3).
 
 
 

@@ -25,7 +25,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 **We are recruiting PhD students to join the lab.** Please include in your inquiry (**{{ site.author.email }}**):
 
 - CV and transcript(s)
-- Research interests (the team's [research areas](/research/) are a good start to see what we do, but we are also interested in what you want to do)
+- Research interests (the team's [research areas](research/) are a good start to see what we do, but we are also interested in what you want to do)
 - If you are a fellowship recipient with funding
 
 **Qualified MS students for these positions may also send an inquiry.**

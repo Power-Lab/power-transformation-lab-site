@@ -3,7 +3,7 @@ name: Prof. Michael Davidson
 img: img/team/00_michael-davidson.png
 ---
 
-I am an assistant professor in the [School of Global Policy and Strategy](http://gps.ucsd.edu/) and the [Mechanical and Aerospace Engineering Department](http://maeweb.ucsd.edu/) at the University of California, San Diego. I study the engineering implications and institutional conflicts inherent in deploying low-carbon energy at scale. See my [research areas](/research/) and [papers](/papers/) for more details.
+I am an assistant professor in the [School of Global Policy and Strategy](http://gps.ucsd.edu/) and the [Mechanical and Aerospace Engineering Department](http://maeweb.ucsd.edu/) at the University of California, San Diego. I study the engineering implications and institutional conflicts inherent in deploying low-carbon energy at scale. See my [research areas](research/) and [papers](publications/) for more details.
 
 I am a faculty member with the [21st Century China Center][21ccc] (where I run a project on Chinese energy markets with the [China Data Lab](cdl)), the [Center for Commerce and Diplomacy][ccd], and the [Japan Forum for Innovation and Technology][jfit], all located at UC San Diego. I am currently a fellow with the [Public Intellectuals Program at the National Committee on U.S.-China Relations](https://www.ncuscr.org/program/public-intellectuals-program) and the [Initiative for Sustainable Energy Policy](http://sais-isep.org/) at Johns Hopkins SAIS. I am an affiliate with the [UC Institute on Global Conflict and Cooperation][igcc].
 

@@ -12,6 +12,6 @@ On the Sinica Podcast, Kaiser chats with Michael Davidson, a leading scholar on 
 
 **Further reading**
 
-Davidson, M., Karplus, V. J., Zhang, D., & Zhang, X. (2021). [Policies and Institutions to Support Carbon Neutrality in China by 2060](/2021-08-24-policies-institutions-china-carbon-neutrality/). _Economics of Energy & Environmental Policy_, 10(2).
+Davidson, M., Karplus, V. J., Zhang, D., & Zhang, X. (2021). [Policies and Institutions to Support Carbon Neutrality in China by 2060]({% post_url 2021-08-24-policies-institutions-china-carbon-neutrality %}). _Economics of Energy & Environmental Policy_, 10(2).
 
 

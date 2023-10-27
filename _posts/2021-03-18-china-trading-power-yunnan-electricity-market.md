@@ -18,7 +18,7 @@ In this report, we propose a market reform pathway for Yunnan that is both feasi
 
 [Full report](https://www.belfercenter.org/publication/china-trading-power-improving-environmental-and-economic-efficiency-yunnans-electricity)
 
-[中文简介](/2021-03-18-china-trading-power-yunnan-electricity-market-cn/)
+[中文简介]({% post_url 2021-03-18-china-trading-power-yunnan-electricity-market-cn %})
 
 
 Recommended citation:

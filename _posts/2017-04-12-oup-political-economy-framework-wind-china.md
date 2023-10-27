@@ -14,7 +14,7 @@ Drawing on global experience, this chapter develops an analytical framework for 
 
 [Download Book (Open Source)](https://global.oup.com/academic/product/the-political-economy-of-clean-energy-transitions-9780198802242?lang=en&cc=nl)
 
-[Working Paper version](/2016-04-01-political-economy-framework-wind-china/)
+[Working Paper version]({% post_url 2016-04-01-political-economy-framework-wind-china %})
 
 Recommended citation:
 
