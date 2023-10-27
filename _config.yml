@@ -18,8 +18,8 @@
 ##############################
 text_skin: custom # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://pwrlab.org
-baseurl : "" # does not include hostname
+url     : "https://pwrlab.org"
+  # baseurl : "" # does not include hostname
 title   : Power Transformation Lab
 description: > # this means to ignore newlines until "Language & timezone"
   The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale
