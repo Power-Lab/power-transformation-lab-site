@@ -64,6 +64,9 @@
         padding-left: 16px;
         font-size: 24pt;
       }
+      @include media-breakpoint-down(sm) {
+        font-size: 18pt;
+      }
       &::after {
         content: "";
         height: 180px;
