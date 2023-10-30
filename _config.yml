@@ -245,6 +245,8 @@ defaults:
       show_subscribe: true
       pageview: true
 
+twitter:
+  card: summary
 
 ## => Plugins
 ##############################
