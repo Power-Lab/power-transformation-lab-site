@@ -1,13 +1,13 @@
 ---
 layout: paper
-title: "China’s Power Outage: The Real Reasons Behind Beijing’s Energy Crisis"
+title: "Why China Can’t Break Its Coal Addiction"
 subtitle: "Davidson, M. <i>Foreign Affairs</i>."
-tags: [papers, power_markets, political_economy, refereed_and_other]
+tags: [papers, power_markets, political_economy, refereed_and_other, featured]
 image: /img/coal-plant-sm.jpg
 
 ---
 
-In the protracted, hope-filled run-up to COP26, the long-postponed UN Climate Change Conference that began in Glasgow on October 31, U.S. Special Presidential Envoy for Climate John Kerry called the conference the world’s “last, best chance” of avoiding a climate emergency. In July, COP26 President Alok Sharma had declared that the conference would, at long last, “consign coal power to history.” Yet by the time heads of state and other world dignitaries began arriving in Scotland, their hopes for the conference had been overshadowed by a global energy crisis that began in China and by summer’s end had...
+For years, environmentalists and energy policymakers have seen China’s reliance on coal as a major impediment to reducing global carbon emissions. Burning coal is the world’s single largest source of carbon dioxide emissions, and half of all coal-fired power stations are located in China.
 
 
 [Full article](https://www.foreignaffairs.com/china/why-china-cant-break-its-coal-addiction)
