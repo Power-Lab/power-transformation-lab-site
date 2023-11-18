@@ -25,5 +25,5 @@ Overtime (evening or weekend) may be required based on needs.
 
 **To Apply**
 
-**See [more details and application requirements](https://employment.ucsd.edu/research-associate-125862/job/26737117).**
+**See [more details and application requirements](https://employment.ucsd.edu/research-associate-125862/job/27219815).**
 
