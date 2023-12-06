@@ -22,7 +22,7 @@ Salary: Commensurate with experience
 
 Appointment: 12 months (extendable based on mutual agreement and available funding)
 
-Start Date: January 1 2023 / Flexible
+Start Date: Negotiable
 
 ### Qualifications
 
