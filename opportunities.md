@@ -11,7 +11,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 
 
 ### Postdoc
-**We are hiring for one or more postdocs to support open modeling of decarbonization in China**. See the [job announcement]({% post_url 2022-11-06-postdoc-open-modeling-decarbonization-china %}) for more information.
+**We are hiring for one or more postdocs to support open modeling of decarbonization in China**. See the [job announcement]({% post_url 2024-02-01-postdoc-open-modeling-decarbonization-china %}) for more information.
 
 ### Staff
 **We are looking for a staff research associate to join a project aligning China's market reforms with carbon neutrality**. See the [job announcement]({% post_url 2023-10-07-staff-research-associate-China-power-grid %}) for more information.
