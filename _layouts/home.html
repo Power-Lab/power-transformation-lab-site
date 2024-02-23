@@ -71,6 +71,19 @@ The Power Transformation Lab at the University of California, San Diego studies 
   text3 = "Meet our team and learn about research and educational opportunities with the lab"
 %}
 
+<div id="featured-home-updates">
+<h2>Featured</h2>
+{% include article-list.html
+  articles=site.posts
+  type='brief'
+  article_type="BlogPosting"
+  show_excerpt=true
+  show_readmore=true
+  show_info=true
+  force_hide_tags=true
+  filter_tag="home"
+ %}
+
 <div id="bottom-hero-spacer">
   <div id="bottom-hero" style="background-image:
     url({{site.baseurl}}/img/transparent-map---green.png)">
