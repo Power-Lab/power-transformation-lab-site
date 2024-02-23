@@ -233,6 +233,9 @@
         color: $text-color-1;
         text-align: center;
         padding: 0 32px;
+        @include media-breakpoint-down(md) {
+          font-size: 1rem;
+        }
       }
 
       &:hover {

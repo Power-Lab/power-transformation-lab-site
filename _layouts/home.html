@@ -76,13 +76,12 @@ The Power Transformation Lab at the University of California, San Diego studies 
   {% for _article in site.posts %}
   {% if _article.tags contains "home" %}
   {% if _article.image %}
-  <div class="swiper__slide" style="background-image:
-    url({{site.baseurl}}{{_article.image}})">
+  <a class="swiper__slide" style="background-image: url({{site.baseurl}}{{_article.image}})" href="{{_article.url}}"}>
   {% else %}
-  <div class="swiper__slide solid-bg">
+  <a class="swiper__slide solid-bg">
   {% endif %}
     <h3>{{ _article.title }}</h3>
-  </div>
+  </a>
   {% endif %}
   {% endfor %}
 </div>
