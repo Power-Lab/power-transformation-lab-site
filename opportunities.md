@@ -7,19 +7,16 @@ image: img/ucsd_campus_small.png
 hero_image: img/hero_backgrounds/Opportunities-page.jpg
 ---
 
-## Openings
-
-
-### Postdoc
+## Postdoc
 **We are hiring for one or more postdocs to support open modeling of decarbonization in China**. See the [job announcement]({% post_url 2024-02-01-postdoc-open-modeling-decarbonization-china %}) for more information.
 
-### Staff
+## Staff
 **We are looking for a staff research associate to join a project aligning China's market reforms with carbon neutrality**. See the [job announcement]({% post_url 2023-10-07-staff-research-associate-China-power-grid %}) for more information.
 
-### Undergraduate
+## Undergraduate
 **We are looking for one or more research assistants to join team modeling China's power grid**. See the [job announcement]({% post_url 2023-09-25-researcher-power-grid %}) for more information.
 
-### PhD and MS
+## PhD and MS
 **We are recruiting PhD students to join the lab.** Please include in your inquiry (**{{ site.author.email }}**):
 
 - CV and transcript(s)
@@ -29,9 +26,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 **Qualified MS students for these positions may also send an inquiry.**
 
 
-## Other Opportunities
-
-### Postdoctoral Fellows
+## Additional Opportunities
 
 We are always interested in recruiting talented postdocs from different disciplines. Interested applicants should consult the [UCSD Office of Postdoctoral Affairs][postdoc] for appointment information, and the [Office of Foundation Relations][foundation], the [National Academies][NAS], the [University of California President's Postdoctoral Fellowship Program](https://ppfp.ucop.edu/info/), and [this resource][harvard-funding] for funding opportunities.
 
