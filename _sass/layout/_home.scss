@@ -215,4 +215,35 @@
       padding: 0 20px;
     }
   }
+
+  #home-swiper {
+    height: 300px;
+    width: 100%;
+    .swiper__slide {
+      padding: 32px;
+      background-color: rgba($main-color-2,0.7);
+      background-blend-mode: multiply;
+      background-size: cover;
+      &.solid-bg {
+        background-color: $main-color-2;
+      }
+
+      h3 {
+        font-family: "Montserrat", "sans-serif";
+        color: $text-color-1;
+        text-align: center;
+        padding: 0 32px;
+      }
+
+      &:hover {
+        h3 {
+          text-decoration: underline;
+        }
+        cursor: pointer;
+      }
+    }
+    .swiper__button {
+      @include clickable($text-color-d, rgba($main-color-1, .4));
+    }
+  }
 }

@@ -71,18 +71,32 @@ The Power Transformation Lab at the University of California, San Diego studies 
   text3 = "Meet our team and learn about research and educational opportunities with the lab"
 %}
 
-<div id="featured-home-updates">
-<h2>Featured</h2>
-{% include article-list.html
-  articles=site.posts
-  type='brief'
-  article_type="BlogPosting"
-  show_excerpt=true
-  show_readmore=true
-  show_info=true
-  force_hide_tags=true
-  filter_tag="home"
- %}
+<div class="swiper" id="home-swiper">
+<div class="swiper__wrapper">
+  {% for _article in site.posts %}
+  {% if _article.tags contains "home" %}
+  {% if _article.image %}
+  <div class="swiper__slide" style="background-image:
+    url({{site.baseurl}}{{_article.image}})">
+  {% else %}
+  <div class="swiper__slide solid-bg">
+  {% endif %}
+    <h3>{{ _article.title }}</h3>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+ <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
+  <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
+</div>
+
+<script>
+  {%- include scripts/lib/swiper.js -%}
+var SOURCES = window.TEXT_VARIABLES.sources;
+window.Lazyload.js(SOURCES.jquery, function() {
+  $('#home-swiper').swiper();
+});
+</script>
 
 <div id="bottom-hero-spacer">
   <div id="bottom-hero" style="background-image:
