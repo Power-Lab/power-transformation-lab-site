@@ -2,7 +2,7 @@
 layout: post
 title: "Decarbonization Decision-making in the Western United States Under Political Uncertainty"
 subtitle: "Princeton University | Center for Policy Research on Energy and the Environment"
-tags: [home]
+tags: []
 youtubeId: iwtzsLZ65lc
 excerpt_separator: <!--more-->
 

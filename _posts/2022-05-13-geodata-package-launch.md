@@ -2,7 +2,7 @@
 layout: post
 title: "Geodata v0.1 package launched"
 subtitle: "Open-source python package that helps to wrangle high-dimensional weather model data and diverse geospatial datasets to address questions of renewable energy planning and siting (and more)"
-tags: [home]
+tags: []
 image: "https://github.com/east-winds/geodata/raw/master/images/geodata_workflow_chart.png"
 ---
 
