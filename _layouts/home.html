@@ -55,22 +55,6 @@ show_title: false
 The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale. We work across multiple geographies and with academic, government, civil society, and industry partners to advance research and solutions to climate and environmental challenges.
 </p>
 
-{% include triple_link_box.html
-  images = true
-  img_1 = "img/home/Home-page-Our-research.jpg"
-  img_2 = "img/home/Home-page-Our-impact.jpg"
-  img_3 = "img/home/Home-page-our-team.jpg"
-  box1 = "Our Research"
-  box2 = "Our Impact"
-  box3 = "Our Team"
-  link1 = "research.html"
-  link2 = "news.html"
-  link3 = "team.html"
-  text1 = "View our publications and the open models and data of our lab"
-  text2 = "View updates from the lab, coverage in the media, and outreach efforts"
-  text3 = "Meet our team and learn about research and educational opportunities with the lab"
-%}
-
 <div class="swiper" id="home-swiper">
 <div class="swiper__wrapper">
   {% for _article in site.posts %}
@@ -96,6 +80,23 @@ window.Lazyload.js(SOURCES.jquery, function() {
   $('#home-swiper').swiper();
 });
 </script>
+
+
+{% include triple_link_box.html
+  images = true
+  img_1 = "img/home/Home-page-Our-research.jpg"
+  img_2 = "img/home/Home-page-Our-impact.jpg"
+  img_3 = "img/home/Home-page-our-team.jpg"
+  box1 = "Our Research"
+  box2 = "Our Impact"
+  box3 = "Our Team"
+  link1 = "research.html"
+  link2 = "news.html"
+  link3 = "team.html"
+  text1 = "View our publications and the open models and data of our lab"
+  text2 = "View updates from the lab, coverage in the media, and outreach efforts"
+  text3 = "Meet our team and learn about research and educational opportunities with the lab"
+%}
 
 <div id="bottom-hero-spacer">
   <div id="bottom-hero" style="background-image:
