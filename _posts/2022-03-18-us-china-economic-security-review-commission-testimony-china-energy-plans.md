@@ -2,7 +2,7 @@
 layout: post
 title: "Testimony before the U.S-China Economic and Security Review Commission"
 subtitle: "China's Energy Plans and Practices"
-tags: [home]
+tags: []
 image: "https://www.uscc.gov/themes/custom/uscc/assets/images/USCC-logo.png"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Undergraduate lab researchers head to CMU, McKinsey, and Georgetown"
 subtitle: "Jiahe Feng, Arjun Sawhney, Yunhan Zhang"
-tags: [home]
+tags: []
 image: /img/wind_sm.jpg
 ---
 
