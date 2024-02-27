@@ -55,6 +55,33 @@ show_title: false
 The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale. We work across multiple geographies and with academic, government, civil society, and industry partners to advance research and solutions to climate and environmental challenges.
 </p>
 
+<div class="swiper" id="home-swiper">
+<div class="swiper__wrapper">
+  {% for _article in site.posts %}
+  {% if _article.tags contains "home" %}
+  {% if _article.image %}
+  <a class="swiper__slide" style="background-image: url({{site.baseurl}}{{_article.image}})" href="{{_article.url}}"}>
+  {% else %}
+  <a class="swiper__slide solid-bg">
+  {% endif %}
+    <h3>{{ _article.title }}</h3>
+  </a>
+  {% endif %}
+  {% endfor %}
+</div>
+ <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
+  <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
+</div>
+
+<script>
+  {%- include scripts/lib/swiper.js -%}
+var SOURCES = window.TEXT_VARIABLES.sources;
+window.Lazyload.js(SOURCES.jquery, function() {
+  $('#home-swiper').swiper();
+});
+</script>
+
+
 {% include triple_link_box.html
   images = true
   img_1 = "img/home/Home-page-Our-research.jpg"

@@ -2,7 +2,7 @@
 layout: post
 title: "PhD Student Recruitment: Modeling China's Decarbonization Pathways"
 subtitle: "MAE PhD student recruitment"
-tags: [home, post]
+tags: [post]
 image: /img/wind_sm.jpg
 ---
 

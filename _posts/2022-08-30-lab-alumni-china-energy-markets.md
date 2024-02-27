@@ -2,7 +2,7 @@
 layout: post
 title: "Lab alumni researching China's energy markets at RAP and Lantau Group"
 subtitle: "Will Gao, Sonia Tan"
-tags: [home]
+tags: []
 image: "https://drive.google.com/uc?export=view&id=1tMB52u7Qa_qMX98mw58OyXh-YxvgFog6"
 
 ---

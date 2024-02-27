@@ -2,7 +2,7 @@
 layout: post
 title: "Job Opening: Research on China Power Grid"
 subtitle: "Join a dynamic team modeling the engineering implications of large amounts of renewable energy and the effects of different electricity market designs on carbon emissions in China"
-tags: [post, home]
+tags: [post]
 image: /img/transmission_tower.jpg
 ---
 

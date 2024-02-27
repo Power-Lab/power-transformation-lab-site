@@ -140,6 +140,17 @@ It is required to set an `img` in the front-matter as well. The image can be
 from locally within the repo or an externally hosted image.
 Currently, featured media mentions do *not* appear on the News page - the News page will list the most recent ones.
 
+### Home page feature
+
+To make a media mention or post featured on the main home page gallery, add
+`home_featured: true` to the front-matter.
+On the home page, the title and image will be shown. If the item is a media
+mention then it will link directly to the specified URL, and if it is a post
+then it will link to the post.
+
+If no image is specified then the site will default to a picture of windmills,
+specifically `img/possible_hero_photos/DSC_8677.JPG`.
+
 ## Alert Banner
 
 The site has a capability to display a short message on a banner that pops up on
