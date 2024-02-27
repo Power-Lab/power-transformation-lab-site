@@ -1,6 +1,7 @@
 ---
 img: img/team/13_yuting-christine-wan.png
 name: Yuting (Christine) Wan
+alumni: true
 ---
 
 

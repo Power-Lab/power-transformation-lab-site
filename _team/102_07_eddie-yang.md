@@ -1,6 +1,7 @@
 ---
 img: img/team/eddie-yang.jpg
 name: Eddie Yang
+alumni: true
 ---
 
 

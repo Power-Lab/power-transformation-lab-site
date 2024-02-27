@@ -1,6 +1,7 @@
 ---
 img: img/team/10_chen-pammy-long.png
 name: Chen (Pammy) Long
+alumni: true
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 img: img/team/29_jingting-liu.jpg
 name: Jingting Liu
+alumni: true
 ---
 
 
