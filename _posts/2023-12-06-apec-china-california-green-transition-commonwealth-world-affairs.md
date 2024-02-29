@@ -2,7 +2,7 @@
 layout: post
 title: "After APEC: What’s China’s Role in California’s Green Transition?"
 subtitle: "Event "
-tags: [post, featured]
+tags: [post]
 youtubeId: O_MC6VOHYFc
 ---
 
