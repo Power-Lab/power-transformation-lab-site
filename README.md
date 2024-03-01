@@ -142,14 +142,8 @@ Currently, featured media mentions do *not* appear on the News page - the News p
 
 ### Home page feature
 
-To make a media mention or post featured on the main home page gallery, add
-`home_featured: true` to the front-matter.
-On the home page, the title and image will be shown. If the item is a media
-mention then it will link directly to the specified URL, and if it is a post
-then it will link to the post.
-
-If no image is specified then the site will default to a picture of windmills,
-specifically `img/possible_hero_photos/DSC_8677.JPG`.
+To make a post featured on the main home page gallery, add
+`home: true` to the front-matter.
 
 ## Alert Banner
 
