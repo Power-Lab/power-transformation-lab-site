@@ -7,9 +7,9 @@ hero_image: img/hero_backgrounds/Teaching-page.jpg
 
 ### Current course schedule
 
-Visit the [UCSD course schedule][ucsd-courseschedule] to see current offerings.
+Visit the [UCSD course schedule][ucsd-courseschedule]* to see current offerings.
 
-But since the UCSD Schedule of Classes is somewhat difficult to navigate, here is a set of "quickview" scripts to find out when classes are typically taught and what your favorite profs teach: [ucsd-class-schedule-quickview][git-quickview].
+For a list of power and energy courses on campus, please visit the [Power and Energy Systems][pes] group website.
 
 Below are courses taught by Prof. Davidson.
 
@@ -95,8 +95,12 @@ The broad aim of the course is for students to be able, in key Asian contexts, t
 	- Identify technologies and policies that fit a given context and environmental problem
 	- Evaluate competing policy proposals for impacts on environmental degradation drivers
 
+### Notes
+
+*But since the UCSD Schedule of Classes is somewhat difficult to navigate, here is a set of "quickview" scripts to find out when classes are typically taught and what your favorite profs teach: [ucsd-class-schedule-quickview][git-quickview].
 
 
 [ucsd-courseschedule]: https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudentResult.htm
 [git-quickview]: https://github.com/east-winds/ucsd-class-schedule-quickview
 [mae-243-repo]: https://github.com/Power-Systems-Optimization-Course/power-systems-optimization
+[pes]: http://power-energy.ucsd.edu
