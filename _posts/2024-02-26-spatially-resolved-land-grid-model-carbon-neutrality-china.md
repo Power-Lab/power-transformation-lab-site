@@ -14,7 +14,7 @@ China has committed to achieve net carbon neutrality by 2060 to combat global cl
 
 Media coverage: [E&E News](https://subscriber.politicopro.com/article/eenews/2024/02/28/one-threat-to-chinas-clean-energy-transition-lack-of-available-land-00143593), [科学网](https://paper.sciencenet.cn/htmlpaper/2024/2/20242271450105896149.shtm), [The Hill](https://thehill.com/policy/energy-environment/4489668-china-needs-huge-expansion-of-solar-win-power-to-reach-climate-goals-california-led-study/), [Tech Xplore](https://techxplore.com/news/2024-02-china-carbon-neutrality.html), [South China Morning Post](https://www.scmp.com/news/china/science/article/3253890/china-needs-10-times-its-solar-and-wind-power-be-carbon-neutral-study-finds)
 
-News brief: [UCSD Today](https://today.ucsd.edu/story/what-will-it-take-for-china-to-reach-carbon-neutrality-by-2060)
+News brief: [UCSD Today](https://today.ucsd.edu/story/what-will-it-take-for-china-to-reach-carbon-neutrality-by-2060), [清华大学碳中和研究院](https://www.icon.tsinghua.edu.cn/info/1066/1466.htm)
 
 Recommended citation:
 
