@@ -1,6 +1,6 @@
 ---
 img: img/team/hongyu-zhang.jpg
-name: Hongyu Zhang
+name: Dr. Hongyu Zhang
 ---
 
 
