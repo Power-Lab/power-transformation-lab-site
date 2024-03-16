@@ -1,7 +1,6 @@
 ---
 img: img/team/04_ruibin-ian-deng.png
 name: Ruibin (Ian) Deng
-alumni: true
 ---
 
 
