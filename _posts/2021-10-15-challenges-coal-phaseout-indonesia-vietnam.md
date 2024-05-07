@@ -11,6 +11,7 @@ Global coal use must be phased out if we are to minimize temperature increases a
 
 [MIT Press](https://direct.mit.edu/glep/article-abstract/doi/10.1162/glep_a_00630/107820/The-Challenges-of-Coal-Phaseout-Coal-Plant)
 
+[Open Access](https://muse.jhu.edu/article/840183)
 
 Recommended citation:
 
