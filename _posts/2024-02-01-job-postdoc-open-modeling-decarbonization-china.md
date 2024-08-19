@@ -2,9 +2,11 @@
 layout: post
 title: "Job Opening: Postdoc in Open Modeling of Decarbonization in China"
 subtitle: "Examine renewable energy, power markets, finance models"
-tags: [post, featured]
+tags: [post, job]
 image: /img/transmission_tower.jpg
 ---
+
+**This post is archived. Please check the [Opportunities Page](/opportunities.html) for current postings.**
 
 _Page updated Feb 1, 2024 with new application link._
 

@@ -8,13 +8,13 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 ---
 
 ## Postdoc
-**We are hiring for one or more postdocs to support open modeling of decarbonization in China**. See the [job announcement]({% post_url 2024-02-01-postdoc-open-modeling-decarbonization-china %}) for more information.
+**We will be hiring soon for one or more postdocs to support open modeling of decarbonization in China**. Please check back and/or send an inquiry for more information.
 
 ## Staff
-**We are looking for a staff research associate to join a project aligning China's market reforms with carbon neutrality**. See the [job announcement]({% post_url 2023-10-07-staff-research-associate-China-power-grid %}) for more information.
+**We will be hiring soon for a staff research associate to join a project aligning China's market reforms with carbon neutrality**. Please check back and/or send an inquiry for more information.
 
 ## Undergraduate
-**We are looking for one or more research assistants to join team modeling China's power grid**. See the [job announcement]({% post_url 2023-09-25-researcher-power-grid %}) for more information.
+**We will be hiring soon for undergraduate researchers to join the lab**. Please check back and/or send an inquiry for more information.
 
 ## PhD and MS
 **We are recruiting PhD students to join the lab.** Please include in your inquiry (**{{ site.author.email }}**):
