@@ -14,7 +14,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 **We will be hiring soon for a staff research associate to join a project aligning China's market reforms with carbon neutrality**. Please check back and/or send an inquiry for more information.
 
 ## Undergraduate
-**We will be hiring soon for undergraduate researchers to join the lab**. Please check back and/or send an inquiry for more information.
+**We are hiring two undergraduate research assistants for work on Vietnam and the geodata package**. Please see the [job announcements]({% post_url 2024-08-20-job-researcher-vietnam-power-grid-geodata %}) for more information.
 
 ## PhD and MS
 **We are recruiting PhD students to join the lab.** Please include in your inquiry (**{{ site.author.email }}**):
