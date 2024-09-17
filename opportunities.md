@@ -17,13 +17,15 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 **We are hiring two undergraduate research assistants for work on Vietnam and the geodata package**. Please see the [job announcements]({% post_url 2024-08-20-job-researcher-vietnam-power-grid-geodata %}) for more information.
 
 ## PhD and MS
-**We are recruiting PhD students to join the lab.** Please include in your inquiry (**{{ site.author.email }}**):
+If you are a prospective PhD student, please include in your inquiry (**{{ site.author.email }}**):
 
 - CV and transcript(s)
 - Research interests (the team's [research areas](research/) are a good start to see what we do, but we are also interested in what you want to do)
 - If you are a fellowship recipient with funding
 
-**Qualified MS students for these positions may also send an inquiry.**
+You should consult the [Power and Energy Systems Group @ UCSD][ucsd-pes] for more information on the school's programs and application advice.
+
+**Admitted masters students (MS, MPP, MIA, MCEPA) may also send an inquiry about lab openings.**
 
 
 ## Additional Opportunities
@@ -43,4 +45,5 @@ If you would like to be considered for future funded opportunities, you may cont
 [foundation]: https://foundationrelations.ucsd.edu/funding-opportunities/postdoctoral-funding-opportunities.html
 [NAS]: https://www.national-academies.org/grantprograms/index.html
 [harvard-funding]: https://research.fas.harvard.edu/postdoc_opportunities
+[ucsd-pes]: https://power-energy.eng.ucsd.edu/
 
