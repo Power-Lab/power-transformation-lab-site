@@ -37,4 +37,4 @@ jobs:
           bundler_ver: '2.4.22'            # Default is compatible bundler version (~>2.5.0)
           cname: 'pwrlab.org'                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
+          pre_build_commands: 'git config --global http.version HTTP/1.1; git config --global http.postBuffer 524288000'
