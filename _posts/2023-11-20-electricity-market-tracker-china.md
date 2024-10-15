@@ -2,7 +2,7 @@
 layout: post
 title: "New Electricity Market Tracker for China Released"
 subtitle: "New open data and model platform researching China's electricity market and policies"
-tags: [post, featured, home]
+tags: [post]
 image: https://emtracker.org/wp-content/uploads/2023/07/shutterstock_2034171221-1-1000x640-c-default.png
 ---
 

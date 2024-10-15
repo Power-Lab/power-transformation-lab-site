@@ -2,7 +2,7 @@
 layout: post
 title: "Lab members present research at Climate and Energy Decision-Making (CEDM) workshop at CMU"
 subtitle: "Projects on small modular reactors and solar siting"
-tags: [post, home, featured]
+tags: [post]
 image: /img/cedm_2024.png
 ---
 

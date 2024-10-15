@@ -14,7 +14,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 **We will be hiring soon for a staff research associate to join a project aligning China's market reforms with carbon neutrality**. Please check back and/or send an inquiry for more information.
 
 ## Undergraduate
-**We are hiring two undergraduate research assistants for work on Vietnam and the geodata package**. Please see the [job announcements]({% post_url 2024-08-20-job-researcher-vietnam-power-grid-geodata %}) for more information.
+**We are not currently hiring for undergraduate research assistants**. Please check back and/or send an inquiry for more information.
 
 ## PhD and MS
 If you are a prospective PhD student, please include in your inquiry (**{{ site.author.email }}**):
