@@ -3,7 +3,7 @@ layout: post
 title: "Job Opening: Staff Research Associate on China's electricity markets"
 subtitle: "Join a research team focusing on data collection and organization, modeling analysis, and writing on China’s electricity market developments and aligning market reforms with carbon neutrality"
 tags: [post, job, featured, home]
-image: /img/transmission_tower.jpg
+image: /img/China_transmission.png
 ---
 
 DESCRIPTION
