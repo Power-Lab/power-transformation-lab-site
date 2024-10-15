@@ -2,7 +2,7 @@
 layout: paper
 title: "Spatially resolved land and grid model of carbon neutrality in China"
 subtitle: "Zhang, D., Zhu, Z., Chen, S., Zhang, C., Lu, X., Zhang, X., … Davidson, M. R. <i>PNAS</i>."
-tags: [papers, renewable_energy_planning, journal_article, featured, home]
+tags: [papers, renewable_energy_planning, journal_article]
 image: /img/ne_wind_farm.jpg
 
 ---
