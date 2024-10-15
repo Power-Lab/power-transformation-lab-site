@@ -11,7 +11,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 **We will be hiring soon for one or more postdocs to support open modeling of decarbonization in China**. Please check back and/or send an inquiry for more information.
 
 ## Staff
-**We are currently hiring a staff research associate to join a project modeling China's market reforms to carbon neutrality. Please see the [job announcement]({% post_url 2024-10-24-job-staff-research-associate-China-power-grid %})**.
+**We are currently hiring a staff research associate to join a project modeling China's market reforms to carbon neutrality. Please see the [job announcement]({% post_url 2024-10-24-job-staff-research-associate-china-power-markets %})**.
 
 ## Undergraduate
 **We are not currently hiring for undergraduate research assistants**. Please check back and/or send an inquiry for more information.
