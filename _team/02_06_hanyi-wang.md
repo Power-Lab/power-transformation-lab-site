@@ -1,6 +1,7 @@
 ---
 img: img/team/hanyi-wang.jpg
 name: Hanyi Wang
+alumni: true
 ---
 
 

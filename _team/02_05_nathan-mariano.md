@@ -1,6 +1,7 @@
 ---
 img: img/team/nathan-mariano.jpg
 name: Nathan Mariano
+alumni: true
 ---
 
 

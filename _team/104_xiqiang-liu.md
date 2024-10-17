@@ -1,7 +1,7 @@
 ---
 img: img/team/08_xiqiang-liu.png
 name: Xiqiang Liu
-alumni: true
+alumni: false
 ---
 
 
