@@ -4,4 +4,5 @@ link: https://foreignpolicy.com/2024/09/25/china-biden-connected-cars-commerce-b
 description: Michael Davidson discusses impact of foregoing China's clean tech capabilities
 featured: true
 date: 2024-09-25
+image: /img/China_EV.jpg
 ---
