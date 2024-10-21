@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Job Opening: Open Modeling of China’s Power Sector Decarbonization"
+title: "Job Opening: Postdoc on Open Modeling of China’s Power Sector Decarbonization"
 subtitle: "Contribute to open and broadly accessible data, models, and insights focused on institutional and engineering challenges of a massive scale-up of renewable and low-carbon energy sources"
 tags: [post, job, featured, home]
 image: /img/China_transformer.jpg
