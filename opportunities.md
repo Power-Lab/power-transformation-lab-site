@@ -8,7 +8,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 ---
 
 ## Postdoc
-**We are currently hirigin one or more postdocs to support open modeling of decarbonization in China Please see the [job announcement]({% post_url 2024-10-21-job-postdoc-open-china-modeling.md %})**.
+**We are currently hiring one or more postdocs to support open modeling of decarbonization in China Please see the [job announcement]({% post_url 2024-10-21-job-postdoc-open-china-modeling.md %})**.
 
 ## Staff
 **We are currently hiring a staff research associate to join a project modeling China's market reforms to carbon neutrality. Please see the [job announcement]({% post_url 2024-10-10-job-staff-research-associate-china-power-markets %})**.
