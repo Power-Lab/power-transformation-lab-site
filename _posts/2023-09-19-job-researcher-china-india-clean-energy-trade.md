@@ -2,7 +2,7 @@
 layout: post
 title: "Job Opening: Research on China-India Clean Energy Trade"
 subtitle: "Trade can help spur climate mitigation but is also a source of geopolitical tension"
-tags: [post, job]
+tags: [post]
 image: /img/transmission_tower.jpg
 ---
 

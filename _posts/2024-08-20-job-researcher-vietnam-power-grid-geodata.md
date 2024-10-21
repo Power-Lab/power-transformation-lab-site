@@ -2,7 +2,7 @@
 layout: post
 title: "Two Research Assistant Openings: Vietnam Power Grid and Geodata Renewable Resource Assessment"
 subtitle: "Join a dynamic team modeling the development pathways for the decarbonization of Vietnam's power sector and developing open-source tools for renewable energy resource assessment and modeling"
-tags: [post, job]
+tags: [post]
 image: /img/transmission_tower.jpg
 ---
 
