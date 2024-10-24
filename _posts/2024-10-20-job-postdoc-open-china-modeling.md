@@ -24,7 +24,7 @@ The initial appointment will be for 2 years, extendable based on mutual agreemen
 
 ## To Apply
 
-Materials: Send a cover letter indicating experience and career goals, a CV, and contact information for three references. All materials and inquiries should be emailed to **mrdavidson AT ucsd.edu**, and include in the subject line “Postdoc: Open Modeling China”.
+Materials: Send a cover letter indicating experience and career goals, a CV, and contact information for three references. All materials and inquiries should be emailed to **powerlab AT ucsd.edu**, and include in the subject line “Postdoc: Open Modeling China”.
 
 **The first round of candidate reviews will take place on November 15, 2024.** It is encouraged to send materials before this deadline, but materials will be reviewed on a rolling basis after this date.
 
