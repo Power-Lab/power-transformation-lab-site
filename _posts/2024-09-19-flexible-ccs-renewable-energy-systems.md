@@ -11,6 +11,7 @@ Electrical power systems account for over 40 % of China's total CO2 emissions, w
 
 [Full article](https://www.sciencedirect.com/science/article/pii/S0306261924018427)
 
+[Open access](https://oapolicy.universityofcalifornia.edu/viewobject.html?cid=1&id=4716353)
 
 Recommended citation:
 
