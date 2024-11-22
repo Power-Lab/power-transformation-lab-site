@@ -25,5 +25,5 @@ Overtime (evening or weekend) may be required based on needs.
 
 First Review: **Thu 10/24/2024**
 
-**See [more details and application requirements](https://employment.ucsd.edu/research-associate-132711/job/28567145).** All inquiries should be emailed to **powerlab AT ucsd.edu**, and include in the subject line “Research Associate: China electricity markets”.
+**See [more details and application requirements](https://employment.ucsd.edu/research-associate-132711/job/28629480).** All inquiries should be emailed to **powerlab AT ucsd.edu**, and include in the subject line “Research Associate: China electricity markets”.
 
