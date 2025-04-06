@@ -2,7 +2,7 @@
 layout: paper
 title: "Simulating institutional heterogeneity in sustainability science"
 subtitle: "Davidson, M. R., Filatova, T., Peng, W., Verbeek, L., & Kucuksayacigil, F. <i>PNAS</i>."
-tags: [papers, political_economy, journal_article, featured, home]
+tags: [papers, political_economy, journal_article]
 image: /img/pnas_simulating_institutions.png
 
 ---

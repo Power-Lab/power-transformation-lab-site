@@ -2,7 +2,7 @@
 layout: post
 title: "Job Opening: Postdoctoral Scholar – Renewable Energy Trade between India and China"
 subtitle: "Analyze the drivers, patterns, and implications of trade between the two countries in clean energy technologies"
-tags: [post, job, featured, home]
+tags: [post, job]
 image: /img/China_port.JPG
 ---
 

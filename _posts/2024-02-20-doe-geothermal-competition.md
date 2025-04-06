@@ -2,7 +2,7 @@
 layout: post
 title: "Power Lab wins 2nd place in DOE Collegiate Geothermal Competition"
 subtitle: "Policy track analyzes the regulatory environment and economic feasibility of a proposed geothermal district heating and cooling (GDHC) system"
-tags: [post, home, featured]
+tags: [post]
 image: /img/geothermal_team_competition.png
 ---
 UCSD graduate students Jenny Nicolas, Zhenhua Zhang, Manh Tri Dao, and Shiny Choudhury secured Second Place (and $6,000) at the [U.S. Department of Energy 2023 Geothermal Collegiate Competition](https://www.energy.gov/eere/articles/us-department-energy-announces-winners-2023-geothermal-collegiate-competition) in the Policy Track.

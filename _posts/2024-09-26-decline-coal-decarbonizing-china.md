@@ -2,7 +2,7 @@
 layout: paper
 title: "Managing the decline of coal in a decarbonizing China"
 subtitle: "Davidson, M. R. <i>WIREs Climate Change</i>."
-tags: [papers, political_economy, journal_article, featured, home]
+tags: [papers, political_economy, journal_article]
 image: /img/coal_plant.jpg
 
 ---

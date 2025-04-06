@@ -2,7 +2,7 @@
 layout: post
 title: "Lab members present research at the Technology, Data, and Policy (TDP) Conference at MIT"
 subtitle: "Best presentation award for China's RE scale-up study"
-tags: [post, home, featured]
+tags: [post]
 image: /img/mit-tdp-2024.jpg
 ---
 
