@@ -1,10 +1,9 @@
 ---
 layout: paper
 title: "Wildfire Resilient Unit Commitment under Uncertain Demand"
-subtitle: "Greenough et al. <i>IEEE Transactions on Power Systems</i>.
-"
+subtitle: "Greenough et al. <i>IEEE Transactions on Power Systems</i>."
 tags: [papers, renewable_energy_planning, journal_article, featured, home]
-image: /img/solar_sm.jpg
+image: https://images.pexels.com/photos/14840720/pexels-photo-14840720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
 ---
 
