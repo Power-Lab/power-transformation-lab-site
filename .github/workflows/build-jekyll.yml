@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      # Setup Ruby
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1.4' # Prebuilt Ruby version
-          bundler-cache: true
           
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
@@ -29,7 +23,7 @@ jobs:
 
       # Use GitHub Deploy Action to build and deploy to Github
       # For latest version: `jeffreytse/jekyll-deploy-action@master`
-      - uses: jeffreytse/jekyll-deploy-action@v0.6.0
+      - uses: jeffreytse/jekyll-deploy-action@master
         with:
           provider: 'github'         # Default is github
           token: ${{ secrets.GH_TOKEN }} # It's your Personal Access Token(PAT)
@@ -39,8 +33,8 @@ jobs:
           jekyll_src: './'           # Default is root directory
           jekyll_cfg: '_config.yml'  # Default is _config.yml
           jekyll_baseurl: ''         # Default is according to _config.yml
-          ruby_ver: '3.1.4'          # Use a stable Ruby version
-          bundler_ver: '2.4.22'            # Default is compatible bundler version (~>2.5.0)
+          ruby_ver: ''          # Use a stable Ruby version
+          bundler_ver: ''            # Default is compatible bundler version (~>2.5.0)
           cname: 'pwrlab.org'                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
           pre_build_commands: 'git config --global http.version HTTP/1.1; git config --global http.postBuffer 524288000; git config --global pack.window 1'
