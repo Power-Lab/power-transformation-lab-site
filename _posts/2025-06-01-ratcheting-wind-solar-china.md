@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Ratcheting up wind and solar targets for decarbonizing the power sector in China and beyond. Cell Reports Sustainability"
+title: "Ratcheting up wind and solar targets for decarbonizing the power sector in China and beyond"
 subtitle: "Zhang, Z., Zhu, Z., Lu, X., Zhang, D., & Davidson, M. R. <i>Cell Reports Sustainability</i>"
 tags: [papers, renewable_energy_planning, journal_article, featured, home]
 image: /img/ne_wind_farm.jpg
