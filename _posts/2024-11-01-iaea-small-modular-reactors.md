@@ -2,7 +2,7 @@
 layout: post
 title: "Lab member presents research at the first Small Modular Reactor (SMR) Conference at IAEA in Vienna"
 subtitle: "Flexibility limits in Small Modular Reactors for enhanced load-following"
-tags: [post, home, featured]
+tags: [post]
 image: /img/iaea_2024.jpg
 ---
 

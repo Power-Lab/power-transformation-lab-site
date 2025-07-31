@@ -13,7 +13,7 @@ Characterizing the morphology of lithium (Li) is crucial for developing long-las
 
 Recommended citation:
 
-**Nicolas, J. R.**, Hui, Z., Miao, Q., Lin, H., **Davidson, M. R.**, & Liu, P. (2025). A quantitative imaging framework for lithium morphology: Linking deposition uniformity to cycle stability in lithium metal batteries. Proceedings of the National Academy of Sciences, 122(29), e2502518122. https://doi.org/10.1073/pnas.2502518122
+**Nicolas, J. R.**, Hui, Z., Miao, Q., Lin, H., **Davidson, M. R.**, & Liu, P. (2025). A quantitative imaging framework for lithium morphology: Linking deposition uniformity to cycle stability in lithium metal batteries. _Proceedings of the National Academy of Sciences_, 122(29), e2502518122. https://doi.org/10.1073/pnas.2502518122
 
 
 

@@ -2,7 +2,7 @@
 layout: paper
 title: "2024 Workshop on Low-Carbon Transitions in Chinese State-Owned Enterprises: Key Take-Aways"
 subtitle: "UC San Diego 21st Century China Center, Power Transformation Lab"
-tags: [featured, home, papers, political_economy, working_and_reports]
+tags: [papers, political_economy, working_and_reports]
 image: /img/2024-workshop-soe-transitions-cover.png
 
 ---

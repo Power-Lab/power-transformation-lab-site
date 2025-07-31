@@ -3,7 +3,7 @@ layout: paper
 title: "Maximizing the environmental benefits of gas power development in China: A multidisciplinary modeling approach"
 subtitle: "Chen et al. <i>iScience</i>.
 "
-tags: [papers, renewable_energy_planning, journal_article, featured, home]
+tags: [papers, renewable_energy_planning, journal_article]
 image: /img/coal_plant_sunset.jpg
 
 ---
