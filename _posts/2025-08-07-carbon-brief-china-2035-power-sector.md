@@ -17,7 +17,7 @@ In our new study, co-authored with experts from Tsinghua University and publishe
 
 [Full post](https://www.carbonbrief.org/guest-post-what-an-ambitious-2035-electricity-target-looks-like-for-china/)
 
-
+[Read the paper]({% post_url 2025-06-01-ratcheting-wind-solar-china %})
 
 
 
