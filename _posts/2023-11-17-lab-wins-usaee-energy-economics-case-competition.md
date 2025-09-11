@@ -2,7 +2,7 @@
 layout: post
 title: "Lab members win US energy economics case competition"
 subtitle: "Winning report on harnessing geothermal power using multi-criteria decision-making"
-tags: [post, featured]
+tags: [post]
 image: https://soeapp.ucsd.edu/tools/uploads/news/2023/img1b(1).png
 ---
 

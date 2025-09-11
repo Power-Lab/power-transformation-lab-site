@@ -2,7 +2,7 @@
 layout: paper
 title: "Why China Can’t Break Its Coal Addiction"
 subtitle: "Davidson, M. <i>Foreign Affairs</i>."
-tags: [papers, power_markets, political_economy, refereed_and_other, featured]
+tags: [papers, power_markets, political_economy, refereed_and_other]
 image: /img/coal-plant-sm.jpg
 
 ---
