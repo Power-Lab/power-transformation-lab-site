@@ -1,6 +1,7 @@
 ---
 img: img/team/hongyu-zhang.jpg
 name: Dr. Hongyu Zhang
+alumni: true
 ---
 
 

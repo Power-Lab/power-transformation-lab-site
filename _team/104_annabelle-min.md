@@ -1,6 +1,7 @@
 ---
 img: img/team/annabelle-min.jpg
 name: Annabelle Min
+alumni: true
 ---
 
 

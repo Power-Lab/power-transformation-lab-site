@@ -1,6 +1,7 @@
 ---
 img: img/team/09_yumeng-liu.png
 name: Yumeng Liu
+alumni: true
 ---
 
 

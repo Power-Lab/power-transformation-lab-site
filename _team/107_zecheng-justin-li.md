@@ -1,6 +1,6 @@
 ---
 img: img/team/07_zecheng-justin-li.png
-name: Zecheng (Justin) Li'
+name: Zecheng (Justin) Li
 alumni: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 img: img/team/07_yiqun-meng.jpg
 name: Yiqun Meng
+alumni: true
 ---
 
 

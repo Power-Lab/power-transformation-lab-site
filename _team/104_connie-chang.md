@@ -1,6 +1,7 @@
 ---
 img: img/team/connie-chang.jpg
 name: Connie Chang
+alumni: true
 ---
 
 

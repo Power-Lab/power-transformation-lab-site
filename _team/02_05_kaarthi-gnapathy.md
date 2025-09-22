@@ -4,5 +4,5 @@ name: Kaarthi Gnapathy
 ---
 
 
-Kaarthi is pursuing a Master of Science in Mechanical and Aerospace Engineering, majoring in Power & Energy Systems at UCSD. He is interested to explore the energy markets in the Southeast Asian region and develop an energy systems model that could help navigate through regional challenges in the energy transition. He holds a B.S. in Mechanical Engineering, and a minor in Economics from Purdue University. In his free time, Kaarthi enjoys cooking, drone photography and going on road trips.
+Kaarthi is a Ph.D. student in Mechanical and Aerospace Engineering at UC San Diego, where he applies engineering tools to explore political economy questions. His current research focuses on how industrial power sector decarbonization, power market reforms, and cross-border electricity trade shape national clean energy transitions. He holds a master’s degree from UC San Diego and a bachelor’s degree from Purdue University, and brings professional experience in the Southeast Asian power sector. Outside of research, he enjoys cycling, cooking, and exploring new restaurants.
 
