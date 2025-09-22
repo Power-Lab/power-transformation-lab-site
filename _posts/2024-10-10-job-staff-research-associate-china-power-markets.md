@@ -6,6 +6,10 @@ tags: [post, job]
 image: /img/China_transmission.png
 ---
 
+## (Archived)
+
+**_These positions have already been filled. Please see [Opportunities](/opportunities.html) for current openings._**
+
 DESCRIPTION
 
 The University of California’s only school of international affairs, the School of Global Policy & Strategy (GPS) provides a unique resource for training leaders, creating ideas, and building networks for the governance of globalization and its local impacts. GPS is internationally renowned for its innovative programs, superb faculty and outstanding students and now stands among the world's top graduate schools of international relations and is the established leader in its focus on Asia and the Americas. GPS instructs a diverse student body consisting of 60% domestic and 40% international students in MPP, MCEPA, MIA, BA-MIA, MAS, joint PhD with Department of Political Science and executive education programs. GPS also administers the International Studies Program, a fast-growing interdisciplinary program with over 1700 declared undergraduate majors, that offers a rigorous curriculum for undergraduate students interested in international affairs. Offering nine B.A. degree options, three combined BA/MIA programs, and a minor program, the International Studies Program explores the interaction between the international and national, global and local, contemporary and historical ideas shaping globalization. GPS is also the parent organization to major research centers: Center for Commerce and Diplomacy (CCD), Center on Global Transformation (CGT), Center for U.S.-Mexican Studies, 21st Century China Center, Fudan-UC Center on China, Institute on Global Conflict and Cooperation (IGCC), Policy Design and Evaluation Lab (PDEL), Laboratory on International Law and Regulation (ILAR), and Japan Forum for Innovation and Technology (JFIT).

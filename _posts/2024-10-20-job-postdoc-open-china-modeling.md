@@ -6,6 +6,10 @@ tags: [post, job]
 image: /img/China_transformer.jpg
 ---
 
+## (Archived)
+
+**_These positions have already been filled. Please see [Opportunities](/opportunities.html) for current openings._**
+
 The Power Transformation Lab at UC San Diego (https://pwrlab.org/) is seeking one or more postdoctoral researchers to conduct research on open modeling of China’s power sector decarbonization. The Power Transformation Lab studies the engineering and institutional requirements of deploying low-carbon energy at scale, centering on the role of the power grid. The Lab is run by Michael Davidson, Assistant Professor in the School of Global Policy and Strategy (GPS) and the Department of Mechanical and Aerospace Engineering (MAE). The postdoctoral researcher appointment may be in either GPS or MAE, per the applicant’s preference.
 
 While China has set a long-term goal for carbon neutrality, there is considerable uncertainty about (a) how to achieve it, (a) what happens in the next decade, and (b) the pace, structure, and cost of low-carbon pathways. The transformation of the power sector—central to any decarbonization scenario—is hindered by entrenched incumbents and the institutional and engineering challenges of achieving a massive scale-up of renewable and low-carbon energy sources. This requires the development of new modeling tools to capture physical resource, engineering, and political economy factors affecting the deployment of low-carbon energy. The postdoctoral researcher will contribute to creating open and broadly accessible data, models, and insights, which target governments, academics, civil society, and industry stakeholders. Applications are welcomed in one or both of the following areas:

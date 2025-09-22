@@ -8,16 +8,16 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 ---
 
 ## Postdoc
-**We are currently hiring multiple postdocs.**
-
-1. Support open modeling of decarbonization in China. Please see the [job announcement]({% post_url 2024-10-20-job-postdoc-open-china-modeling %}).
-2. Analyze renewable energy technology trade between China and India. Please see the [job announcement]({% post_url 2024-11-15-job-postdoc-aretic-india-china-clean-energy-trade %}).
+**We will be posting postdoc positions soon.** In general, we are always looking for strong candidates in the areas:
+- Modeling and decarbonization of power systems
+- Analyzing clean energy trade and supply chains
+- Regional focuses on China, Southeast Asia, India
 
 ## Staff
-**We are currently hiring a staff research associate to join a project modeling China's market reforms to carbon neutrality. Please see the [job announcement]({% post_url 2024-10-10-job-staff-research-associate-china-power-markets %})**.
+We are not currently hiring any staff positions.
 
 ## Undergraduate
-**We are not currently hiring for undergraduate research assistants**. Please check back and/or send an inquiry for more information.
+**We are currently hiring a block of undergraduate research assistants**. Please see the [job announcement]({% post_url 2025-09-20-job-multiple-undergrad-research-assistants %}).
 
 ## PhD and MS
 If you are a prospective PhD student, please include in your inquiry (**{{ site.author.email }}**):

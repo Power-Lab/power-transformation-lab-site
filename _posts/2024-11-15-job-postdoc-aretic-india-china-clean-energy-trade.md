@@ -6,7 +6,9 @@ tags: [post, job]
 image: /img/China_port.JPG
 ---
 
-## Postdoctoral Scholar – Renewable Energy Trade between India and China
+## (Archived)
+
+**_These positions have already been filled. Please see [Opportunities](/opportunities.html) for current openings._**
 
 The 21st Century India Center at UC San Diego invites applications for a postdoctoral scholar to conduct research on the renewable energy trade relationship between India and China. This position focuses on understanding and analyzing the drivers, patterns, and implications of trade between the two countries in clean energy technologies.
 
