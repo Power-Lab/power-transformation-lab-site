@@ -15,7 +15,6 @@ China has recently reinvigorated reforms to its electricity sector, focusing on 
 
 [Pre-publication version](https://escholarship.org/uc/item/5cx330qg)
 
-[中文版本]({% post_url 2019-12-16-avoiding-pitfalls-china-electricity-reforms-cn %})
 
 Recommended citation:
 
