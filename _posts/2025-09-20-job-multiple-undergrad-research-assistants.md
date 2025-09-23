@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Seeking Multiple Undergraduate Research Assistants"
+title: "Seeking Multiple Undergraduate Research Assistants (Fall 2025)"
 subtitle: "Contribute to data and analysis on projects related to power decarbonization, electricity markets and clean energy trade"
 tags: [post, job, featured, home]
 image: /img/hero_backgrounds/Team-small.jpg
