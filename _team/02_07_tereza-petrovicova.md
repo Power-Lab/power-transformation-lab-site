@@ -1,5 +1,5 @@
 ---
-img: img/team/tereza-petrovicova.png
+img: img/team/tereza-petrovicova.jpg
 name: Tereza Petrovicova
 ---
 
