@@ -3,7 +3,7 @@ layout: paper
 title: "Reaching carbon neutrality in China: Temporal and subnational limitations of renewable energy scale-up"
 subtitle: "Zhang, Z., Zhu, Z., Gordon, J., Lu, X., Zhang, D., & Davidson, M. R. <i>Advances in Applied Energy</i>."
 tags: [papers, renewable_energy_planning, journal_article, featured, home]
-image: https://ars.els-cdn.com/content/image/1-s2.0-S2666792425000320-gr4.jpg
+image: https://ars.els-cdn.com/content/image/1-s2.0-S2666792425000320-gr2.jpg
 
 ---
 
