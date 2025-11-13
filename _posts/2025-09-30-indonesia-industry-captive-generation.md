@@ -15,7 +15,9 @@ Industrial park firms are interested in decarbonizing their industrial parks by 
 This report assesses options for reducing carbon emissions in Indonesia’s captive power facilities considering plant-level options and grid upgrades, with a specific emphasis on who owns these facilities and finding viable strategies to support and implement.
 
 [Report](https://doi.org/10.5281/zenodo.17345968)
+
 [Model](https://github.com/Power-Lab/captive-indonesia-2025)
+
 [Data](https://github.com/Power-Lab/data-indonesia-2025)
 
 Recommended citation:
