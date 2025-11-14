@@ -3,7 +3,7 @@ layout: post
 title: "New Reports on Southeast Asia's Low-Carbon Energy Future"
 subtitle: "Modeling studies from lab students Kaarthi A Gnapathy, Tyson Dao and Lucien Chen"
 tags: [post,  political_economy, featured, home]
-
+image: /img/solar_sm.jpg
 ---
 
 
