@@ -2,7 +2,7 @@
 layout: paper
 title: "Physics-Informed Unit Commitment Framework for Nuclear Reactors"
 subtitle: "Choudhury, S., Davidson, M., & Tynan, G. <i>arXiv preprint</i>."
-tags: [papers, renewable_energy_planning, reports]
+tags: [papers, renewable_energy_planning, working_and_reports]
 image: /img/nuclear-plant-unsplash.jpg
 
 ---
