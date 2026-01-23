@@ -1,6 +1,7 @@
 ---
 img: img/team/vafa-behnam-roudsari.jpg
 name: Vafa Behnam-roudsari
+alumni: true
 ---
 
 
