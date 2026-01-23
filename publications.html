@@ -1,0 +1,1723 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Publications - Power Transformation Lab</title>
+
+<meta name="description" content="The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale
+">
+<link rel="canonical" href="https://pwrlab.org/publications.html"><link rel="alternate" type="application/rss+xml" title="Power Transformation Lab" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<!--<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50">
+--><link rel="shortcut icon" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Power Transformation Lab" />
+<meta name="twitter:image" content="https://pwrlab.org/assets/apple-touch-icon.png" /><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet -->
+<link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://use.fontawesome.com/releases/v5.15.1/css/all.css',
+        jquery: 'https://unpkg.com/jquery@3.3.1/dist/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://unpkg.com/chart.js@2.7.2/dist/Chart.min.js',
+        gitalk: {
+          js: 'https://unpkg.com/gitalk@1.2.2/dist/gitalk.min.js',
+          css: 'https://unpkg.com/gitalk@1.2.2/dist/gitalk.css'
+        },
+        valine: 'https//unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://unpkg.com/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Publications | Power Transformation Lab</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Publications" />
+<meta name="author" content="Power Transformation Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale" />
+<meta property="og:description" content="The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale" />
+<link rel="canonical" href="https://pwrlab.org/publications.html" />
+<meta property="og:url" content="https://pwrlab.org/publications.html" />
+<meta property="og:site_name" content="Power Transformation Lab" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Publications" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@east_winds" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The Power Transformation Lab at the University of California, San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale","headline":"Publications","url":"https://pwrlab.org/publications.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root">
+<div class="page__main js-page-main page__viewport cell cell--auto">
+
+      <div class="page__main-inner">
+<div class="page__header d-print-none">
+<header class="header"><div class="main">
+      <a id="skip-to-content" href="">Skip To Content</a>
+      <div class="header__title">
+        <div class="header__brand">
+<a href="/" class="header-image-container"><img src="/img/header-logo.png" height="64" alt="Power Transformation Lab Logo"></a>
+        </div>
+</div>
+<nav class="navigation">
+        <ul>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/" class="dropdown-btn">HOME</a>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/research.html" class="dropdown-btn">RESEARCH</a><div class="dropdown-content">
+<a href="/publications.html" class="dropdown-item">Publications</a><a href="/models_and_data.html" class="dropdown-item">Models and Data</a>
+</div>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/news.html" class="dropdown-btn">NEWS</a><div class="dropdown-content">
+<a href="/in_the_media.html" class="dropdown-item">In the Media</a><a href="/lab_updates.html" class="dropdown-item">Lab Updates</a>
+</div>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/about.html" class="dropdown-btn">ABOUT</a><div class="dropdown-content">
+<a href="/team.html" class="dropdown-item">Meet the Team</a><a href="/teaching.html" class="dropdown-item">Teaching</a><a href="/opportunities.html" class="dropdown-item">Opportunities</a><a href="/study_at_ucsd.html" class="dropdown-item">Study @ UCSD</a>
+</div>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/contact.html" class="dropdown-btn">CONTACT</a>
+</div>
+              </li>
+</ul>
+      </nav><div id="mobile-menu-icon" tabindex="0" onclick="togglemenu()">
+  <hr>
+  <hr>
+  <hr>
+</div>
+
+<div id="mobile-menu">
+  <div id="links-container">
+    <ul class="main-list">
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/">HOME</a>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/research.html">RESEARCH</a><ul class="submenu">
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/publications.html">Publications</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/models_and_data.html">Models and Data</a>
+        </li>
+</ul>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/news.html">NEWS</a><ul class="submenu">
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/in_the_media.html">In the Media</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/lab_updates.html">Lab Updates</a>
+        </li>
+</ul>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/about.html">ABOUT</a><ul class="submenu">
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/team.html">Meet the Team</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/teaching.html">Teaching</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/opportunities.html">Opportunities</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/study_at_ucsd.html">Study @ UCSD</a>
+        </li>
+</ul>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/contact.html">CONTACT</a>
+</li>
+</ul>
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg id="mobile-menu-up-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px" viewbox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" onclick="togglemenu()" tabindex="-1" class="mobile-menu-item">
+<g>
+	<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+		c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+		c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"></path>
+</g>
+</svg>
+
+  </div>
+</div>
+
+<script>
+  let menuItems
+  let mobileMenu
+  let mobileMenuIcon
+  let upArrow
+  document.addEventListener('DOMContentLoaded', () => {
+    menuItems = document.querySelectorAll(".mobile-menu-item")
+    mobileMenu = document.querySelector("#mobile-menu")
+    mobileMenuIcon = document.querySelector("#mobile-menu-icon")
+    upArrow = document.querySelector("#mobile-menu-up-arrow")
+    mobileMenuIcon.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault()
+        togglemenu()
+      }
+    })
+    upArrow.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault()
+        togglemenu()
+      }
+    })
+  })
+  const expandmenu = () => {
+      mobileMenu.className = "expanded"
+      mobileMenuIcon.className = "expanded"
+      document.querySelector("html").style.overflowY = "hidden"
+      menuItems.forEach(item => {
+        item.setAttribute("tabindex", "0")
+      })
+  }
+  const retractmenu = () => {
+      mobileMenu.className = ""
+      mobileMenuIcon.className = ""
+      document.querySelector("html").style.overflowY = "scroll"
+      menuItems.forEach(item => {
+        item.setAttribute("tabindex", "01")
+      })
+  }
+  const togglemenu = () => {
+    if (mobileMenu.className == "") {
+      expandmenu()
+    } else {
+      retractmenu()
+    }
+  }
+  // if the window expands then make sure we close the menu so it doesn't reappear if the window shrinks
+  window.onresize = () => {
+    if (window.innerWidth > 1024) {
+      retractmenu()
+    }
+  }
+</script>
+</div>
+  </header>
+</div>
+<div class="page__content"><div class="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"></div>
+
+              <div class="col-main cell cell--auto">
+<!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Publications</h1></header><meta itemprop="headline" content="Publications">
+<meta itemprop="author" content="Power Transformation Lab">
+                    <div class="js-article-content">
+
+<div class="hero-container" style="background-image: url(img/hero_backgrounds/Publications-page.jpg); background-color: #658129">
+  
+  <div class="hero-text long">
+  
+    <h1>PUBLICATIONS</h1>
+  </div>
+  <?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg class="prompt-arrow" fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" viewbox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" onclick="scrollToFirstContent()" tabindex="0">
+<g>
+	<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+		c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+		c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"></path>
+</g>
+</svg>
+
+</div>
+<div class="hero-spacer"></div>
+<script> const scrollToFirstContent = () => {
+  const vh = window.innerHeight
+  if (window.innerWidth < 500) {
+    window.scrollTo(0, vh - 64)
+  } else {
+    window.scrollTo(0, vh - 80)
+  }
+}
+
+const promptArrow = document.querySelector(".prompt-arrow")
+promptArrow.addEventListener("keydown", e => {
+  if (e.key == "Enter") {
+    scrollToFirstContent()
+  }
+})
+</script>
+
+<div class="layout__publications">
+  
+<div class="triple-box-container">
+  <a class="box" href="renewable_energy_planning">
+    <h3>Renewable energy planning</h3>
+  </a>
+  <a class="box" href="power_markets">
+    <h3>Power markets</h3>
+  </a>
+  <a class="box" href="political_economy">
+    <h3>Political economy</h3>
+  </a>
+</div>
+
+
+
+  <p><a id="show-all" href="">Show All</a></p>
+<h2 class="section-header">Journal Articles</h2>
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/10/17/carbon-neutrality-pathways-china.html" class="article-title">Reaching carbon neutrality in China: Temporal and subnational limitations of renewable energy scale-up (2025)</a>
+    <p class="citation">Zhang, Z., Zhu, Z., Gordon, J., Lu, X., Zhang, D., &amp; Davidson, M. R. <i>Advances in Applied Energy</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/09/19/critical-mineral-bottlenecks-sub-technology.html" class="article-title">Critical Mineral Bottlenecks Constrain Sub-Technology Choices in Low-Carbon Energy Deployment (2025)</a>
+    <p class="citation">Yu, D., Gu, B., Zhu, M., &amp; Davidson, M. <i>iScience</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/07/15/lithium-morphology-deposition-uniformity.html" class="article-title">A quantitative imaging framework for lithium morphology: Linking deposition uniformity to cycle stability in lithium metal batteries (2025)</a>
+    <p class="citation">Nicolas, J. R., Hui, Z., Miao, Q., Lin, H., Davidson, M. R., &amp; Liu, P. <i>Proceedings of the National Academy of Sciences</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/06/01/ratcheting-wind-solar-china.html" class="article-title">Ratcheting up wind and solar targets for decarbonizing the power sector in China and beyond (2025)</a>
+    <p class="citation">Zhang, Z., Zhu, Z., Lu, X., Zhang, D., &amp; Davidson, M. R. <i>Cell Reports Sustainability</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/05/16/emerging-demand-flexible-resources.html" class="article-title">Emerging demand-side flexible resources accelerate China’s power system transition toward carbon neutrality (2025)</a>
+    <p class="citation">Wei et al. <i>iScience</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/04/22/coordinating-power-sector-policy-climate.html" class="article-title">Coordinating power sector climate transitions under policy uncertainty (2025)</a>
+    <p class="citation">Kucuksayacigil, F., Zhang, Z., &amp; Davidson, M. R. <i>Nature Communications</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/01/08/wildfire-resilient-unit-commitment.html" class="article-title">Wildfire Resilient Unit Commitment under Uncertain Demand (2025)</a>
+    <p class="citation">Greenough, R., Murakami, K., Davidson, M., Kleissl, J., &amp; Khurram, A. <i>IEEE Transactions on Power Systems</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/01/01/flexible-ccs-renewable-energy-systems.html" class="article-title">Assessing the synergies of flexibly-operated carbon capture power plants with variable renewable energy in large-scale power systems (2025)</a>
+    <p class="citation">Li, J., Zhang, C., Davidson, M. R., &amp; Lu, X. <i>Applied Energy</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2024/10/17/strategic-coal-to-gas-china.html" class="article-title">Maximizing the environmental benefits of gas power development in China: A multidisciplinary modeling approach (2024)</a>
+    <p class="citation">Chen et al. <i>iScience</i>. </p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2024/09/26/decline-coal-decarbonizing-china.html" class="article-title">Managing the decline of coal in a decarbonizing China (2024)</a>
+    <p class="citation">Davidson, M. R. <i>WIREs Climate Change</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2024/02/26/spatially-resolved-land-grid-model-carbon-neutrality-china.html" class="article-title">Spatially resolved land and grid model of carbon neutrality in China (2024)</a>
+    <p class="citation">Zhang, D., Zhu, Z., Chen, S., Zhang, C., Lu, X., Zhang, X., … Davidson, M. R. <i>PNAS</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2024/02/15/simulating-institutions-sustainability-modeling.html" class="article-title">Simulating institutional heterogeneity in sustainability science (2024)</a>
+    <p class="citation">Davidson, M. R., Filatova, T., Peng, W., Verbeek, L., &amp; Kucuksayacigil, F. <i>PNAS</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2023/06/01/hard-to-say-goodbye-south-korea-japan-china-lenders-coal.html" class="article-title">Hard to Say Goodbye: South Korea, Japan, and China as the Last Lenders for Coal (2023)</a>
+    <p class="citation">Davidson, M. R., Gao, X., Busby, J., Shearer, C., &amp; Eisenman, J. <i>Environmental Politics</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2022/10/26/quantifying-cost-global-solar-supply-chains.html" class="article-title">Quantifying the cost savings of global solar photovoltaic supply chains (2022)</a>
+    <p class="citation">Helveston, J.P., He, G., &amp; Davidson, M.R. <i>Nature</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2022/09/15/risks-decoupling-china-low-carbon.html" class="article-title">Risks of decoupling from China on low-carbon technologies (2022)</a>
+    <p class="citation">Davidson, M. R., Karplus, V. J., Lewis, J. I., Nahm, J., &amp; Wang, A. <i>Science</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2022/06/06/limitations-reanalysis-wind-power.html" class="article-title">Limitations of reanalysis data for wind power applications (2022)</a>
+    <p class="citation">Davidson, M. R., Millstein, D. <i>Wind Energy</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2022/05/10/static-electricity.html" class="article-title">Static Electricity: Institutional and Ideational Barriers to China’s Market Reforms (2022)</a>
+    <p class="citation">Davidson, M. R., Pearson, M. M. <i>Studies in Comparative International Development</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2021/10/15/challenges-coal-phaseout-indonesia-vietnam.html" class="article-title">The Challenges of Coal Phaseout: Coal Plant Development and Foreign Finance in Indonesia and Vietnam (2021)</a>
+    <p class="citation">Gao, X., Davidson, M., Busby, J., Shearer, C., Eisenman, J. <i>Global Environmental Politics</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2021/08/24/policies-institutions-china-carbon-neutrality.html" class="article-title">Policies and Institutions to Support Carbon Neutrality in China by 2060 (2021)</a>
+    <p class="citation">Davidson, M., Karplus, V. J., Zhang, D., &amp; Zhang, X. <i>Economics of Energy &amp; Environmental Policy</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2020/07/23/china-power-market-reform-energy-policy.html" class="article-title">Power market reform in China: Motivations, progress, and recommendations (2020)</a>
+    <p class="citation">Guo, H., Davidson, M. R., Chen, Q., Zhang, D., Jiang, N., Xia, Q., Kang, C., and Zhang, X. <i>Energy Policy</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2019/12/16/avoiding-pitfalls-china-electricity-reforms.html" class="article-title">Avoiding Pitfalls in China’s Electricity Sector Reforms (2019)</a>
+    <p class="citation">Davidson, M. R. and Ignacio Pérez-Arriaga. <i>The Energy Journal</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2018/04/02/unit-commitment-china-political-context-ieee.html" class="article-title">Modeling Unit Commitment in Political Context: Case of China's Partially Restructured Electricity Sector (2018)</a>
+    <p class="citation">Davidson, M. R., Pérez-Arriaga, J. I. <i>IEEE Transactions on Power Systems</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2016/06/20/modelling-wind-energy-potential-China.html" class="article-title">Modelling the potential for wind energy integration on China’s coal-heavy electricity grid (2016)</a>
+    <p class="citation">Davidson, M. R., Zhang, D., Xiong, W., Zhang, X., and Karplus, V. J. Nature Energy.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2013/09/01/politics-power-china-wind-curtailment-transmission.html" class="article-title">Politics of Power in China: Institutional Bottlenecks to Reducing Wind Curtailment Through Improved Transmission (2013)</a>
+    <p class="citation">Davidson, M. R. International Association for Energy Economics (IAEE) Energy Forum.</p>
+  </div>
+
+<h2 class="section-header">Refereed Book Chapters and Other Publications</h2>
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2023/11/02/china-coal-foreign-affairs.html" class="article-title">Why China Can’t Break Its Coal Addiction (2023)</a>
+    <p class="citation">Davidson, M. <i>Foreign Affairs</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2023/05/15/renewable-energy-pathways-carbon-neutrality-china.html" class="article-title">Renewable Energy Pathways to Carbon Neutrality in China (2023)</a>
+    <p class="citation">California-China Climate Institute, Power Transformation Lab, Institute of Energy, Environment and Economy</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2021/12/01/foundations-low-carbon-energy-system-china.html" class="article-title">Foundations for a Low-Carbon Energy System in China (2021)</a>
+    <p class="citation">Lee, H., Schrag, D. P., Bunn, M., Davidson, M., Peng, W., Wang, P., &amp; Mao, Z. <i>Cambridge University Press</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2021/11/18/china-power-outage-foreign-affairs.html" class="article-title">China’s Power Outage: The Real Reasons Behind Beijing’s Energy Crisis (2021)</a>
+    <p class="citation">Davidson, M. <i>Foreign Affairs</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2020/04/13/paths-to-net-zero.html" class="article-title">The Paths to Net Zero: How Technology Can Save the Planet (2020)</a>
+    <p class="citation">Azevedo, I., Davidson, M. R., Jenkins, J. D., Karplus, V. J., and Victor, D. G. <i>Foreign Affairs</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2019/06/30/cup-technology-integration-china-electricity.html" class="article-title">Technology Integration in China’s Electricity System: Central Targets and Local Challenges (2019)</a>
+    <p class="citation">Davidson, M. R. In <i>Policy, Regulation and Innovation in China's Electricity and Telecom Industries.</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2018/05/21/phd-dissertation-china-wind-markets.html" class="article-title">Creating Markets for Wind Electricity in China: Case Studies in Energy Policy and Regulation (2018)</a>
+    <p class="citation">Davidson, M.R. (2018). Ph.D. Thesis. <i>Massachusetts Institute of Technology<i></i>.</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2014/05/09/ms-thesis.html" class="article-title">Regulatory and Technical Barriers to Wind Energy Integration in Northeast China (2014)</a>
+    <p class="citation">Davidson, M. R (2014). M.S. Thesis. <i>Massachusetts Institute of Technology</i>.</p>
+  </div>
+
+<h2 class="section-header">Working Papers and Reports</h2>
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2025/11/05/workshop-low-carbon-transitions-chinese-soe-takeaways.html" class="article-title">2025 Workshop on Low-Carbon Transitions in Chinese State-Owned Enterprises: Key Take-Aways (2025)</a>
+    <p class="citation">UC San Diego 21st Century China Center, Power Transformation Lab</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2025/10/26/third-way-securing-us-clean-energy-china.html" class="article-title">Securing US-China Engagements on Clean Energy Technology (2025)</a>
+    <p class="citation">Davidson, M. &amp; DiLorenzo, A. <i>Third Way</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2025/10/23/us-china-climate-workshop-key-takeaways.html" class="article-title">Key Takeaways from San Diego Workshop on Climate and U.S.-China Relations (2025)</a>
+    <p class="citation">UCSD 21st Century China Center, Power Transformation Lab, Fudan-UC Center on Contemporary China</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2025/09/30/indonesia-industry-captive-generation.html" class="article-title">Advancing Low-Carbon Industry Transition: Decarbonizing Industrial Captive Generation in Indonesia (2025)</a>
+    <p class="citation">A Gnapathy, K., Chen, L., &amp; Davidson, M. R. <i>Technical Report</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2025/08/30/physics-informed-unit-commitment-nuclear-preprint.html" class="article-title">Physics-Informed Unit Commitment Framework for Nuclear Reactors (2025)</a>
+    <p class="citation">Choudhury, S., Davidson, M., &amp; Tynan, G. <i>arXiv preprint</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2025/08/12/india-china-clean-energy-trade-white-paper.html" class="article-title">India-China Clean Energy Trade White Paper (2025)</a>
+    <p class="citation">Davidson, M., Fang, Z., Garg, T., Mariano, N., &amp; Tong, L. <i>UCSD 21st Century India Center</i></p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2025/04/01/penn-project-us-china-clean-energy-race.html" class="article-title">U.S.-China Clean Energy Race: Accelerating Innovation, Manufacturing and Adoption (2025)</a>
+    <p class="citation">Davidson. <i>Penn Project on the Future of U.S.-China Relations</i>. </p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2024/12/15/workshop-low-carbon-transitions-chinese-soe-takeaways.html" class="article-title">2024 Workshop on Low-Carbon Transitions in Chinese State-Owned Enterprises: Key Take-Aways (2024)</a>
+    <p class="citation">UC San Diego 21st Century China Center, Power Transformation Lab</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2024/03/14/wildfire-resilient-unit-commitment.html" class="article-title">Wildfire Resilient Unit Commitment under Uncertain Demand (2024)</a>
+    <p class="citation">Greenough, R., Murakami, K., Davidson, M., Kleissl, J., &amp; A. Khurram. <i>arXiv reprint, under review</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2023/07/15/workshop-low-carbon-transitions-chinese-soe-takeaways.html" class="article-title">Workshop on Low-Carbon Transitions in Chinese State-Owned Enterprises: Six Key Take-Aways (2023)</a>
+    <p class="citation">UC San Diego 21st Century China Center, Power Transformation Lab</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2022/06/03/low-carbon-transition-china-soe-china-energy.html" class="article-title">Low-Carbon Transition Planning in China's Coal and Power SOEs: Case of China Energy (2022)</a>
+    <p class="citation">Davidson, M.R.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2021/11/01/task-force-trade-climate-change.html" class="article-title">The Role of Trade in Addressing Climate Change: Recommendations for Policies and Practices (2021)</a>
+    <p class="citation">Bowen, R., Broz, J. L., Burney, J., Costello, C., Davidson, M. R., Li, H., &amp; Rauch, J. E. <i>UC San Diego Center for Commerce and Diplomacy Task Force on Climate and Trade</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2021/03/18/china-trading-power-yunnan-electricity-market.html" class="article-title">China Trading Power: Improving Environmental and Economic Efficiency of Yunnan’s Electricity Market (2021)</a>
+    <p class="citation">Liu, Shuangquan and Michael Davidson. <i>Harvard Kennedy School Belfer Center for Science and International Affairs</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2021/03/18/china-trading-power-yunnan-electricity-market-cn.html" class="article-title">中国电力交易：提升云南电力市场的环境与经济效益 (2021)</a>
+    <p class="citation">Liu, Shuangquan and Michael Davidson. <i>Harvard Kennedy School Belfer Center for Science and International Affairs</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2020/09/17/impact-covid-karnataka-electricity.html" class="article-title">The impact of COVID-19 on the power sector in Karnataka, India (2020)</a>
+    <p class="citation">Iychettira, K., Hou, X., Davidson, M., &amp; Urpelainen, J. <i>Initiative for Sustainable Energy Policy</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="political_economy" data-encode-type="">
+    <a href="/2019/12/18/subnational-china-climate-institutions.html" class="article-title">Creating Subnational Climate Institutions in China (2019)</a>
+    <p class="citation">Davidson, M. R. Discussion Paper. <i>Harvard Project on Climate Agreements</i>.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="power_markets" data-encode-type="">
+    <a href="/2017/04/21/unit-commitment-china-political-context.html" class="article-title">Modeling Unit Commitment in Political Context: Case of China's Partially Restructured Electricity Sector (2017)</a>
+    <p class="citation">Davidson, M. R., Pérez-Arriaga, J. I. CEEPR Working Paper.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2016/04/01/political-economy-framework-wind-china.html" class="article-title">Toward a Political Economy Framework for Wind Integration: Does China Break the Mould? (2016)</a>
+    <p class="citation">Davidson, M. R., Kahrl, F., and Karplus, V. J. UNU-WIDER.</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning" data-encode-type="">
+    <a href="/2014/04/01/integrated-assessment-china-wind-energy.html" class="article-title">An Integrated Assessment of China’s Wind Energy Potential (2014)</a>
+    <p class="citation">Zhang, D., Davidson, M. R., Gunturu, B., Zhang, X., and Karplus, V. J. MIT Joint Program on the Science and Policy of Global Change.</p>
+  </div>
+
+<!--<h2 class="section-header">Posters</h2>
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="none"
+    data-encode-type="">
+    <a href="/2017/03/10/hidden-costs-technology-china-coal.html"<h4 class="article-title">Winner, Social Sciences Category, 2017 AAAS Student Poster Competition (2017)</h4></a>
+    <p class="citation">Hidden Costs of Technology Development by the Plan: Case of China's Coal Fleet Upgrading</p>
+  </div>
+
+
+  
+
+  
+  
+  
+
+  
+
+  <div class="article-container" data-encode-topic="renewable_energy_planning"
+    data-encode-type="">
+    <a href="/2015/11/06/gcc-reanalysis-data-wind-applications.html"<h4 class="article-title">Re-Analysis Data for Fine Temporal Resolution Wind Power Estimation: A Comparison of Boundary Layer Parameterizations (2015)</h4></a>
+    <p class="citation">Davidson, M. R., and Qi, T. Graduate Climate Conference, Woods Hole Oceanographic Institution. Woods Hole, MA.</p>
+  </div>
+
+-->
+
+</div>
+<script>
+function hasArticleContainerAfterH2(h2Element) {
+    // Get the parent of the h2Element
+    let parent = h2Element.parentElement;
+
+    // Get all children of the parent
+    let children = Array.from(parent.children);
+
+    // Get the index of the h2Element in the children array
+    let h2Index = children.indexOf(h2Element);
+
+    // Iterate from the h2Element to the next h2 or the end of the parent
+    for (let i = h2Index + 1; i < children.length; i++) {
+        let child = children[i];
+
+        // If we find another h2, we stop looking
+        if (child.tagName.toLowerCase() === 'h2') {
+            return false;
+        }
+
+        // If the child is a div, has the class 'article-container' and the display style is 'block', return true
+        if (
+            child.tagName.toLowerCase() === 'div' &&
+            child.classList.contains('article-container') &&
+            child.style.display === 'block'
+        ) {
+            return true;
+        }
+    }
+
+    // If we reached this point, no div with the class 'article-container' and display style 'block' was found
+    return false;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("a.box").forEach(box => {
+    const filterTitle = box.getAttribute("href")
+    box.addEventListener("click", e => {
+      e.preventDefault()
+      document.querySelectorAll("div.article-container").forEach(div => {
+        if (div.getAttribute("data-encode-topic") == filterTitle) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none"
+        }
+      })
+      document.querySelectorAll("h2.section-header").forEach(h2 => {
+        const hasContent = hasArticleContainerAfterH2(h2)
+        if (hasContent) {
+          h2.style.display = "block"
+        } else {
+          h2.style.display = "none"
+        }
+      })
+    })
+  })
+  document.querySelector("#show-all").addEventListener("click", e => {
+    e.preventDefault()
+    document.querySelectorAll("div.article-container").forEach(div => {
+      div.style.display = "block"
+    })
+    document.querySelectorAll("h2.section-header").forEach(h2 => {
+      h2.style.display = "block"
+    })
+  })
+})
+
+
+
+</script>
+
+</div>
+<section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div>
+<div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main">
+    <img src="/img/Power-Transformation-Lab-Final-Logo-1_1half.png" id="footer-img" alt="Power Transformation Lab Logo"><div itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Power Transformation Lab">
+<meta itemprop="url" content="https://pwrlab.org">
+<div class="footer__author-links">
+<div class="author-links">
+  <ul class="menu menu--nowrap menu--inline">
+<link itemprop="url" href="https://pwrlab.org">
+<li title="Send us an Email.">
+      <a class="button button--circle mail-button" itemprop="email" href="/contact" target="_blank" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+</li>
+<li title="Follow us on Twitter.">
+        <a class="button button--circle twitter-button" itemprop="sameAs" href="https://twitter.com/east_winds" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+          <div class="icon">
+<svg fill="#000000" width="24px" height="24px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="Twitter logo">
+  <path d="M1024.032 194.432c-37.664 16.704-78.176 28-120.672 33.088 43.36-26.016 76.672-67.168 92.384-116.224-40.608 24.064-85.568 41.568-133.408 50.976-38.336-40.832-92.928-66.336-153.344-66.336-116.032 0-210.08 94.048-210.08 210.08 0 16.48 1.856 32.512 5.44 47.872-174.592-8.768-329.408-92.416-433.024-219.52-18.08 31.04-28.448 67.104-28.448 105.632 0 72.896 37.088 137.184 93.472 174.88-34.432-1.088-66.816-10.528-95.168-26.272-0.032 0.864-0.032 1.76-0.032 2.656 0 101.792 72.416 186.688 168.512 205.984-17.632 4.8-36.192 7.36-55.36 7.36-13.536 0-26.688-1.312-39.52-3.776 26.72 83.456 104.32 144.192 196.256 145.888-71.904 56.352-162.496 89.92-260.928 89.92-16.96 0-33.664-0.992-50.112-2.944 92.96 59.616 203.392 94.4 322.048 94.4 386.432 0 597.728-320.128 597.728-597.76 0-9.12-0.192-18.176-0.608-27.168 41.056-29.632 76.672-66.624 104.832-108.736z"></path>
+</svg>
+</div>
+        </a>
+      </li>
+<li title="Follow us on Github.">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/east-winds" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+          <div class="icon">
+<svg fill="#000000" width="24px" height="24px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="GitHub Logo">
+  <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z"></path>
+</svg>
+</div>
+        </a>
+      </li>
+</ul>
+</div>
+</div>
+    </div>
+<div class="site-info mt-2">
+      <div>© Power Transformation Lab 2026,
+        Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> &amp; <a title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme" target="_blank" rel="noopener noreferrer">TeXt Theme</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+    </div>
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"></div>
+</div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script>
+    </div>
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+window.onload = () => {
+  document.querySelector("#skip-to-content").addEventListener("click", e => {
+    e.preventDefault()
+    if (document.querySelector(".prompt-arrow")) {
+      scrollToFirstContent()
+    } 
+    const pageContent = document.querySelector('.page__content')
+    const firstFocusable = pageContent.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    if (firstFocusable) {
+      firstFocusable.focus()
+    }
+  })
+}
+</script>
+  </body>
+</html>
+

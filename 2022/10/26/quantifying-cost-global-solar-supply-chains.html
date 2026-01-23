@@ -1,0 +1,925 @@
+<!DOCTYPE html><html lang="en">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Quantifying the cost savings of global solar photovoltaic supply chains - Power Transformation Lab</title>
+
+<meta name="description" content="Achieving carbon neutrality requires deploying renewable energy at unprecedented speed and scale, yet countries sometimes implement policies that increase co...">
+<link rel="canonical" href="https://pwrlab.org/2022/10/26/quantifying-cost-global-solar-supply-chains.html"><link rel="alternate" type="application/rss+xml" title="Power Transformation Lab" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<!--<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50">
+--><link rel="shortcut icon" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Power Transformation Lab" />
+<meta name="twitter:image" content="https://pwrlab.org/assets/apple-touch-icon.png" /><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet -->
+<link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://use.fontawesome.com/releases/v5.15.1/css/all.css',
+        jquery: 'https://unpkg.com/jquery@3.3.1/dist/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://unpkg.com/chart.js@2.7.2/dist/Chart.min.js',
+        gitalk: {
+          js: 'https://unpkg.com/gitalk@1.2.2/dist/gitalk.min.js',
+          css: 'https://unpkg.com/gitalk@1.2.2/dist/gitalk.css'
+        },
+        valine: 'https//unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://unpkg.com/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Quantifying the cost savings of global solar photovoltaic supply chains | Power Transformation Lab</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Quantifying the cost savings of global solar photovoltaic supply chains" />
+<meta name="author" content="Power Transformation Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Achieving carbon neutrality requires deploying renewable energy at unprecedented speed and scale, yet countries sometimes implement policies that increase costs by restricting the free flow of capital, talent and innovation in favour of localizing benefits such as economic growth, employment and trade surpluses. Here we assess the cost savings from a globalized solar photovoltaic (PV) module supply chain. We develop a two-factor learning model using historical capacity, component and input material price data of solar PV deployment in the United States, Germany and China. We estimate that the globalized PV module market has saved PV installers US$24 (19–31) billion in the United States, US$7 (5–9) billion in Germany and US$36 (26–45) billion in China from 2008 to 2020 compared with a counterfactual scenario in which domestic manufacturers supply an increasing proportion of installed capacities over a ten-year period. Projecting the same scenario forwards from 2020 results in estimated solar module prices that are approximately 20–25 per cent higher in 2030 compared with a future with globalized supply chains. International climate policy benefits from a globalized low-carbon value chain, and these results point to the need for complementary policies to mitigate welfare distribution effects and potential impacts on technological crowding out. Full Text on Nature.com Preprint Version Recommended citation: Helveston, J. P., He, G., &amp; Davidson, M. R. (2022). Quantifying the cost savings of global solar photovoltaic supply chains. Nature. https://doi.org/10.1038/s41586-022-05316-6" />
+<meta property="og:description" content="Achieving carbon neutrality requires deploying renewable energy at unprecedented speed and scale, yet countries sometimes implement policies that increase costs by restricting the free flow of capital, talent and innovation in favour of localizing benefits such as economic growth, employment and trade surpluses. Here we assess the cost savings from a globalized solar photovoltaic (PV) module supply chain. We develop a two-factor learning model using historical capacity, component and input material price data of solar PV deployment in the United States, Germany and China. We estimate that the globalized PV module market has saved PV installers US$24 (19–31) billion in the United States, US$7 (5–9) billion in Germany and US$36 (26–45) billion in China from 2008 to 2020 compared with a counterfactual scenario in which domestic manufacturers supply an increasing proportion of installed capacities over a ten-year period. Projecting the same scenario forwards from 2020 results in estimated solar module prices that are approximately 20–25 per cent higher in 2030 compared with a future with globalized supply chains. International climate policy benefits from a globalized low-carbon value chain, and these results point to the need for complementary policies to mitigate welfare distribution effects and potential impacts on technological crowding out. Full Text on Nature.com Preprint Version Recommended citation: Helveston, J. P., He, G., &amp; Davidson, M. R. (2022). Quantifying the cost savings of global solar photovoltaic supply chains. Nature. https://doi.org/10.1038/s41586-022-05316-6" />
+<link rel="canonical" href="https://pwrlab.org/2022/10/26/quantifying-cost-global-solar-supply-chains.html" />
+<meta property="og:url" content="https://pwrlab.org/2022/10/26/quantifying-cost-global-solar-supply-chains.html" />
+<meta property="og:site_name" content="Power Transformation Lab" />
+<meta property="og:image" content="https://pwrlab.org/img/solar_sm.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-26T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://pwrlab.org/img/solar_sm.jpg" />
+<meta property="twitter:title" content="Quantifying the cost savings of global solar photovoltaic supply chains" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@east_winds" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-26T00:00:00+00:00","datePublished":"2022-10-26T00:00:00+00:00","description":"Achieving carbon neutrality requires deploying renewable energy at unprecedented speed and scale, yet countries sometimes implement policies that increase costs by restricting the free flow of capital, talent and innovation in favour of localizing benefits such as economic growth, employment and trade surpluses. Here we assess the cost savings from a globalized solar photovoltaic (PV) module supply chain. We develop a two-factor learning model using historical capacity, component and input material price data of solar PV deployment in the United States, Germany and China. We estimate that the globalized PV module market has saved PV installers US$24 (19–31) billion in the United States, US$7 (5–9) billion in Germany and US$36 (26–45) billion in China from 2008 to 2020 compared with a counterfactual scenario in which domestic manufacturers supply an increasing proportion of installed capacities over a ten-year period. Projecting the same scenario forwards from 2020 results in estimated solar module prices that are approximately 20–25 per cent higher in 2030 compared with a future with globalized supply chains. International climate policy benefits from a globalized low-carbon value chain, and these results point to the need for complementary policies to mitigate welfare distribution effects and potential impacts on technological crowding out. Full Text on Nature.com Preprint Version Recommended citation: Helveston, J. P., He, G., &amp; Davidson, M. R. (2022). Quantifying the cost savings of global solar photovoltaic supply chains. Nature. https://doi.org/10.1038/s41586-022-05316-6","headline":"Quantifying the cost savings of global solar photovoltaic supply chains","image":"https://pwrlab.org/img/solar_sm.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://pwrlab.org/2022/10/26/quantifying-cost-global-solar-supply-chains.html"},"url":"https://pwrlab.org/2022/10/26/quantifying-cost-global-solar-supply-chains.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root">
+<div class="page__main js-page-main page__viewport cell cell--auto">
+
+      <div class="page__main-inner">
+<div class="page__header d-print-none">
+<header class="header"><div class="main">
+      <a id="skip-to-content" href="">Skip To Content</a>
+      <div class="header__title">
+        <div class="header__brand">
+<a href="/" class="header-image-container"><img src="/img/header-logo.png" height="64" alt="Power Transformation Lab Logo"></a>
+        </div>
+</div>
+<nav class="navigation">
+        <ul>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/" class="dropdown-btn">HOME</a>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/research.html" class="dropdown-btn">RESEARCH</a><div class="dropdown-content">
+<a href="/publications.html" class="dropdown-item">Publications</a><a href="/models_and_data.html" class="dropdown-item">Models and Data</a>
+</div>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/news.html" class="dropdown-btn">NEWS</a><div class="dropdown-content">
+<a href="/in_the_media.html" class="dropdown-item">In the Media</a><a href="/lab_updates.html" class="dropdown-item">Lab Updates</a>
+</div>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/about.html" class="dropdown-btn">ABOUT</a><div class="dropdown-content">
+<a href="/team.html" class="dropdown-item">Meet the Team</a><a href="/teaching.html" class="dropdown-item">Teaching</a><a href="/opportunities.html" class="dropdown-item">Opportunities</a><a href="/study_at_ucsd.html" class="dropdown-item">Study @ UCSD</a>
+</div>
+</div>
+              </li>
+<li class="navigation__item">
+                <div class="dropdown">
+                <a href="/contact.html" class="dropdown-btn">CONTACT</a>
+</div>
+              </li>
+</ul>
+      </nav><div id="mobile-menu-icon" tabindex="0" onclick="togglemenu()">
+  <hr>
+  <hr>
+  <hr>
+</div>
+
+<div id="mobile-menu">
+  <div id="links-container">
+    <ul class="main-list">
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/">HOME</a>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/research.html">RESEARCH</a><ul class="submenu">
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/publications.html">Publications</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/models_and_data.html">Models and Data</a>
+        </li>
+</ul>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/news.html">NEWS</a><ul class="submenu">
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/in_the_media.html">In the Media</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/lab_updates.html">Lab Updates</a>
+        </li>
+</ul>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/about.html">ABOUT</a><ul class="submenu">
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/team.html">Meet the Team</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/teaching.html">Teaching</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/opportunities.html">Opportunities</a>
+        </li>
+<li>
+          <a class="mobile-menu-item" tabindex="-1" href="/study_at_ucsd.html">Study @ UCSD</a>
+        </li>
+</ul>
+</li>
+<li>
+        <a class="mobile-menu-item" tabindex="-1" href="/contact.html">CONTACT</a>
+</li>
+</ul>
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg id="mobile-menu-up-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px" viewbox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" onclick="togglemenu()" tabindex="-1" class="mobile-menu-item">
+<g>
+	<path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58
+		c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022
+		c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"></path>
+</g>
+</svg>
+
+  </div>
+</div>
+
+<script>
+  let menuItems
+  let mobileMenu
+  let mobileMenuIcon
+  let upArrow
+  document.addEventListener('DOMContentLoaded', () => {
+    menuItems = document.querySelectorAll(".mobile-menu-item")
+    mobileMenu = document.querySelector("#mobile-menu")
+    mobileMenuIcon = document.querySelector("#mobile-menu-icon")
+    upArrow = document.querySelector("#mobile-menu-up-arrow")
+    mobileMenuIcon.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault()
+        togglemenu()
+      }
+    })
+    upArrow.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault()
+        togglemenu()
+      }
+    })
+  })
+  const expandmenu = () => {
+      mobileMenu.className = "expanded"
+      mobileMenuIcon.className = "expanded"
+      document.querySelector("html").style.overflowY = "hidden"
+      menuItems.forEach(item => {
+        item.setAttribute("tabindex", "0")
+      })
+  }
+  const retractmenu = () => {
+      mobileMenu.className = ""
+      mobileMenuIcon.className = ""
+      document.querySelector("html").style.overflowY = "scroll"
+      menuItems.forEach(item => {
+        item.setAttribute("tabindex", "01")
+      })
+  }
+  const togglemenu = () => {
+    if (mobileMenu.className == "") {
+      expandmenu()
+    } else {
+      retractmenu()
+    }
+  }
+  // if the window expands then make sure we close the menu so it doesn't reappear if the window shrinks
+  window.onresize = () => {
+    if (window.innerWidth > 1024) {
+      retractmenu()
+    }
+  }
+</script>
+</div>
+  </header>
+</div>
+<div class="page__content"><div class="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"></div>
+
+              <div class="col-main cell cell--auto">
+<!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header">
+<header><h1>Quantifying the cost savings of global solar photovoltaic supply chains</h1></header>
+
+      
+      <hr>
+      <span class="-subheading">Helveston, J.P., He, G., &amp; Davidson, M.R. <i>Nature</i>.</span>
+  </div>
+<meta itemprop="headline" content="Quantifying the cost savings of global solar photovoltaic supply chains">
+<div class="article__info clearfix">
+<ul class="left-col menu">
+<li>
+					      <a class="button button--secondary button--pill button--sm" href="/lab_updates.html?tag=papers">papers</a>
+					    </li>
+<li>
+					      <a class="button button--secondary button--pill button--sm" href="/lab_updates.html?tag=political_economy">political_economy</a>
+					    </li>
+<li>
+					      <a class="button button--secondary button--pill button--sm" href="/lab_updates.html?tag=journal_article">journal_article</a>
+					    </li>
+</ul>
+<ul class="right-col menu"><li>
+<i class="far fa-calendar-alt"></i> <span>Oct 26, 2022</span>
+            </li></ul>
+</div>
+<meta itemprop="author" content="Power Transformation Lab">
+<meta itemprop="datePublished" content="2022-10-26T00:00:00+00:00">
+    <meta itemprop="keywords" content="papers,political_economy,journal_article">
+                <img src="/img/solar_sm.jpg" class="page-header-image">
+                
+                    <div class="js-article-content">
+<div class="layout--article">
+<!-- start custom article top snippet -->
+
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody">
+<p>Achieving carbon neutrality requires deploying renewable energy at unprecedented speed and scale, yet countries sometimes implement policies that increase costs by restricting the free flow of capital, talent and innovation in favour of localizing benefits such as economic growth, employment and trade surpluses. Here we assess the cost savings from a globalized solar photovoltaic (PV) module supply chain. We develop a two-factor learning model using historical capacity, component and input material price data of solar PV deployment in the United States, Germany and China. We estimate that the globalized PV module market has saved PV installers US$24 (19–31) billion in the United States, US$7 (5–9) billion in Germany and US$36 (26–45) billion in China from 2008 to 2020 compared with a counterfactual scenario in which domestic manufacturers supply an increasing proportion of installed capacities over a ten-year period. Projecting the same scenario forwards from 2020 results in estimated solar module prices that are approximately 20–25 per cent higher in 2030 compared with a future with globalized supply chains. International climate policy benefits from a globalized low-carbon value chain, and these results point to the need for complementary policies to mitigate welfare distribution effects and potential impacts on technological crowding out.</p>
+
+<p><a href="https://rdcu.be/cYkmp" target="_blank" rel="noopener noreferrer">Full Text on Nature.com</a></p>
+
+<p><a href="https://drive.google.com/file/d/1u2VeAYNzYQWZaABiJUcHogYNbC2BuWV_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Preprint Version</a></p>
+
+<p>Recommended citation:</p>
+
+<p>Helveston, J. P., He, G., &amp; <strong>Davidson, M. R.</strong> (2022). Quantifying the cost savings of global solar photovoltaic supply chains. <em>Nature</em>. https://doi.org/10.1038/s41586-022-05316-6</p>
+
+</div>
+<section class="article__sharing d-print-none"></section><div class="d-print-none">
+<footer class="article__footer"><meta itemprop="dateModified" content="2022-10-26T00:00:00+00:00">
+<!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+</footer>
+</div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
+</div>
+<section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div>
+<div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main">
+    <img src="/img/Power-Transformation-Lab-Final-Logo-1_1half.png" id="footer-img" alt="Power Transformation Lab Logo"><div itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Power Transformation Lab">
+<meta itemprop="url" content="https://pwrlab.org">
+<div class="footer__author-links">
+<div class="author-links">
+  <ul class="menu menu--nowrap menu--inline">
+<link itemprop="url" href="https://pwrlab.org">
+<li title="Send us an Email.">
+      <a class="button button--circle mail-button" itemprop="email" href="/contact" target="_blank" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+</li>
+<li title="Follow us on Twitter.">
+        <a class="button button--circle twitter-button" itemprop="sameAs" href="https://twitter.com/east_winds" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+          <div class="icon">
+<svg fill="#000000" width="24px" height="24px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="Twitter logo">
+  <path d="M1024.032 194.432c-37.664 16.704-78.176 28-120.672 33.088 43.36-26.016 76.672-67.168 92.384-116.224-40.608 24.064-85.568 41.568-133.408 50.976-38.336-40.832-92.928-66.336-153.344-66.336-116.032 0-210.08 94.048-210.08 210.08 0 16.48 1.856 32.512 5.44 47.872-174.592-8.768-329.408-92.416-433.024-219.52-18.08 31.04-28.448 67.104-28.448 105.632 0 72.896 37.088 137.184 93.472 174.88-34.432-1.088-66.816-10.528-95.168-26.272-0.032 0.864-0.032 1.76-0.032 2.656 0 101.792 72.416 186.688 168.512 205.984-17.632 4.8-36.192 7.36-55.36 7.36-13.536 0-26.688-1.312-39.52-3.776 26.72 83.456 104.32 144.192 196.256 145.888-71.904 56.352-162.496 89.92-260.928 89.92-16.96 0-33.664-0.992-50.112-2.944 92.96 59.616 203.392 94.4 322.048 94.4 386.432 0 597.728-320.128 597.728-597.76 0-9.12-0.192-18.176-0.608-27.168 41.056-29.632 76.672-66.624 104.832-108.736z"></path>
+</svg>
+</div>
+        </a>
+      </li>
+<li title="Follow us on Github.">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/east-winds" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+          <div class="icon">
+<svg fill="#000000" width="24px" height="24px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" alt="GitHub Logo">
+  <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z"></path>
+</svg>
+</div>
+        </a>
+      </li>
+</ul>
+</div>
+</div>
+    </div>
+<div class="site-info mt-2">
+      <div>© Power Transformation Lab 2026,
+        Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> &amp; <a title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme" target="_blank" rel="noopener noreferrer">TeXt Theme</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+    </div>
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"></div>
+</div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script>
+    </div>
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+window.onload = () => {
+  document.querySelector("#skip-to-content").addEventListener("click", e => {
+    e.preventDefault()
+    if (document.querySelector(".prompt-arrow")) {
+      scrollToFirstContent()
+    } 
+    const pageContent = document.querySelector('.page__content')
+    const firstFocusable = pageContent.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    if (firstFocusable) {
+      firstFocusable.focus()
+    }
+  })
+}
+</script>
+  </body>
+</html>
+
