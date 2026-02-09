@@ -11,6 +11,10 @@ Acute temporal impacts and subnational limitations can hinder a country’s deca
 
 [Open access](https://doi.org/10.1016/j.adapen.2025.100238)
 
+[Model](https://github.com/Power-Lab/AdvAppliedEnergy_Pathways_2025)
+
+[Data](https://doi.org/10.5281/zenodo.14907700)
+
 Recommended citation:
 
 **Zhang, Z.**, Zhu, Z., Gordon, J., Lu, X., Zhang, D., & **Davidson, M. R.** (2025). Reaching carbon neutrality in China: Temporal and subnational limitations of renewable energy scale-up. _Advances in Applied Energy_, 100238. https://doi.org/10.1016/j.adapen.2025.100238

@@ -11,6 +11,10 @@ As countries are releasing their 2035 nationally determined contributions (NDCs)
 
 [Open access](https://doi.org/10.1016/j.crsus.2025.100389)
 
+[Model](https://github.com/Power-Lab/CellReports_NDC_2025)
+
+[Data](https://doi.org/10.5281/zenodo.15122725)
+
 Recommended citation:
 
 **Zhang, Z.**, Zhu, Z., Lu, X., Zhang, D., & **Davidson, M. R.** (2025). Ratcheting up wind and solar targets for decarbonizing the power sector in China and beyond. Cell Reports Sustainability, 0(0). https://doi.org/10.1016/j.crsus.2025.100389

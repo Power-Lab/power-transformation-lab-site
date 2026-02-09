@@ -11,6 +11,8 @@ Effective climate policy requires coordination among political jurisdictions wit
 
 [Open access](https://doi.org/10.1038/s41467-025-59126-1)
 
+[Model and data](https://doi.org/10.5281/zenodo.14783689)
+
 Recommended citation:
 
 **Kucuksayacigil, F.**, **Zhang, Z.**, & **Davidson, M. R.** (2025). Coordinating power sector climate transitions under policy uncertainty. _Nature Communications_, 16(1), 3786. https://doi.org/10.1038/s41467-025-59126-1
