@@ -2,9 +2,11 @@
 layout: post
 title: "Student Web Developers — Web Designer + Frontend/Backend (RE-Pathway Website)"
 subtitle: "Build a cutting-edge renewable energy analysis web platform with interactive visuals, a province dashboard, and exportable tables"
-tags: [post, job, featured, home]
+tags: [post]
 image: /img/hero_backgrounds/Team-small.jpg
 ---
+
+**This post is archived. Please check the [Opportunities Page](/opportunities.html) for current postings.**
 
 **Job Description**
 

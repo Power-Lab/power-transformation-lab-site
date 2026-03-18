@@ -9,7 +9,7 @@ hero_image: img/hero_backgrounds/Opportunities-page.jpg
 
 ## Postdoc
 
-**We are currently hiring a postdoc on low-carbon trade and investment.** Please see the [job announcement]({% post_url 2025-10-20-job-postdoc-asia-trade-investment %}).
+We are not currently hiring any postdoc positions.
 
 In general, we are always looking for strong candidates in the following areas:
 - Modeling and decarbonization of power systems
@@ -20,9 +20,8 @@ In general, we are always looking for strong candidates in the following areas:
 We are not currently hiring any staff positions.
 
 ## Undergraduate
-**We are currently hiring a block of undergraduate research assistants**. Please see the [job announcement]({% post_url 2025-09-20-job-multiple-undergrad-research-assistants %}).
 
-**We are currently hiring a block of undergraduate web developers**. Please see the [job announcement]({% post_url 2025-10-20-job-re-pathways-web-developer %}).
+We are not currently hiring any undergraduate researcher positions.
 
 ## PhD and MS
 If you are a prospective PhD student, please include in your inquiry (**{{ site.author.email }}**):

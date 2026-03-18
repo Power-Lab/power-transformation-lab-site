@@ -2,9 +2,12 @@
 layout: post
 title: "Seeking Multiple Undergraduate Research Assistants (Fall 2025)"
 subtitle: "Contribute to data and analysis on projects related to power decarbonization, electricity markets and clean energy trade"
-tags: [post, job, featured, home]
+tags: [post]
 image: /img/hero_backgrounds/Team-small.jpg
 ---
+
+**This post is archived. Please check the [Opportunities Page](/opportunities.html) for current postings.**
+
 
 The Power Transformation Lab at UC San Diego studies the engineering and institutional requirements of deploying low-carbon energy at scale. We work across multiple geographies and with academic, government, civil society, and industry partners to advance research and solutions to climate and environmental challenges.
 

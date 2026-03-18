@@ -2,9 +2,12 @@
 layout: post
 title: "Job Opening: Postdoctoral Research Scholar: Accelerating Asia's Decarbonization Through Trade and Investment Policies"
 subtitle: "Contribute to helping Southeast and South Asian countries balance trade and investment with their decarbonization goals"
-tags: [post, job, featured, home]
+tags: [post]
 image: /img/China_transformer.jpg
 ---
+
+**This post is archived. Please check the [Opportunities Page](/opportunities.html) for current postings.**
+
 
 The Power Transformation Lab (https://pwrlab.org/) at the University of California San Diego is seeking a highly motivated Postdoctoral Research Scholar to contribute to a two-year project focused on helping Southeast and South Asian countries balance trade and investment with their decarbonization goals. The successful candidate will work with a team of researchers from the UCSD School of Global Policy and Strategy and Griffith University, and with numerous civil society organizations in the region.
 
