@@ -4,9 +4,11 @@ title: In The Media
 fallback_color: 536eb1
 hero_image: img/hero_backgrounds/In-the-Media.jpg
 ---
-<div class="in-the-media">
 
-  {% assign _recent_media = site.in_the_media | sort: "featured" | reverse %}
+<div class="in-the-media">
+  {% assign _featured_media = site.in_the_media | where: "featured", true | sort: "date" | reverse %}
+  {% assign _other_media = site.in_the_media | where_exp: "item", "item.featured != true" | sort: "date" | reverse %}
+  {% assign _recent_media = _featured_media | concat: _other_media %}
 
   {%- include article-list.html
     articles=_recent_media
