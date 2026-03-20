@@ -18,9 +18,6 @@ In this report, we propose a market reform pathway for Yunnan that is both feasi
 
 [Full report](https://www.belfercenter.org/publication/china-trading-power-improving-environmental-and-economic-efficiency-yunnans-electricity)
 
-[中文简介]({% post_url 2021-03-18-china-trading-power-yunnan-electricity-market-cn %})
-
-
 Recommended citation:
 
 Liu, S., & **Davidson, M. R.** (2021). China Trading Power: Improving Environmental and Economic Efficiency of Yunnan’s Electricity Market. _Harvard Kennedy School Belfer Center for Science and International Affairs_. Retrieved from https://www.belfercenter.org/publication/china-trading-power-improving-environmental-and-economic-efficiency-yunnans-electricity
