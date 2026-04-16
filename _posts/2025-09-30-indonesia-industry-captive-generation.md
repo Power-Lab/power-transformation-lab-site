@@ -2,7 +2,7 @@
 layout: paper
 title: "Advancing Low-Carbon Industry Transition: Decarbonizing Industrial Captive Generation in Indonesia"
 subtitle: "A Gnapathy, K., Chen, L., & Davidson, M. R. <i>Technical Report</i>"
-tags: [papers, working_and_reports, political_economy, featured, home]
+tags: [papers, working_and_reports, renewable_energy_planning, featured, home]
 image: /img/industrial_park.jpg
 
 ---
