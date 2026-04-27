@@ -3,7 +3,7 @@ layout: post
 title: "Power Lab Members join inaugural cohort of NextGen Fellows at CERAWeek"
 subtitle: "Shiny, Jenny and Zhenhua present research at premier energy industry conference"
 tags: [post, home, featured]
-image: https://drive.google.com/file/d/1Yxw2xUXjKYPAXKC-dXNVptuZARexGRMt/preview
+image: /img/ceraweek-2026.jpg
 ---
 
 Pictured: Jenny Nicolas, Prof David Victor, Shiny Choudhury, Zhenhua Zhang and Zane Heather (SIO)
