@@ -19,3 +19,8 @@ Detailed modeling and policy analysis can be found in the links below.
 
 [Executive Summary (Chinese and English)](https://www.law.berkeley.edu/wp-content/uploads/2026/03/Offshore-wind-Executive-Summary-Feb-2026.pdf) \
 [Full Report (English)](https://www.law.berkeley.edu/wp-content/uploads/2026/03/Offshore-wind-Report-Feb-2026.pdf)
+
+
+Recommended citation:
+
+**Wei, M.**, **Zhang, Z.**, Cui, X., Kahrl, F., & **Davidson, M. R.** (2026). Offshore Wind Power and Resource Adequacy in the China Southern Grid. California-China Climate Institute. Retrieved from https://www.law.berkeley.edu/wp-content/uploads/archive/2026/03/Offshore-wind-Report-Feb-2026.pdf
