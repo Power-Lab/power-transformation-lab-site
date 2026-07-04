@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Integrated planning of net-zero power systems for all"
+subtitle: "Zhu, Z., Mao, H., Yu, R., Botterud, A., **Davidson, M. R.**, Lu, X., … Zhang, D. <i>Nature Energy</i>"
 tags: [home, featured, papers, renewable_energy_planning, journal_article]
 image: /img/windfarm.jpg
 ---
