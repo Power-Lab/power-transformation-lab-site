@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "New Reports on Southeast Asia's Low-Carbon Energy Future"
+title: "Webinar and New Reports on Southeast Asia's Low-Carbon Energy Future"
 subtitle: "Modeling studies from lab students Kaarthi A Gnapathy, Tyson Dao and Lucien Chen"
-tags: [post,  political_economy, featured, home]
+tags: [post,  political_economy]
 image: /img/solar_sm.jpg
 ---
+
+The UC San Diego Power Transformation Lab and TransitionZero held a webinar bringing together new research insights and policy perspectives on how Southeast Asian economies, including Indonesia and Vietnam, are advancing their energy transitions and climate commitments.
+
+The event featured presentations on low-carbon power generation and industrial transformation in key economies, building on new modeling results and reflections of progress and challenges on the ground. With the announcement of new climate commitments at the UN Conference of the Parties, the panel reflected on practical strategies for clean energy investment, policy coordination and regional cooperation in Southeast Asia’s low-carbon transition.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NJYoBlmNQWk?si=luNTIEYjfp4EyEGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 [Indonesia Captive Report](https://zenodo.org/records/17345968)
