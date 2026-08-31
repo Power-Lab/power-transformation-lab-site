@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Effects of escalating trade barriers on the U.S. energy system"
-subtitle: "**Davidson, M. R.** <i>Environmental Research Letters</i>"
+subtitle: "Davidson, M. R. <i>Environmental Research Letters</i> (2026)"
 tags: [home, featured, papers, political_economy, journal_article]
 image: /img/port.jpg
 ---

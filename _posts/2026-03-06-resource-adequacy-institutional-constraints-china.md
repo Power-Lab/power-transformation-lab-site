@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Resource adequacy under institutional constraints and the low-carbon energy transition in China"
-subtitle: "Wei, M., Yao, B., & Davidson, M. R. <i>Energy Policy</i>"
+subtitle: "Wei, M., Yao, B., & Davidson, M. R. <i>Energy Policy</i> (2026)"
 tags: [home, featured, papers, renewable_energy_planning, journal_article]
 image: /img/ne_wind_farm.jpg
 ---
