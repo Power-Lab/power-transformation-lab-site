@@ -21,7 +21,8 @@ We are not currently hiring any staff positions.
 
 ## Undergraduate
 
-We are not currently hiring any undergraduate researcher positions.
+We are currently hiring undergraduate researcher positions in the areas of AI/LLM tools, China electricity markets, and US clean energy manufacturing policy. [See the announcement for more info and application instructions]({% post_url 2026-09-17-job-multiple-undergrad-research-assistants %}).
+
 
 ## PhD and MS
 If you are a prospective PhD student, please include in your inquiry (**{{ site.author.email }}**):
