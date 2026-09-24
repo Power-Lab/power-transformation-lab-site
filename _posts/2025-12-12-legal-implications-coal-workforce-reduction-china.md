@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Legal Implications of Coal Workforce Reduction Strategies in China"
-subtitle: "Zou, Q., Liu, Y., & **Davidson, M. R.** <i>UCLA Pacific Basin Law Journal</i>."
+subtitle: "Zou, Q., Liu, Y., & Davidson, M. R. <i>UCLA Pacific Basin Law Journal</i>."
 tags: [home, featured, papers, political_economy, journal_article]
 image: /img/coal_mining_pit.jpg
 

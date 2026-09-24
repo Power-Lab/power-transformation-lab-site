@@ -22,7 +22,7 @@ Create one publication post in this repository, matching the supplied example po
 4. If automated metadata retrieval fails, is blocked, or returns incomplete data, ask the user to supply a BibTeX file or citation. Do not guess bibliographic metadata or invent an abstract.
 5. Choose a date-prefixed filename in `_posts/YYYY-MM-DD-slug.md`. Use the current post date unless the user specifies another date or the repository's established convention requires the publication date. Make the slug concise and unique.
 6. Create a post with `layout: paper`, the paper title, an author-and-journal subtitle, tags including `papers`, the best supported topic tag, `journal_article`, `featured`, and `home`, and an existing relevant image path. Reuse a suitable image from the example or the repository; do not add an unrelated asset.
-7. Use the verified abstract as the body. Add a published-version link when available, followed by `Recommended citation:` and a complete citation. Bold Davidson's name in the subtitle and recommended citation when present, following the example.
+7. Use the verified abstract as the body. Add a published-version link when available, followed by `Recommended citation:` and a complete citation. Bold Davidson's name in the recommended citation when present, following the example. Do not use bold `**` markup in the subtitle.
 8. Keep the change limited to the new post unless the user explicitly asks for other site changes. Do not modify the home page or News template when the tags already provide the required inclusion.
 
 ## Validation
