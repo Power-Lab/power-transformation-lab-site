@@ -10,6 +10,8 @@ China’s rapid renewable expansion coincides with deep structural reforms to it
 
 [Published version](https://doi.org/10.1016/j.rser.2026.117475)
 
+[Open access](https://escholarship.org/content/qt6g62v4mc/qt6g62v4mc.pdf)
+
 Recommended citation:
 
 Dong, J., **Zhang, Z.**, **Davidson, M. R.**, Shi, M., Jiang, N., Zhang, N., Kang, C., Pollitt, M. G., & Guo, H. (2027). China’s power market reform for a high-renewable future: Key drivers, market design, and prospects. _Renewable and Sustainable Energy Reviews_, 244, 117475. https://doi.org/10.1016/j.rser.2026.117475
