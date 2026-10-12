@@ -1,0 +1,21 @@
+name: front-matter
+
+# Required check on PRs into main: every page, post and collection item must have valid
+# YAML front matter (see .github/scripts/check-front-matter.rb). Also runs after direct
+# pushes to main, so an admin push with a broken file shows a red X and an alert.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  front-matter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check front matter
+        env:
+          LANG: C.UTF-8
+          LC_ALL: C.UTF-8
+        run: ruby .github/scripts/check-front-matter.rb

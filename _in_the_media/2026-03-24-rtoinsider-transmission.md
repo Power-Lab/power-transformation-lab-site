@@ -1,5 +1,5 @@
 ---
-title: RTO Insider: Transmission Policies in China and Germany Examined in ACEG Webinar
+title: "RTO Insider: Transmission Policies in China and Germany Examined in ACEG Webinar"
 link: https://www.rtoinsider.com/128879-lessons-expanding-the-grid-from-abroad-aceg/
 description: Michael Davidson is quoted on China's transmission policies
 featured: true
