@@ -1,0 +1,22 @@
+name: up-to-date
+
+# Required check on PRs into main: the branch must already contain the latest main.
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  up-to-date:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Check the branch contains main
+        run: |
+          git fetch -q origin main
+          if ! git merge-base --is-ancestor origin/main HEAD; then
+            echo "::error::This branch is missing the latest main. Click 'Update branch' or merge main into it, then push."
+            exit 1
+          fi
