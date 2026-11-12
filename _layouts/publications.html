@@ -19,13 +19,13 @@ layout: hero_page
   <h2 class="section-header">Journal Articles</h2>
   {%- include publications_section.html article_list = journal_articles_list -%}
 
-  {%- assign refereed_other_list = papers_list | where_exp:"item","item.tags contains 'refereed_and_other'" -%}
-  <h2 class="section-header">Refereed Book Chapters and Other Publications</h2>
-  {%- include publications_section.html article_list = refereed_other_list -%}
-
   {%- assign working_reports_list = papers_list | where_exp:"item","item.tags contains 'working_and_reports'" -%}
   <h2 class="section-header">Working Papers and Reports</h2>
   {%- include publications_section.html article_list = working_reports_list -%}
+
+  {%- assign refereed_other_list = papers_list | where_exp:"item","item.tags contains 'refereed_and_other'" -%}
+  <h2 class="section-header">Refereed Book Chapters and Other Publications</h2>
+  {%- include publications_section.html article_list = refereed_other_list -%}
 
   <!-- {%- assign posters_list = papers_list | where_exp:"item","item.tags contains 'posters'" -%}
   <h2 class="section-header">Posters</h2>
